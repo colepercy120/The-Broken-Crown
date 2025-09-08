@@ -1,6 +1,6 @@
-Welcome to The Broken Crown, a Victoria 3 total conversion mod that looks at a few key differences in history, taking a nod from Divergences.
+Welcome to **The Broken Crown**, a Victoria 3 total conversion mod that looks at a few key differences in history, taking a nod from Divergences.
 
-Key differences:
+# Key differences:
 1. The American Revolution resulted in a much greater success, pushing Britain out of the New World entirely. This crushing defeat led to a total collapse of the British Empire, who underwent a liberal revolution and overthrew the monarchy, opting for a Parliamentary Democracy.
 2. This new "Commonwealth" now spreads the revolutionary ideas of democracy to every corner of the world, fomenting unrest in states still ruled by an absolute monarch.
 3. America's resounding victory left France in a much better position, allowing them to maintain their monarchy...for now.

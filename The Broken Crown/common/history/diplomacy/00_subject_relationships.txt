@@ -13,12 +13,43 @@
 			type = colony
 		}
 		create_diplomatic_pact = {
-			country = c:CLM
+			country = c:GCO
 			type = colony
 		}
 		create_diplomatic_pact = {
-			country = c:ARG
+			country = c:PLT
 			type = colony
+		}
+		
+#		create_diplomatic_pact = {
+#			country = c:CAL
+#			type = colony
+#		}
+		create_diplomatic_pact = {
+			country = c:PEU
+			type = colony
+		}
+	}
+	c:PEU = {
+		create_diplomatic_pact = {
+			country = c:CHL
+			type = puppet
+		}
+	}
+	c:GCO = {
+		create_diplomatic_pact = {
+			country = c:VNZ
+			type = puppet
+		}
+	}
+	c:MEX = {
+		create_diplomatic_pact = {
+			country = c:TEX
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:UCA
+			type = puppet
 		}
 	}
 	c:NET ?= {

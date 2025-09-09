@@ -17,8 +17,7 @@
 				culture = mayan
 				size = 312000
 			}
-		}
-		region_state:GBR = {
+		
 			create_pop = {
 				culture = afro_caribbean
 				size = 7104
@@ -176,7 +175,7 @@
 		}
 	}
 	s:STATE_PUERTO_RICO = {
-		region_state:SPA = {
+		region_state:CUB = {
 			create_pop = {
 				culture = caribeno
 				size = 182500
@@ -197,7 +196,7 @@
 		}
 	}
 	s:STATE_BAHAMAS = {
-		region_state:GBR = {
+		region_state:CUB = {
 			create_pop = {
 				culture = british
 				size = 19200
@@ -218,18 +217,6 @@
 				culture = afro_antillean
 				size = 216104
 			}
-		}
-		region_state:DEN = {
-			create_pop = {
-				culture = danish
-				size = 3992
-			}
-			create_pop = {
-				culture = afro_caribbean
-				size = 39996
-			}
-		}
-		region_state:GBR = {
 			create_pop = {
 				culture = british
 				size = 34704
@@ -243,9 +230,20 @@
 				size = 396
 			}
 		}
+		region_state:DEN = {
+			create_pop = {
+				culture = danish
+				size = 3992
+			}
+			create_pop = {
+				culture = afro_caribbean
+				size = 39996
+			}
+		}
+		
 	}
 	s:STATE_JAMAICA = {
-		region_state:GBR = {
+		region_state:CUB = {
 			create_pop = {
 				culture = afro_caribbean
 				size = 358596

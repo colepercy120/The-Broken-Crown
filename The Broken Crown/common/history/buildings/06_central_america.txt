@@ -114,13 +114,12 @@
 				reserves=1
 				activate_production_methods={ "pm_no_organization" }
 			}
-		}
-		region_state:GBR={
+		
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GBR"
+						country="c:UCA"
 						levels=1
 					}
 				}
@@ -448,14 +447,14 @@
 		}
 	}
 	s:STATE_PUERTO_RICO={
-		region_state:SPA={
+		region_state:CUB={
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:CUB"
 						levels=1
 						region="STATE_PUERTO_RICO"
 					}
@@ -467,7 +466,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:CUB"
 						levels=2
 						region="STATE_PUERTO_RICO"
 					}
@@ -480,7 +479,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:CUB"
 						levels=1
 						region="STATE_PUERTO_RICO"
 					}
@@ -493,7 +492,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:CUB"
 						levels=3
 						region="STATE_PUERTO_RICO"
 					}
@@ -506,7 +505,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:CUB"
 						levels=3
 						region="STATE_PUERTO_RICO"
 					}
@@ -518,7 +517,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:CUB"
 						levels=1
 					}
 				}
@@ -528,13 +527,13 @@
 		}
 	}
 	s:STATE_BAHAMAS={
-		region_state:GBR={
+		region_state:CUB={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:CUB"
 						levels=1
 						region="STATE_BAHAMAS"
 					}
@@ -547,7 +546,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:CUB"
 						levels=1
 						region="STATE_BAHAMAS"
 					}
@@ -559,7 +558,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GBR"
+						country="c:CUB"
 						levels=1
 					}
 				}
@@ -589,7 +588,7 @@
 					building={
 						type="building_manor_house"
 						country="c:FRA"
-						levels=3
+						levels=6
 						region="STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -602,20 +601,21 @@
 					building={
 						type="building_manor_house"
 						country="c:FRA"
-						levels=2
+						levels=4
 						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
 			}
+			
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:FRA"
-						levels=2
+						levels=4
 						region="STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -647,74 +647,23 @@
 				activate_production_methods={ "pm_anchorage" }
 			}
 		}
-		region_state:GBR={
-			create_building={
-				building="building_sugar_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:GBR"
-						levels=3
-						region="STATE_WEST_INDIES"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_coffee_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:GBR"
-						levels=2
-						region="STATE_WEST_INDIES"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_tobacco_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:GBR"
-						levels=2
-						region="STATE_WEST_INDIES"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_anchorage" }
-			}
-		}
+		
 	}
 	s:STATE_JAMAICA={
-		region_state:GBR={
+		region_state:CUB={
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GBR"
+						country="c:CUB"
 						levels=2
 						region="STATE_JAMAICA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GBR"
+						country="c:CUB"
 						levels=1
 						region="STATE_HOME_COUNTIES"
 					}
@@ -726,7 +675,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:CUB"
 						levels=1
 						region="STATE_JAMAICA"
 					}
@@ -739,7 +688,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:CUB"
 						levels=3
 						region="STATE_JAMAICA"
 					}
@@ -752,7 +701,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:CUB"
 						levels=5
 						region="STATE_JAMAICA"
 					}
@@ -764,7 +713,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GBR"
+						country="c:CUB"
 						levels=1
 					}
 				}

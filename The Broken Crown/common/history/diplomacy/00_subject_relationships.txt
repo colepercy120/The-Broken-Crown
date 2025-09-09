@@ -52,6 +52,13 @@
 			type = puppet
 		}
 	}
+	c:UCA = {
+		# Mosquito Kingdom
+		create_diplomatic_pact = {
+			country = c:MKT
+			type = protectorate
+		}
+	}
 	c:NET ?= {
 		create_diplomatic_pact = {
 			country = c:LUX
@@ -143,6 +150,10 @@
 			country = c:LIB
 			type = protectorate
 		}
+		create_diplomatic_pact = {
+			country = c:HBC
+			type = chartered_company
+		}
 	}
 	c:GBR ?= {
 		create_diplomatic_pact = {
@@ -196,10 +207,7 @@
 			type = colony
 		}
 		# Hudson Bay Company has a weird autonomous charter
-		create_diplomatic_pact = {
-			country = c:HBC
-			type = chartered_company
-		}
+		
 
 		### AUSTRALIA ###
 		# Colony of New South Wales
@@ -237,11 +245,7 @@
 			country = c:KAU
 			type = protectorate
 		}
-		# Mosquito Kingdom
-		create_diplomatic_pact = {
-			country = c:MKT
-			type = protectorate
-		}
+		
 	}
 	c:DAI ?= {
 		create_diplomatic_pact = {

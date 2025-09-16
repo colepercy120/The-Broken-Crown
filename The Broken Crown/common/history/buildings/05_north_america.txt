@@ -473,17 +473,54 @@
 		}
 	}
 	s:STATE_WASHINGTON={
-		region_state:ORG={
+		region_state:ALK={
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:ALK"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ALK"
+						levels=1
+						region="STATE_BRITISH_COLUMBIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:ALK"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		
 		}
 	}
 	s:STATE_OREGON={
-		region_state:ORG={
+		region_state:ALK={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:ORG"
+						country="c:ALK"
 						levels=1
 						region="STATE_OREGON"
 					}
@@ -2988,13 +3025,13 @@
 		}
 	}
 	s:STATE_BRITISH_COLUMBIA={
-		region_state:ORG={
+		region_state:ALK={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:ORG"
+						country="c:ALK"
 						levels=1
 						region="STATE_BRITISH_COLUMBIA"
 					}
@@ -3006,7 +3043,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:ORG"
+						country="c:ALK"
 						levels=2
 					}
 				}
@@ -3051,15 +3088,15 @@
 		}
 	}
 	s:STATE_YUKON_TERRITORY={
-		region_state:HBC={
+		region_state:ATB={
 		}
 	}
 	s:STATE_NORTHWEST_TERRITORIES={
-		region_state:HBC={
+		region_state:ATB={
 		}
 	}
 	s:STATE_NUNAVUT={
-		region_state:HBC={
+		region_state:ATB={
 		}
 	}
 	s:STATE_BERMUDA={

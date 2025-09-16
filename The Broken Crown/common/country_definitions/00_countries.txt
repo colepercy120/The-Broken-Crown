@@ -2699,6 +2699,17 @@ IRC = {
 	capital = STATE_SASKATCHEWAN
 }
 
+CER = {
+	color = { 61 158 124 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cree  }
+	capital = STATE_QUEBEC
+}
+
 JAM = {
 	color = hsv360{ 88  87  33 }
 

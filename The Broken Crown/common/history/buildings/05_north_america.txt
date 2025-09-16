@@ -2653,20 +2653,7 @@
 		}
 	}
 	s:STATE_ONTARIO={
-		region_state:HBC={
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					company={
-						type=company_hbc
-						country="c:GBR"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-		}
+		
 		region_state:USA={
 			create_building={
 				building="building_trade_center"
@@ -2972,20 +2959,7 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 		}
-		region_state:HBC={
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					company={
-						type=company_hbc
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-		}
+		
 	}
 	s:STATE_NEWFOUNDLAND={
 		region_state:USA={
@@ -3005,14 +2979,15 @@
 		}
 	}
 	s:STATE_ALBERTA={
-		region_state:HBC={
+		region_state:USA={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					company={
-						type=company_hbc
-						country="c:GBR"
+					building={
+						type="building_financial_district"
+						country="c:USA"
 						levels=1
+						region="STATE_QUBEC"
 					}
 				}
 				reserves=1
@@ -3059,25 +3034,16 @@
 		}
 	}
 	s:STATE_MANITOBA={
-		region_state:HBC={
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:HBC"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
+		region_state:USA={
+			
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					company={
-						type=company_hbc
-						country="c:GBR"
+					building={
+						type="building_financial_district"
+						country="c:USA"
 						levels=2
+						region="STATE_QUBEC"
 					}
 				}
 				reserves=1

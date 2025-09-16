@@ -1181,19 +1181,13 @@
 		}
 	}
 	s:STATE_ALBERTA = {
-		region_state:HBC = {
+		region_state:USA = {
 			create_pop = {
 				culture = yankee
 				size = 3999
 			}
-			create_pop = {
-				culture = siouan
-				size = 8200
-			}
-			create_pop = {
-				culture = metis
-				size = 11000
-			}
+			
+			
 		}
 		region_state:IRC = {
 			create_pop = {
@@ -1202,7 +1196,11 @@
 			}
 			create_pop = {
 				culture = siouan
-				size = 12004
+				size = 20000
+			}
+			create_pop = {
+				culture = metis
+				size = 11000
 			}
 		}
 		region_state:BLF = {
@@ -1239,7 +1237,7 @@
 		}
 	}
 	s:STATE_SASKATCHEWAN = {
-		region_state:HBC = {
+		region_state:USA = {
 			create_pop = {
 				culture = yankee
 				size = 3000
@@ -1263,26 +1261,30 @@
 				size = 24000
 			}
 		}
+		region_state:ATB = {
+			create_pop = {
+				culture = athabaskan
+				size = 8000
+			}
+			
+		}
 	}
 	s:STATE_MANITOBA = {
-		region_state:HBC = {
+		region_state:USA = {
 			create_pop = {
 				culture = yankee
 				size = 14848
 			}
 			create_pop = {
 				culture = siouan
-				size = 12000
+				size = 6000
 			}
 			create_pop = {
 				culture = metis
 				religion = protestant
 				size = 3996
 			}
-			create_pop = {
-				culture = athabaskan
-				size = 16000
-			}
+			
 			create_pop = {
 				culture = metis
 				size = 20004
@@ -1293,6 +1295,17 @@
 				culture = cree
 				size = 12000
 			}
+			create_pop = {
+				culture = siouan
+				size = 6000
+			}
+		}
+		region_state:ATB = {
+			create_pop = {
+				culture = athabaskan
+				size = 16000
+			}
+			
 		}
 	}
 	s:STATE_YUKON_TERRITORY = {

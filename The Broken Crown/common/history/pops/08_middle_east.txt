@@ -336,7 +336,7 @@
 		}
 	}
 	s:STATE_CYPRUS = {
-		region_state:TUR = {
+		region_state:BYZ = {
 			create_pop = {
 				culture = turkish
 				size = 43764
@@ -1348,10 +1348,10 @@
 		}
 	}
 	s:STATE_HUDAVENDIGAR = {
-		region_state:TUR = {
+		region_state:BYZ = {
 			create_pop = {
 				culture = turkish
-				size = 838494
+				size = 438494
 			}
 			create_pop = {
 				culture = sephardic
@@ -1367,7 +1367,7 @@
 			}
 			create_pop = {
 				culture = greek
-				size = 126555
+				size = 626555
 			}
 			create_pop = {
 				culture = greek
@@ -1387,10 +1387,10 @@
 		}
 	}
 	s:STATE_AYDIN = {
-		region_state:TUR = {
+		region_state:BYZ = {
 			create_pop = {
 				culture = turkish
-				size = 598129
+				size = 298129
 			}
 			create_pop = {
 				culture = armenian
@@ -1398,7 +1398,7 @@
 			}
 			create_pop = {
 				culture = greek
-				size = 374120
+				size = 674120
 			}
 			create_pop = {
 				culture = greek
@@ -1464,14 +1464,14 @@
 		}
 	}
 	s:STATE_KASTAMONU = {
-		region_state:TUR = {
+		region_state:BYZ = {
 			create_pop = {
 				culture = turkish
-				size = 753786
+				size = 453786
 			}
 			create_pop = {
 				culture = greek
-				size = 16426
+				size = 316426
 			}
 			create_pop = {
 				culture = armenian

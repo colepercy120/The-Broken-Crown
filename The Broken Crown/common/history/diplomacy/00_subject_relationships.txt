@@ -73,17 +73,9 @@
 			type = dominion
 		}
 	}
-	c:SWE ?= {
-		create_diplomatic_pact = {
-			country = c:NOR
-			type = personal_union
-		}
-	}
+	
 	c:RUS ?= {
-		create_diplomatic_pact = {
-			country = c:FIN
-			type = personal_union
-		}
+		
 		create_diplomatic_pact = {
 			country = c:UBD
 			type = puppet
@@ -120,6 +112,14 @@
 			country = c:SCH
 			type = personal_union
 		}
+		create_diplomatic_pact = {
+			country = c:NOR
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:SWE
+			type = personal_union
+		}
 	}
 	c:CHI ?= {
 		create_diplomatic_pact = {
@@ -137,8 +137,12 @@
 	}
 	c:AUS ?= {
 		create_diplomatic_pact = {
-			country = c:KRA
-			type = puppet
+			country = c:CRO
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:HUN
+			type = personal_union
 		}
 	}
 	c:USA ?= {
@@ -600,13 +604,13 @@
 		add_liberty_desire = 45
 	}
 
-	c:NPU = {
-		add_liberty_desire = 30
-	}
+	#c:NPU = {
+	#	add_liberty_desire = 30
+	#}
 
-	c:IQU = {
-		add_liberty_desire = -10
-	}
+#	c:IQU = {
+#		add_liberty_desire = -10
+#	}
 
 	c:BIC ?= {
 		every_subject_or_below = {

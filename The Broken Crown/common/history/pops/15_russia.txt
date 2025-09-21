@@ -1,6 +1,6 @@
 ﻿POPS = {
 	s:STATE_VILNIUS = { #DONE
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = byelorussian
 				size = 147130
@@ -184,7 +184,7 @@
 		}
 	}
 	s:STATE_KAUNAS = { #DONE
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = lithuanian
 				size = 618377
@@ -216,7 +216,7 @@
 		}
 	}
 	s:STATE_MAZOVIA = { #Mazovia - DONE
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = polish
 				size = 970792
@@ -244,7 +244,7 @@
 		}
 	}
 	s:STATE_GREATER_POLAND = { #Warszawa - DONE
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = polish
 				size = 2004469
@@ -269,7 +269,7 @@
 		}
 	}
 	s:STATE_LESSER_POLAND = { #Lublin - DONE
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = polish
 				size = 633163
@@ -298,7 +298,7 @@
 		}
 	}
 	s:STATE_UUSIMAA = { #DONE
-		region_state:FIN = {
+		region_state:SWE = {
 			create_pop = {
 				culture = swedish
 				size = 101334
@@ -310,7 +310,7 @@
 		}
 	}
 	s:STATE_WEST_KARELIA = { #DONE
-		region_state:FIN = {
+		region_state:SWE = {
 			create_pop = {
 				culture = finnish
 				size = 221799
@@ -331,7 +331,7 @@
 		}
 	}
 	s:STATE_ALAND = { #DONE
-		region_state:FIN = {
+		region_state:SWE = {
 			create_pop = {
 				culture = swedish
 				size = 25800
@@ -343,7 +343,7 @@
 		}
 	}
 	s:STATE_OSTROBOTHNIA = { #DONE
-		region_state:FIN = {
+		region_state:SWE = {
 			create_pop = {
 				culture = finnish
 				size = 135542
@@ -355,7 +355,7 @@
 		}
 	}
 	s:STATE_OULU = { #DONE
-		region_state:FIN = {
+		region_state:SWE = {
 			create_pop = {
 				culture = finnish
 				size = 116250
@@ -371,7 +371,7 @@
 		}
 	}
 	s:STATE_KUOPIO = { #DONE
-		region_state:FIN = {
+		region_state:SWE = {
 			create_pop = {
 				culture = finnish
 				size = 301794
@@ -456,7 +456,7 @@
 		}
 	}
 	s:STATE_BREST = { #DONE
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = byelorussian
 				size = 512334
@@ -548,7 +548,7 @@
 		}
 	}
 	s:STATE_VOLHYNIA = { #DONE
-		region_state:RUS = {
+		region_state:PLC = {
 			create_pop = {
 				culture = ukrainian
 				size = 526356
@@ -752,7 +752,7 @@
 		}
 	}
 	s:STATE_BESSARABIA = {
-		region_state:RUS = {
+		region_state:ROM = {
 			create_pop = {
 				culture = romanian
 				size = 303466

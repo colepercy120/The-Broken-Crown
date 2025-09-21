@@ -877,13 +877,13 @@
 		}
 	}
 	s:STATE_ICELAND={
-		region_state:DEN={
+		region_state:NOR={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:DEN"
+						country="c:NOR"
 						levels=1
 						region="STATE_ICELAND"
 					}
@@ -895,7 +895,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:DEN"
+						country="c:NOR"
 						levels=1
 					}
 				}
@@ -905,12 +905,12 @@
 		}
 	}
 	s:STATE_GREENLAND={
-		region_state:DEN={
+		region_state:NOR={
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:DEN"
+						country="c:NOR"
 						levels=1
 					}
 				}
@@ -2440,13 +2440,13 @@
 		}
 	}
 	s:STATE_ULSTER={
-		region_state:GBR={
+		region_state:IRE={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:IRE"
 						levels=2
 						region="STATE_ULSTER"
 					}
@@ -2459,7 +2459,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:IRE"
 						levels=3
 						region="STATE_ULSTER"
 					}
@@ -2472,7 +2472,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GBR"
+						country="c:IRE"
 						levels=2
 						region="STATE_ULSTER"
 					}
@@ -2484,7 +2484,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GBR"
+						country="c:IRE"
 						levels=1
 					}
 				}
@@ -2494,13 +2494,13 @@
 		}
 	}
 	s:STATE_MUNSTER={
-		region_state:GBR={
+		region_state:IRE={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:IRE"
 						levels=3
 						region="STATE_MUNSTER"
 					}
@@ -2512,7 +2512,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GBR"
+						country="c:IRE"
 						levels=1
 					}
 				}
@@ -2522,12 +2522,12 @@
 		}
 	}
 	s:STATE_LEINSTER={
-		region_state:GBR={
+		region_state:IRE={
 			create_building={
 				building="building_university"
 				add_ownership={
 					country={
-						country="c:GBR"
+						country="c:IRE"
 						levels=1
 					}
 				}
@@ -2540,7 +2540,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GBR"
+						country="c:IRE"
 						levels=1
 						region="STATE_HOME_COUNTIES"
 					}
@@ -2552,7 +2552,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GBR"
+						country="c:IRE"
 						levels=1
 						region="STATE_LEINSTER"
 					}
@@ -2565,7 +2565,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GBR"
+						country="c:IRE"
 						levels=4
 						region="STATE_LEINSTER"
 					}
@@ -2578,7 +2578,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:IRE"
 						levels=5
 						region="STATE_LEINSTER"
 					}
@@ -2590,7 +2590,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GBR"
+						country="c:IRE"
 						levels=2
 					}
 				}
@@ -2600,13 +2600,13 @@
 		}
 	}
 	s:STATE_CONNAUGHT={
-		region_state:GBR={
+		region_state:IRE={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GBR"
+						country="c:IRE"
 						levels=2
 						region="STATE_CONNAUGHT"
 					}
@@ -2755,13 +2755,13 @@
 		}
 	}
 	s:STATE_PROVENCE={
-		region_state:SAR={
+		region_state:ITA={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:SAR"
+						country="c:ITA"
 						levels=1
 						region="STATE_PROVENCE"
 					}
@@ -2774,7 +2774,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SAR"
+						country="c:ITA"
 						levels=1
 						region="STATE_PROVENCE"
 					}
@@ -2787,7 +2787,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SAR"
+						country="c:ITA"
 						levels=1
 						region="STATE_PROVENCE"
 					}

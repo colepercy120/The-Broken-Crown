@@ -128,7 +128,7 @@
 		}
 	}
 	s:STATE_ICELAND = {
-		region_state:DEN = {
+		region_state:NOR = {
 			create_pop = {
 				culture = icelandic
 				size = 63200
@@ -140,7 +140,7 @@
 		}
 	}
 	s:STATE_GREENLAND = {
-		region_state:DEN = {
+		region_state:NOR = {
 			create_pop = {
 				culture = danish
 				size = 410
@@ -303,7 +303,7 @@
 		}
 	}
 	s:STATE_ULSTER = {
-		region_state:GBR = {
+		region_state:IRE = {
 			create_pop = {
 				culture = irish # Catholics
 				size = 1183122
@@ -329,7 +329,7 @@
 		}
 	}
 	s:STATE_MUNSTER = {
-		region_state:GBR = {
+		region_state:IRE = {
 			create_pop = {
 				culture = irish # Catholics
 				size = 2214388
@@ -355,7 +355,7 @@
 		}
 	}
 	s:STATE_LEINSTER = {
-		region_state:GBR = {
+		region_state:IRE = {
 			create_pop = {
 				culture = irish # Catholics
 				size = 1677581
@@ -390,7 +390,7 @@
 		}
 	}
 	s:STATE_CONNAUGHT = {
-		region_state:GBR = {
+		region_state:IRE = {
 			create_pop = {
 				culture = irish # Catholics
 				size = 1319428
@@ -432,7 +432,7 @@
 		}
 	}
 	s:STATE_PROVENCE = {
-		region_state:SAR = {
+		region_state:ITA = {
 			create_pop = {
 				culture = north_italian
 				size = 131100

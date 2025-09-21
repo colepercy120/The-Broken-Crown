@@ -477,7 +477,7 @@ POPS = {
 			}
 		}
 	}
-	s:STATE_PLTGUAY = {
+	s:STATE_PARAGUAY = {
 		region_state:PLT = {
 			create_pop = {
 				culture = platinean

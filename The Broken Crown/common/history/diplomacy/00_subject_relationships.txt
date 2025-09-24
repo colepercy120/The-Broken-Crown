@@ -138,11 +138,19 @@
 	c:AUS ?= {
 		create_diplomatic_pact = {
 			country = c:CRO
-			type = personal_union
+			type = crown_land
+		}
+		create_diplomatic_pact = {
+			country = c:CRO
+			type = decrease_payments  
 		}
 		create_diplomatic_pact = {
 			country = c:HUN
-			type = personal_union
+			type = crown_land
+		}
+		create_diplomatic_pact = {
+			country = c:TRS
+			type = crown_land
 		}
 	}
 	c:USA ?= {
@@ -227,7 +235,7 @@
 	c:DAI ?= {
 		create_diplomatic_pact = {
 			country = c:CAM
-			type = tributary
+			type = vassal
 		}
 	}
 	c:SIA ?= {
@@ -602,6 +610,10 @@
 
 	c:EGY = {
 		add_liberty_desire = 45
+	}
+	
+	c:CAM ?= {
+		add_liberty_desire = 20
 	}
 
 	#c:NPU = {

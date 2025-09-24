@@ -6,7 +6,7 @@
 				add_ownership={
 					country={
 						country="c:USA"
-						levels=6
+						levels=10
 					}
 				}
 				reserves=1

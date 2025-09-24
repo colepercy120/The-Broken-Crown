@@ -522,6 +522,10 @@
 				culture = algonquian
 				size = 16000
 			}
+			create_pop = {
+				culture = yankee
+				size = 3000
+			}
 		}
 		region_state:LKT = {
 			create_pop = {

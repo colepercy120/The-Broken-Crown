@@ -1,0 +1,11 @@
+﻿
+CER = {
+	color = { 61 158 124 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cree  }
+	capital = STATE_QUEBEC
+}

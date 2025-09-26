@@ -1,6 +1,6 @@
 ﻿
 CER = {
-	color = { 61 158 124 }
+	color = { 213 243 245 }
 
 	country_type = decentralized
 
@@ -8,4 +8,28 @@ CER = {
 
 	cultures = { cree  }
 	capital = STATE_QUEBEC
+}
+
+BAN = {
+	color = { 4 66 64 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_german }
+	capital = STATE_BRANDENBURG
+	is_named_from_capital = yes
+}
+
+WES = {
+	color = { 27 65 161 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
+	is_named_from_capital = yes
 }

@@ -72,8 +72,23 @@
 			country = c:DEI
 			type = dominion
 		}
+		create_diplomatic_pact = {
+			country = c:SAF
+			type = colony
+		}
+		# Colony of Ceylon
+		create_diplomatic_pact = {
+			country = c:BCE
+			type = colony
+		}
 	}
-	
+	#c:PLC = {
+	#	create_diplomatic_pact = {
+	#		country = c:PRU
+	#		type = puppet
+	#	}
+	#	
+	#}
 	c:RUS ?= {
 		
 		create_diplomatic_pact = {
@@ -182,14 +197,8 @@
 			type = puppet
 		}
 		
-		create_diplomatic_pact = {
-			country = c:HAN
-			type = personal_union
-		}
-		create_diplomatic_pact = {
-			country = c:SAF
-			type = colony
-		}
+		
+		
 
 		
 		
@@ -215,11 +224,7 @@
 			country = c:TAS
 			type = colony
 		}
-		# Colony of Ceylon
-		create_diplomatic_pact = {
-			country = c:BCE
-			type = colony
-		}
+		
 		# United Tribes of New Zealand
 		create_diplomatic_pact = {
 			country = c:UNT

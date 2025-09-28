@@ -62,7 +62,7 @@
 		}
 	}
 	s:STATE_ABU_DHABI = {
-		region_state:ABU = {
+		region_state:NEJ = {
 			create_pop = {
 				culture = bedouin
 				religion = sunni
@@ -118,7 +118,7 @@
 				size = 100
 			}
 		}
-		region_state:BHN = {
+		region_state:NEJ = {
 			create_pop = {
 				culture = bedouin
 				religion = shiite
@@ -176,7 +176,7 @@
 				size = 16000
 			}
 		}
-		region_state:HDJ = {
+		region_state:NEJ = {
 			create_pop = {
 				pop_type = slaves
 				culture = sudanese
@@ -257,7 +257,7 @@
 		}
 	}
 	s:STATE_HEDJAZ = {
-		region_state:HDJ = {
+		region_state:NEJ = {
 			create_pop = {
 				culture = bedouin
 				religion = sunni
@@ -292,7 +292,7 @@
 		}
 	}
 	s:STATE_HAIL = {
-		region_state:JAB = {
+		region_state:NEJ = {
 			create_pop = {
 				culture = bedouin
 				size = 38496
@@ -617,7 +617,7 @@
 		}
 	}
 	s:STATE_BAGHDAD = {
-		region_state:TUR = {
+		region_state:IRQ = {
 			create_pop = {
 				culture = mashriqi
 				religion = sunni
@@ -670,7 +670,7 @@
 		}
 	}
 	s:STATE_MOSUL = {
-		region_state:TUR = {
+		region_state:ASS = {
 			create_pop = {
 				culture = kurdish
 				size = 203004
@@ -678,7 +678,7 @@
 			create_pop = {
 				culture = assyrian
 				religion = oriental_orthodox
-				size = 52000
+				size = 152000
 			}
 			create_pop = {
 				culture = armenian
@@ -715,16 +715,16 @@
 		}
 	}
 	s:STATE_DEIR_EZ_ZOR = {
-		region_state:TUR = {
+		region_state:ASS = {
 			create_pop = {
 				culture = mashriqi
 				religion = sunni
-				size = 144000
+				size = 44000
 			}
 			create_pop = {
 				culture = assyrian
 				religion = oriental_orthodox
-				size = 43996
+				size = 143996
 			}
 			create_pop = {
 				culture = kurdish
@@ -747,7 +747,7 @@
 		}
 	}
 	s:STATE_BASRA = {
-		region_state:TUR = {
+		region_state:IRQ = {
 			create_pop = {
 				culture = mashriqi
 				size = 272000
@@ -872,7 +872,7 @@
 				size = 8200
 			}
 		}
-		region_state:BHN = {
+		region_state:NEJ = {
 			create_pop = {
 				culture = bedouin
 				size = 5002
@@ -1492,10 +1492,11 @@
 		}
 	}
 	s:STATE_DIYARBAKIR = {
-		region_state:TUR = {
+		region_state:ASS = {
 			create_pop = {
 				culture = kurdish
 				size = 351906
+			}
 			# Alevis, Bektashis, Zazaki and the more heterodox end of Anatolian folk Islam
 			create_pop = {
 				culture = kurdish
@@ -1505,7 +1506,7 @@
 			create_pop = {
 				culture = assyrian
 				religion = oriental_orthodox
-				size = 29341
+				size = 129341
 			}
 			create_pop = {
 				culture = turkish
@@ -1565,8 +1566,7 @@
 				culture = lacustrine_bantu
 				size = 1000
 			}
-		}
-		region_state:TUR = {
+		
 			create_pop = {
 				culture = turkish
 				size = 30012
@@ -1592,7 +1592,7 @@
 		}
 	}
 	s:STATE_TRABZON = {
-		region_state:TUR = {
+		region_state:RUS = {
 			create_pop = {
 				culture = turkish
 				size = 678712
@@ -1633,7 +1633,7 @@
 		}
 	}
 	s:STATE_ERZURUM = {
-		region_state:TUR = {
+		region_state:RUS = {
 			create_pop = {
 				culture = turkish
 				size = 244045
@@ -1687,7 +1687,7 @@
 		}
 	}
 	s:STATE_KARS = {
-		region_state:TUR = {
+		region_state:RUS = {
 			create_pop = {
 				culture = turkish
 				size = 61000
@@ -1724,8 +1724,7 @@
 				culture = georgian
 				size = 1400
 			}
-		}
-		region_state:RUS = {
+		
 			create_pop = {
 				culture = azerbaijani
 				size = 17000

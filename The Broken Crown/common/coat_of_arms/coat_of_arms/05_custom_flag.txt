@@ -1,0 +1,708 @@
+EUR = {
+	pattern = "pattern_solid.tga"
+	color1 = "european_blue"
+	color2 = "european_blue"
+
+	colored_emblem = {
+		texture = "ce_stars_circle_13.dds"
+		color1 = yellow
+		color2 = yellow
+	}
+}
+
+EUR_com = {
+	pattern = "pattern_solid.tga"
+	color1 = "communist_hre_red"
+	color2 = "communist_hre_red"
+
+	colored_emblem = {
+		texture = "ce_stars_circle_13.dds"
+		color1 = yellow
+		color2 = yellow
+	}
+}
+
+RME = {
+	pattern = "pattern_solid.tga"
+	color1 = "roman_red"
+	color2 = "roman_red"
+
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = yellow
+		color2 = yellow
+	}
+}
+
+GLR = {
+	pattern = "pattern_solid.tga"
+	color1 = "azure"
+	color2 = "azure"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = white
+		color2 = green_dark
+		
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = blue
+		color2 = blue
+		instance = { position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = white
+		color2 = white
+		instance = { position = { 0.175 0.5 } scale = { 0.4 0.4 } }
+	}
+	
+}
+
+GPR = {
+	pattern = "pattern_solid.tga"
+	color1 = "orange"
+	color2 = "orange"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = white
+		color2 = yellow
+		
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = blue
+		color2 = blue
+		instance = { position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = white
+		color2 = white
+		instance = { position = { 0.175 0.5 } scale = { 0.4 0.4 } }
+	}
+	
+}
+
+ZAP = { # Polish-Lithuanian Commonwealth	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "red"
+		color2 = "blue"
+	}	
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "red"
+		color2 = "blue"
+		instance = { position = { 0.5 0.5 } scale = { 0.75 0.75 } }
+	}
+	colored_emblem = {
+		texture = "ce_stars_circle_13.dds"
+		color1 = white
+		color2 = white
+		instance = { position = { 0.5 0.5 } scale = { 0.5 0.5 } }
+	}
+}
+
+colonial_south_china = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow_dark"
+	color2 = "yellow_dark"
+
+	colored_emblem = {
+		texture = "ce_dragon_china.dds"
+		color1 = "black"
+		color2 = "white"
+		color3 = "red"
+		instance = { scale = { 1 1 } position = { .6 0.6 } }			
+	}
+}
+
+colonial_north_china = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow_light"
+	color2 = "yellow_light"
+
+	colored_emblem = {
+		texture = "ce_dragon_china.dds"
+		color1 = "black"
+		color2 = "white"
+		color3 = "red"
+		instance = { scale = { 1 1 } position = { .6 0.6 } }			
+	}
+}
+
+colonial_indonesia = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "blue"
+	}
+
+	
+}
+
+colonial_indochina = {
+	pattern = "pattern_solid.tga"
+	color1 = "golden"
+	color2 = "golden"
+
+	
+}
+
+colonial_oceania = {
+	# blue ensign with commonwealth star and southern cross
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.33 0.33 } position = { 0.25 0.75 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.743 0.181 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.625 0.484 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.861 0.37 } }
+		instance = { scale = { 0.20 0.20 } position = { 0.743 0.849 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.1 0.1 } position = { 0.8 0.543 } }
+	}
+}
+
+colonial_manchuria = {
+	# Flag as chinese subject (rearranged five stripped flag)
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "white"
+
+	
+	
+}
+
+colonial_japan = {
+	# Based on imperial std
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_chrysanthemum_japan.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }			
+	}
+	
+	
+}
+
+colonial_west_siberia = {
+	# Based on imperial std
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+
+	
+	
+	
+}
+
+colonial_east_siberia = {
+	# Based on imperial std
+	
+	pattern = "pattern_solid.tga"
+	color1 = "saffron"
+	color2 = "yellow"
+
+}
+
+colonial_anatolia = {
+	# Based on imperial std
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.70 0.5 } }	
+	}
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		instance = { scale = { 0.25 0.25 } position = { 0.87 0.50 } }		
+		color1 = "white"
+		color2 = "white"
+	}	
+	
+
+}
+
+colonial_arabic = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_crescent_large.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.60 0.60 } position = { 0.78 0.5 } }			
+	}	
+
+}
+
+colonial_persia = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "green"
+	
+	colored_emblem = {
+		texture = "ce_inti.dds"
+		color1 = "yellow"
+		color2 = "orange"
+		color3 = "white"
+		instance = { scale = { 0.32 0.32 } position = { 0.76 0.45 } }			
+	}	
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { 0.2 0.1 } position = { 0.75 0.6 } }		
+	}	
+	colored_emblem = {		
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.1 0.1 } position = { 0.76 0.45 } }		
+	}
+
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.28 0.015 } position = { 0.765 0.67 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_lion_persia.dds"
+		color1 = "yellow"
+		color2 = "orange"
+		color3 = "white"
+		instance = { scale = { 0.6 0.6 } position = { 0.75 0.50 } }			
+	}
+
+}
+
+colonial_caucasus = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "black"
+		color2 = "red"
+	}
+
+}
+
+colonial_south_india = {
+	pattern = "pattern_solid.tga"
+	color1 = "saffron"	
+
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = "orange"
+		instance = { scale = { 0.63 0.59 } position = { 0.75 0.5 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = "red"
+		instance = { scale = { 0.60 0.56 } position = { 0.75 0.5 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_gandaberunda.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "grey"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.51 } }			
+	}			
+
+}
+
+colonial_north_india = {
+	# 1879 design, blue ensign with order of the star badge 
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+	
+	textured_emblem = {
+		texture = "te_star_india.dds"
+		instance = { scale = { 0.6 0.6 } position = { 0.75 0.5 } }
+	}		
+
+}
+
+colonial_himalayas = {
+	# Except as subject of China (since starting flag)
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		color2 = color2
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_snow_lion.dds"
+		color1 = "white"
+		color2 = "green"
+		color3 = "saffron"
+		instance = { scale = { 0.6 0.6 } position = { 0.76 0.5 } }		
+	}	
+
+}
+
+colonial_central_asia = {
+	pattern = "pattern_solid.tga"
+	color1 = "light_blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "green"
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+        instance = { scale = { 1.0 0.02 } position = { 0.5 0.33 }  }	
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+        instance = { scale = { 1.0 0.02 } position = { 0.5 0.66 }  }	
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "white"
+        instance = { scale = { 0.3 0.3 } position = { 0.15 0.165 }  }	
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+        instance = { scale = { 0.07 0.07 } position = { 0.28 0.25 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.33 0.25 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.38 0.25 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.43 0.25 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.48 0.25 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.33 0.18 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.38 0.18 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.43 0.18 }  }
+        instance = { scale = { 0.07 0.07 } position = { 0.48 0.18 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.38 0.11 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.43 0.11 }  }	
+        instance = { scale = { 0.07 0.07 } position = { 0.48 0.11 }  }		
+	}
+
+}
+
+BLZ = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_belize.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.75 0.75 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 -0.15 } scale = { 1 0.5 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.75 } scale = { 1 0.5 } }
+	}
+}
+BLZ_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {		
+		texture = "te_coa_belize_gbr.dds"
+		color1 = "white"
+		color2 = "yellow"
+        instance = { position = { 0.75 0.5 } scale = { 0.75 0.75 } }
+	}
+     
+    
+	
+}
+
+WID = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_belize.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.75 0.75 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 -0.15 } scale = { 1 0.5 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.75 } scale = { 1 0.5 } }
+	}
+}
+WID_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {		
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "yellow"
+        instance = { position = { 0.75 0.5 } scale = { 0.85 0.85 } }
+	}
+	
+	textured_emblem = {		
+		texture = "te_coa_wid.dds"
+		color1 = "white"
+		color2 = "yellow"
+        instance = { position = { 0.75 0.5 } scale = { 0.5 0.5 } }
+	}
+     
+    
+	
+}
+
+GUY = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "white"
+		color2 = color3
+		instance = { position = { 0 0.5 } scale = { 2 1 } }
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "yellow"
+		color2 = color3
+		instance = { position = { 0 0.5 } scale = { 1.8 0.9 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "black"
+		color2 = color3
+		instance = { position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "red"
+		color2 = color3
+		instance = { position = { 0 0.5 } scale = { 0.9 0.9 } }
+	}
+ 
+}
+GUY_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {		
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "yellow"
+        instance = { position = { 0.75 0.5 } scale = { 0.75 0.75 } }
+	}
+	
+	textured_emblem = {		
+		texture = "te_coa_guyana.dds"
+		color1 = "white"
+		color2 = "yellow"
+        instance = { position = { 0.75 0.5 } scale = { 0.25 0.25 } }
+	}
+     
+    
+	
+}
+
+BRM = {
+	pattern = "pattern_solid.tga"
+	color1 = "light_blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "green"
+		instance = { position = { 0 0.5 } scale = { 2 1 } }
+	}
+	
+ 
+}
+BRM_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	
+	textured_emblem = {		
+		texture = "te_coa_bermuda.dds"
+		color1 = "white"
+		color2 = "yellow"
+        instance = { position = { 0.75 0.5 } scale = { 0.5 0.5 } }
+	}
+     
+    
+	
+}
+
+PCO_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	
+	textured_emblem = {		
+		texture = "te_coa_puerto_rico.dds"
+		color1 = "white"
+		color2 = "yellow"
+        instance = { position = { 0.75 0.5 } scale = { 0.5 0.5 } }
+	}
+     
+    
+	
+}
+
+PCO_subject_USA = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_stripes_05.dds"
+		color1 = color1
+		color2 = color1
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.175 0.5 } scale = { 0.4 0.4 } }
+	}
+
+}
+
+WIN_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_wi_waves.dds"
+		color1 = "white"
+		color2 = "orange"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }			
+	}
+     }
+    
+SON = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "roman_red"
+
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = white
+		color2 = white
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "red"
+		color2 = "orange"
+		instance = { scale = { 0.3 0.3 } position = { 0.33 0.5 } }			
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "red"
+		color2 = "orange"
+		instance = { scale = { 0.3 0.3 } position = { 0.66 0.5 } }			
+	}
+	
+	}
+
+ZAC = {
+	pattern = "pattern_per_bend.dds"
+	color1 = "yellow"
+	color2 = "red"
+
+	
+	
+	
+	
+	colored_emblem = {
+		texture = "ce_bend_dexter.dds"
+		color1 = "white"
+		color2 = "orange"
+					
+	}
+	
+	}

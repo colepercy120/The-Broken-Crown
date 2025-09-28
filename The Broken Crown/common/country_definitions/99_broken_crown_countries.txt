@@ -33,3 +33,82 @@ WES = {
 	capital = STATE_WESTPHALIA
 	is_named_from_capital = yes
 }
+
+EGY = {
+	color = { 255  205  155 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { misri }
+	capital = STATE_LOWER_EGYPT
+}
+
+GLR = {
+	color = { 40 187 156 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { yankee anglo_canadian }
+	capital = STATE_ILLINOIS
+}
+
+GPR = {
+	color = { 216 213 31 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { yankee dixie }
+	capital = STATE_KANSAS
+}
+
+EUR = {
+	color = { 20  50  210 }
+	
+	country_type = recognized
+
+	tier = hegemony
+	
+	cultures = { french north_german south_german dutch flemish wallonian alemannic north_italian south_italian }
+	capital = STATE_ILE_DE_FRANCE
+}
+
+USW = {
+	color = { 66  94  193 }
+	
+	country_type = colonial
+	
+	tier = empire
+	
+	cultures = { afro_american liberian }
+	capital = STATE_LIBERIA
+}
+
+RME = {
+	color = { 140  13  13 }
+	
+	valid_as_home_country_for_separatists = { always = no } # root = country to separate from
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { greek north_italian south_italian french spanish portugese romanian turkish }	
+	capital = STATE_LAZIO
+}
+
+ZAP = {
+	color = { 219  31  62 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { polish czech slovak }
+	capital = STATE_WEST_GALICIA
+}

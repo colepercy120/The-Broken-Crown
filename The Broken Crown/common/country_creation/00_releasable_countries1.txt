@@ -1,0 +1,134 @@
+﻿GLR = {
+	states = {
+		STATE_ILLINOIS
+		STATE_WISCONSIN
+		STATE_MINNESOTA
+		STATE_MICHIGAN
+		STATE_INDIANA
+		STATE_OHIO
+		STATE_PENNSYLVANIA
+		STATE_NEW_YORK
+		STATE_ONTARIO
+		STATE_IOWA
+		STATE_MANITOBA
+		STATE_NEW_JERSEY
+	}
+	
+	ai_will_do = { always = no }
+}
+
+DES = {
+	states = {
+		STATE_UTAH
+		STATE_NEVADA
+		STATE_ARIZONA
+		STATE_CALIFORNIA
+	}
+	ai_will_do = { always = no }
+}
+
+GPR = {
+	states = {
+		STATE_KANSAS
+		STATE_NEBRASKA
+		STATE_OKLAHOMA
+		STATE_COLORADO
+		STATE_WYOMING
+		STATE_SOUTH_DAKOTA
+		STATE_NORTH_DAKOTA
+		STATE_MONTANA
+		STATE_ALBERTA
+		STATE_SASKATCHEWAN
+		STATE_MANITOBA
+		STATE_MINNESOTA
+		STATE_IOWA
+		
+	}
+	
+	ai_will_do = { always = no }
+}
+
+CAL = {
+	states = {
+		STATE_CALIFORNIA
+		STATE_BAJA_CALIFORNIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+ASK = {
+	states = {
+		STATE_ALASKA
+		
+	}
+	ai_will_do = { always = no }
+}
+
+YUK = {
+	states = {
+		STATE_YUKON_TERRITORY
+		STATE_NORTHWEST_TERRITORIES	
+		
+	}
+	ai_will_do = { always = no }
+}
+
+SON = {
+	states = {
+		STATE_SONORA
+		STATE_BAJA_CALIFORNIA
+		
+	}
+	ai_will_do = { always = no }
+}
+
+NTE = {
+	states = {
+		STATE_SONORA
+		STATE_BAJA_CALIFORNIA
+		STATE_SINALOA
+		STATE_DURANGO
+		STATE_RIO_GRANDE
+		STATE_CHIHUAHUA
+		
+	}
+	ai_will_do = { always = no }
+}
+
+WIN = {
+	use_culture_states = yes
+	
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+GUY = {
+	states = {
+		STATE_GUAYANA
+		
+	}
+	ai_will_do = { always = no }
+}
+
+BRM = {
+	states = {
+		STATE_BERMUDA
+		
+	}
+	ai_will_do = { always = no }
+}
+
+BLZ = {
+	provinces = { xD0B040 x02073E x7D333F }
+	ai_will_do = { always = no }
+}
+
+WID = {
+	states = {
+		STATE_WEST_INDIES
+		
+	}
+	ai_will_do = { always = no }
+}

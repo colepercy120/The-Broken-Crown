@@ -23,7 +23,7 @@
 				size = 7104
 			}
 			create_pop = {
-				culture = british
+				culture = caribbean
 				size = 104
 			}
 		}
@@ -70,7 +70,7 @@
 				size = 500
 			}
 			create_pop = {
-				culture = british
+				culture = caribbean
 				size = 500
 			}
 			create_pop = {
@@ -198,7 +198,7 @@
 	s:STATE_BAHAMAS = {
 		region_state:CUB = {
 			create_pop = {
-				culture = british
+				culture = caribbean
 				size = 19200
 			}
 			create_pop = {
@@ -210,7 +210,7 @@
 	s:STATE_WEST_INDIES = {
 		region_state:FRA = {
 			create_pop = {
-				culture = french
+				culture = antillean
 				size = 22200
 			}
 			create_pop = {
@@ -218,7 +218,7 @@
 				size = 216104
 			}
 			create_pop = {
-				culture = british
+				culture = caribbean
 				size = 34704
 			}
 			create_pop = {
@@ -249,7 +249,7 @@
 				size = 358596
 			}
 			create_pop = {
-				culture = british
+				culture = caribbean
 				size = 23040
 			}
 		}

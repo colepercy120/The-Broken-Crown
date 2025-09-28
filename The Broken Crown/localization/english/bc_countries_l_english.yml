@@ -4,3 +4,57 @@
  
  BAN: "Brandenburg"
  BAN_ADJ: "Brandenburger"
+ 
+ GLR: "Great Lakes"
+ GLR_ADJ: "Superior"
+ 
+ dyn_c_glr_monarchy: "Kingdom of the Great Lakes"
+ dyn_c_glr_monarchy_adj: "Laker"
+ dyn_c_glr_republic: "Great Lakes Republic"
+ dyn_c_glr_republic_adj: "Laker"
+ dyn_c_glr_communist: "Union of the Great Lakes"
+ dyn_c_glr_communist_adj: "Laker"
+ dyn_c_glr_fascist: "Superior State"
+ dyn_c_glr_fascist_adj: "Superior"
+ 
+ dyn_c_GPR_monarchy: "Kingdom of the Plains"
+ dyn_c_GPR_monarchy_adj: "Plainer"
+ dyn_c_GPR_republic: "Great Plains Republic"
+ dyn_c_GPR_republic_adj: "Plainer"
+ dyn_c_GPR_communist: "Union of the Great Plains"
+ dyn_c_GPR_communist_adj: "Plainer"
+ dyn_c_GPR_fascist: "Greater Kansas"
+ dyn_c_GPR_fascist_adj: "Kansan"
+ 
+ GPR: "Great Plains"
+ GPR_ADJ: "Plainer"
+ 
+ EUR: "Europe"
+ EUR_ADJ: "European"
+ USW: "West Africa"
+ USW_ADJ: "West African"
+ dyn_c_united_sovereign_archduchy_wa: "Archduchy of West Africa"
+ dyn_c_united_sovereign_archduchy_wa_adj: "Archducal West Africa"
+
+ dyn_c_united_states_of_west_africa: "United States of West Africa"
+ dyn_c_united_syndicates_of_west_africa: "United Syndicates of West Africa"
+ dyn_c_united_synods_of_west_africa: "United Synods of West Africa"
+ dyn_c_united_senators_of_liberia: "Liberia"
+ 
+
+ 
+ dyn_c_eur_monarchy: "Empire of Europe"
+ dyn_c_eur_monarchy_adj: "European"
+ dyn_c_eur_republic: "European Union"
+ dyn_c_eur_republic_adj: "European"
+ dyn_c_eur_communist: "Union of European Peoples Republics"
+ dyn_c_eur_communist_adj: "European"
+ dyn_c_eur_fascist: "European State"
+ dyn_c_eur_fascist_adj: "European"
+ 
+ RME: "Rome"
+ RME_ADJ: "Roman"
+ dyn_c_rme_monarchy: "Roman Empire"
+ dyn_c_rme_monarchy_adj: "Roman"
+ dyn_c_rme_republic: "Roman Republic"
+ dyn_c_rme_republic_adj: "Roman"

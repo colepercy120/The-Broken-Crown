@@ -1,0 +1,612 @@
+﻿
+# common variables
+@coa_width = 768
+@coa_height = 512
+@canton_scale_cross_x = @[ ( 333 / coa_width ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / coa_height ) + 0.001 ]
+@canton_scale_sweden_x = @[ ( 255 / coa_width ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / coa_height ) + 0.001 ]
+@canton_scale_norway_x = @[ ( 192 / coa_width ) + 0.001 ]
+@canton_scale_norway_y = @[ ( 192 / coa_height ) + 0.001 ]
+@canton_scale_denmark_x = @[ ( 220 / coa_width ) + 0.001 ]
+@canton_scale_denmark_y = @[ ( 220 / coa_height ) + 0.001 ]
+@third = @[1/3]
+
+DEFAULT = {
+	flag_definition = {
+		coa = list "communist"
+		priority = 1000
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = list "anarchy"
+		priority = 2000
+		trigger = {
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = colonial_southern_africa
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = southern_africa_subject_var
+			}
+			NOT = {
+				scope:actor ?= {
+					c:SAF ?= this
+					c:GBR ?= this.overlord
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = colonial_congo
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = congo_subject_var
+			}
+		}
+	}
+	flag_definition = {
+		coa = colonial_niger
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = niger_subject_var
+			}
+		}
+	}
+	flag_definition = {
+		coa = colonial_senegal
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = senegal_subject_var
+			}
+		}
+	}
+	flag_definition = {
+		coa = colonial_zanj
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = zanj_subject_var
+			}
+		}
+	}
+	flag_definition = {
+		coa = colonial_ethiopia
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = ethiopia_subject_var
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = colonial_indonesia
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = indonesia_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_indochina
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = indochina_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_oceania
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = oceania_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_south_china
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = south_china_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_north_china
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = north_china_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_manchuria
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = manchuria_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_japan
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = japan_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_west_siberia
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = west_siberia_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_east_siberia
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = east_siberia_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_anatolia
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = anatolia_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_arabic
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = arabic_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_persia
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = persia_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_caucasus
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = caucasus_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_south_india
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = south_india_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_north_india
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = north_india_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_himalayas
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = himalayas_subject_var
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = colonial_central_asia
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = central_asia_subject_var
+			}
+		}
+	}
+} 
+
+USW = { # Liberia
+	flag_definition = {
+		coa = LIB
+		subject_canton = LIB
+		allow_overlord_canton = yes			
+		overlord_canton_scale = { 0.35 @[1 / 13 * 7] }		
+		priority = 1
+	}	
+	flag_definition = {
+		coa = LIB_dictatorship
+		subject_canton = LIB_dictatorship
+		allow_overlord_canton = yes	
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = LIB
+		priority = 50
+		trigger = { 
+			coa_def_american_ensign_trigger = yes
+		}
+	}	
+}
+
+EUR = { # Liberia
+	flag_definition = {
+		coa = EUR
+		subject_canton = LIB
+		allow_overlord_canton = yes			
+		overlord_canton_scale = { 0.35 @[1 / 13 * 7] }		
+		priority = 1
+	}	
+	flag_definition = {
+		coa = EUR_com
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+			
+		}
+	}
+	
+}
+
+RME = { # Liberia
+	flag_definition = {
+		coa = RME
+		subject_canton = RME
+		allow_overlord_canton = yes			
+		overlord_canton_scale = { 0.35 @[1 / 13 * 7] }		
+		priority = 1
+	}	
+	flag_definition = {
+		coa = EUR_com
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+			
+		}
+	}
+	
+}
+
+GLR = { # Liberia
+	flag_definition = {
+		coa = GLR
+		subject_canton = LIB
+		allow_overlord_canton = yes			
+		overlord_canton_scale = { 0.35 @[1 / 13 * 7] }		
+		priority = 1
+	}	
+	
+}
+
+GPR = { # Liberia
+	flag_definition = {
+		coa = GPR
+		subject_canton = LIB
+		allow_overlord_canton = yes			
+		overlord_canton_scale = { 0.35 @[1 / 13 * 7] }		
+		priority = 1
+	}	
+	
+}
+
+NEW = { # Newfoundland
+	flag_definition = {
+		coa = NEW
+		priority = 100
+		coa_with_overlord_canton = NEW_subject
+		allow_overlord_canton = yes
+	}
+	flag_definition = {
+		coa = NEW_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEW_coa
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEW_theocracy
+		subject_canton = NEW_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+}
+
+BLZ = { # Jamaica
+	flag_definition = {
+		coa = BLZ
+		subject_canton = BLZ
+	}
+	
+	flag_definition = {
+		coa = BLZ_subject
+		subject_canton = BLZ
+		priority = 10
+		allow_overlord_canton = yes
+		trigger = {
+			coa_def_independent_trigger = no
+		}
+	}
+	
+}
+
+WID = { # Jamaica
+	flag_definition = {
+		coa = WIN
+		allow_overlord_canton = no			
+		subject_canton = WIN
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = WID_subject
+		subject_canton = WIN
+		priority = 10
+		allow_overlord_canton = yes
+		trigger = {
+			coa_def_independent_trigger = no
+		}
+	}
+	
+}
+
+GUY = { # Jamaica
+	flag_definition = {
+		coa = GUY
+		allow_overlord_canton = no			
+		subject_canton = GUY
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = GUY_subject
+		subject_canton = GUY
+		priority = 10
+		allow_overlord_canton = yes
+		trigger = {
+			coa_def_independent_trigger = no
+		}
+	}
+	
+}
+
+BRM = { # Jamaica
+	flag_definition = {
+		coa = BRM
+		allow_overlord_canton = no			
+		subject_canton = BRM
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = BRM_subject
+		subject_canton = BRM
+		priority = 10
+		allow_overlord_canton = yes
+		trigger = {
+			coa_def_independent_trigger = no
+		}
+	}
+	
+}
+
+PCO = { # Jamaica
+	flag_definition = {
+		coa = PCO
+		allow_overlord_canton = no			
+		subject_canton = PCO
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = PCO_subject
+		subject_canton = PCO
+		priority = 10
+		allow_overlord_canton = yes
+		trigger = {
+			coa_def_independent_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = PCO
+		allow_overlord_canton = no
+		subject_canton = PCO
+		priority = 100
+		
+		trigger = {
+			coa_def_american_ensign_trigger = yes
+		}
+	}
+	
+}
+
+WIN = { # West Indies Federation
+	flag_definition = {
+		coa = WIN
+		allow_overlord_canton = no			
+		subject_canton = WIN
+		priority = 1
+	}
+	flag_definition = {
+		coa = WIN_subject
+		subject_canton = WIN
+		priority = 10
+		allow_overlord_canton = yes
+		trigger = {
+			coa_def_independent_trigger = no
+		}
+	}
+}
+
+SON = { # Jamaica
+	flag_definition = {
+		coa = SON
+		allow_overlord_canton = no			
+		subject_canton = SON
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = SON
+		subject_canton = SON
+		priority = 10
+		allow_overlord_canton = yes
+		trigger = {
+			coa_def_independent_trigger = no
+		}
+	}
+	
+}
+
+ZAC = { # Jamaica
+	flag_definition = {
+		coa = ZAC
+		allow_overlord_canton = no			
+		subject_canton = ZAC
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = ZAC
+		subject_canton = ZAC
+		priority = 10
+		allow_overlord_canton = yes
+		trigger = {
+			coa_def_independent_trigger = no
+		}
+	}
+	
+}

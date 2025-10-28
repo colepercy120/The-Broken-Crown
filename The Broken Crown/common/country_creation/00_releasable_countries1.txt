@@ -132,3 +132,27 @@ WID = {
 	}
 	ai_will_do = { always = no }
 }
+
+MIN = {
+	use_culture_states = yes
+	
+	required_num_states = 1
+
+	ai_will_do = { always = no }
+}
+
+JIA = {
+	states = {
+		STATE_JIANGSU
+		STATE_SUZHOU
+		STATE_NANJING
+	}
+	ai_will_do = { always = no }
+}
+JIX = {
+	states = {
+		STATE_JIANGXI
+		
+	}
+	ai_will_do = { always = no }
+}

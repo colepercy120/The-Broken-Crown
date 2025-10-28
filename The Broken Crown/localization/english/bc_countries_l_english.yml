@@ -58,3 +58,12 @@
  dyn_c_rme_monarchy_adj: "Roman"
  dyn_c_rme_republic: "Roman Republic"
  dyn_c_rme_republic_adj: "Roman"
+ 
+ MIN: "Min"
+ MIN_ADJ: "Min"
+ 
+ JIA: "Jiangsu"
+ JIA_ADJ: "Jiangsu"
+ 
+ JIX: "Jiangxi"
+ JIX_ADJ: "Jiangxi"

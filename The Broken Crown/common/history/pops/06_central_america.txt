@@ -89,7 +89,7 @@
 		}
 	}
 	s:STATE_PANAMA = {
-		region_state:CLM = {
+		region_state:UCA = {
 			create_pop = {
 				culture = central_american
 				size = 87792

@@ -203,6 +203,12 @@
 				size = 500
 			}
 		}
+		region_state:SLS = {
+			create_pop = {
+				culture = salish
+				size = 2000
+			}
+		}
 		region_state:NZP = {
 			create_pop = {
 				culture = nez_perce
@@ -217,7 +223,7 @@
 		}
 	}
 	s:STATE_COLORADO = {
-		region_state:MEX = {
+		region_state:TEX = {
 			create_pop = {
 				culture = siouan
 				size = 2000
@@ -989,7 +995,7 @@
 		}
 	}
 	s:STATE_UTAH = {
-		region_state:MEX = {
+		region_state:TEX = {
 			create_pop = {
 				culture = paiute
 				size = 3000
@@ -1191,6 +1197,13 @@
 				size = 3999
 			}
 			
+			
+		}
+		region_state:ATB = {
+			create_pop = {
+				culture = athabaskan
+				size = 8000
+			}
 			
 		}
 		region_state:IRC = {
@@ -1766,7 +1779,7 @@
 		}
 	}
 	s:STATE_BAJA_CALIFORNIA = {
-		region_state:MEX = {
+		region_state:TEX = {
 			create_pop = {
 				culture = mexican
 				size = 8264

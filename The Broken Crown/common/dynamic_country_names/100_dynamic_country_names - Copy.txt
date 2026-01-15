@@ -1235,14 +1235,106 @@ CRO = { # Illyria
 		priority = 100
 		
 		trigger = {
-			exists = c:CRO
-			c:CRO ?= {
+			exists = scope:actor
+			scope:actor ?= {
 				
 				owns_entire_state_region = STATE_MONTENEGRO
 				owns_entire_state_region = STATE_BOSNIA
 				owns_entire_state_region = STATE_SLAVONIA
 				owns_entire_state_region = STATE_DALMATIA
 				owns_entire_state_region = STATE_CROATIA
+			}
+		}
+	}
+}
+
+TEX = { # Ontario
+	dynamic_country_name = {
+		name = dyn_c_tex_spa
+		adjective = dyn_c_tex_spa_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= { 
+				any_overlord_or_above = {
+					OR = {
+						this = c:SPA
+						this = c:SPC
+					}
+				}
+			}
+		}
+	}
+}
+
+UCA = { # Ontario
+	dynamic_country_name = {
+		name = dyn_c_uca_spa
+		adjective = dyn_c_uca_spa_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= { 
+				any_overlord_or_above = {
+					OR = {
+						this = c:SPA
+						this = c:SPC
+					}
+				}
+			}
+		}
+	}
+}
+
+GCO = { # Ontario
+	dynamic_country_name = {
+		name = dyn_c_gco_spa
+		adjective = dyn_c_gco_spa_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= { 
+				any_overlord_or_above = {
+					OR = {
+						this = c:SPA
+						this = c:SPC
+					}
+				}
+			}
+		}
+	}
+}
+
+CUB = { # Ontario
+	dynamic_country_name = {
+		name = dyn_c_cub_spa
+		adjective = dyn_c_cub_spa_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= { 
+				any_overlord_or_above = {
+					OR = {
+						this = c:SPA
+						this = c:SPC
+					}
+				}
+				owns_entire_state_region = STATE_WESTERN_CUBA
+				owns_entire_state_region = STATE_EASTERN_CUBA
+				owns_entire_state_region = STATE_CENTRAL_CUBA
+				owns_entire_state_region = STATE_PUERTO_RICO
 			}
 		}
 	}

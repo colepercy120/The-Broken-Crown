@@ -1,0 +1,477 @@
+﻿COUNTRIES = {
+	c:CHI ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:XIN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:MGL ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:XIB ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:SHN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:ZHI ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:SHA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:AHU ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:JIA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:MIN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:JIX ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:HNA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:SIH ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:YUN ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:GUI ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:GNG ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:YUE ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:FRS ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+	c:MCH ?= {
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+		
+			
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship	
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_canton_system
+		activate_law = law_type:law_freedom_of_conscience
+
+		set_tax_level = low
+
+		
+	}
+}

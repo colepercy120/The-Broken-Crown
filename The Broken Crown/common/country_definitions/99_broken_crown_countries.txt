@@ -22,7 +22,7 @@ BAN = {
 	is_named_from_capital = yes
 }
 
-WES = {
+REPLACE:WES = {
 	color = { 27 65 161 }
 
 	country_type = recognized
@@ -34,7 +34,7 @@ WES = {
 	is_named_from_capital = yes
 }
 
-EGY = {
+REPLACE:EGY = {
 	color = { 255  205  155 }
 
 	country_type = recognized
@@ -113,7 +113,7 @@ ZAP = {
 	capital = STATE_WEST_GALICIA
 }
 
-MEX = {
+REPLACE:MEX = {
 	color = { 56 143 53 }
 
 	country_type = colonial
@@ -127,7 +127,7 @@ MEX = {
 	is_named_from_capital = yes
 }
 
-GCO = {
+REPLACE:GCO = {
 	color = { 255  244  100 }
 
 	country_type = colonial
@@ -138,7 +138,7 @@ GCO = {
 	capital = STATE_CUNDINAMARCA
 }
 
-PEU = {
+REPLACE:PEU = {
 	color = { 124  140  162 }
 
 	country_type = colonial
@@ -149,7 +149,7 @@ PEU = {
 	capital = STATE_LIMA
 }
 
-PLT = {
+REPLACE:PLT = {
 	color = { 130  135  240 }
 
 	country_type = colonial
@@ -160,7 +160,7 @@ PLT = {
 	capital = STATE_BUENOS_AIRES
 }
 
-LIB = {
+REPLACE:LIB = {
 	color = { 193  138  83 }
 
 	country_type = recognized

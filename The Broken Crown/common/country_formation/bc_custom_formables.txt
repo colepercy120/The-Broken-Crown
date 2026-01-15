@@ -1,5 +1,5 @@
-
-WIN = {
+﻿
+REPLACE:WIN = {
 	use_culture_states = yes
 
 	required_states_fraction = 0.8
@@ -7,7 +7,7 @@ WIN = {
 	ai_will_do = { always = yes }
 }
 
-SCA = {
+REPLACE:SCA = {
 	use_culture_states = yes
 
 	is_major_formation = yes
@@ -54,7 +54,7 @@ USW = {
 		STATE_GUINEA
 		STATE_EASTERN_MALI
 		STATE_GAMBIA
-		STATE_GHANA
+		STATE_GOLD_COAST
 		STATE_INNER_MARURITANIA
 		STATE_IVORY_COAST
 		STATE_MAURITANIA

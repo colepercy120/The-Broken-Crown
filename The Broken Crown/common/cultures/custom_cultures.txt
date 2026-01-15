@@ -1,7 +1,8 @@
-caribbean= { # "English" in localization
+﻿caribbean= { # "English" in localization
 	color= rgb{ 210 156 140 }
 	religion = protestant
-	traits = { anglophone european_heritage }
+	heritage = heritage_british
+	language = language_anglophone
 	
 	obsessions = {
 		tea
@@ -19,14 +20,14 @@ caribbean= { # "English" in localization
 		Isambard Isaac
 		John James Jacob Jeremy Joseph Julian Josslyn Joshua
 		Kenelm
-		Laurence Leonard_2 Lyon Lionel Lewis
+		Laurence  Lyon Lionel Lewis
 		Mark Michael Matthew Massey Montague Myles Murrough Maurice Martin Maxwell
 		Nigel Nicholas Nathaniel Neville
 		Oliver Octavius Oscar Oswald
 		Peter Paul Patrick Poulett Philip Percy
 		Richard Robert Roger Rudyard Redvers Rowland Reginald Roundell Rupert Rufus Ross
 		Stephen Simon Spencer Stanley Samuel Stafford Sewallis Sackville Sutherland
-		Theodore_2 Tristan Theobald Thomas Terence Teignmouth Timothy
+		 Tristan Theobald Thomas Terence Teignmouth Timothy
 		Victor Valentine_2
 		Winston Walter William Wilfred Watkin Wellwood Weston Wentworth Wilbraham Wyndham Weetman
 		Zachary
@@ -143,7 +144,8 @@ caribbean= { # "English" in localization
 antillean= {
 	color= rgb{ 76 118 155 }
 	religion = catholic
-	traits = { francophone european_heritage }
+	heritage = heritage_gallic
+	language = language_francophone
 	
 	obsessions = {
 		wine

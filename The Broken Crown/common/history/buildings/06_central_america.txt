@@ -13,10 +13,10 @@
 				activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
 			}
 			create_building={
-				building="building_textile_mills"
+				building="building_textile_mill"
 				add_ownership={
 					building={
-						type="building_textile_mills"
+						type="building_textile_mill"
 						country="c:UCA"
 						levels=1
 						region="STATE_SAN_SALVADOR"
@@ -52,7 +52,7 @@
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:UCA"
@@ -104,7 +104,7 @@
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:UCA"
@@ -168,7 +168,7 @@
 				activate_production_methods={ "pm_anchorage" }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:UCA"
@@ -209,7 +209,7 @@
 				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:UCA"
@@ -222,7 +222,7 @@
 		}
 		region_state:MKT={
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:MKT"
@@ -258,10 +258,10 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+				activate_production_methods={ "coffee_plantation_dry_process" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:UCA"
@@ -286,7 +286,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+				activate_production_methods={ "coffee_plantation_dry_process" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_banana_plantation"
@@ -423,7 +423,7 @@
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:CUB"
@@ -472,7 +472,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+				activate_production_methods={ "coffee_plantation_dry_process" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_banana_plantation"
@@ -606,7 +606,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+				activate_production_methods={ "coffee_plantation_dry_process" "pm_road_carts"  }
 			}
 			
 			create_building={
@@ -707,7 +707,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+				activate_production_methods={ "coffee_plantation_dry_process" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_port"
@@ -738,7 +738,7 @@
 						type="building_financial_district"
 						country="c:SPA"
 						levels=2
-						region="STATE_TOLEDO"
+						region="STATE_OLD_CASTILE"
 					}
 				}
 				reserves=1
@@ -769,11 +769,11 @@
 						type="building_manor_house"
 						country="c:SPA"
 						levels=2
-						region="STATE_TOLEDO"
+						region="STATE_OLD_CASTILE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+				activate_production_methods={ "coffee_plantation_dry_process" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_tobacco_plantation"
@@ -788,7 +788,7 @@
 						type="building_manor_house"
 						country="c:SPA"
 						levels=3
-						region="STATE_TOLEDO"
+						region="STATE_OLD_CASTILE"
 					}
 				}
 				reserves=1
@@ -807,14 +807,14 @@
 						type="building_manor_house"
 						country="c:SPA"
 						levels=5
-						region="STATE_TOLEDO"
+						region="STATE_OLD_CASTILE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_barracks"
+				building="building_barrack"
 				add_ownership={
 					country={
 						country="c:CUB"

@@ -7,6 +7,11 @@
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
-    "multiplayer_synchronized" : true
+    "multiplayer_synchronized" : true,
+	"replace_paths": [
+     
+      "common/history/characters"
+	  
+    ]
   }
 }

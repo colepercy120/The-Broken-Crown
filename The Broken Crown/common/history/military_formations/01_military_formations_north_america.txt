@@ -2,7 +2,7 @@
 	c:TEX ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_texas
+			hq_region = sr:region_dixie
 			name = "Ejército del Norte"
 
 			# Regular Infantry
@@ -39,7 +39,7 @@
     c:MEX ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_mexico_city
+			hq_region = sr:region_mexico
 			name = "Ejército de Nueva España"
 
 			# Regular Infantry
@@ -113,7 +113,7 @@
     c:USA ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_eastern_seaboard
+			hq_region = sr:region_new_england
 			name = "Army of the Atlantic"
 
 			# Regular Infantry
@@ -150,7 +150,7 @@
     c:USA ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_mississippi_valley
+			hq_region = sr:region_the_midwest
 			name = "Army of the Mississippi"
 
 			# Regular Infantry
@@ -224,7 +224,7 @@
     c:ALK ?= {
         create_military_formation = {
             type = army
-            hq_region = sr:region_pacific
+            hq_region = sr:region_pacific_coast
             name = "Armiya Alyaski"
 
             # Regular Infantry

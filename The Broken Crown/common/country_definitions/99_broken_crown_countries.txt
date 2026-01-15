@@ -210,3 +210,104 @@ JIX = { # Formosa
 	capital = STATE_JIANGXI
 	is_named_from_capital = yes
 }
+
+WID = {
+	color = { 50  150  50 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { caribbean antillean }
+	capital = STATE_WEST_INDIES
+}
+
+REPLACE:JAM = {
+	color = hsv360{ 88  87  33 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { caribbean }
+	capital = STATE_JAMAICA
+}
+
+REPLACE:BAH = {
+	color = hsv360{ 189  100  55 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { caribbean }
+	capital = STATE_BAHAMAS
+	is_named_from_capital = yes
+}
+
+GUY = {
+	color = hsv360{ 88  87  33 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { caribbean antillean }
+	capital = STATE_GUAYANA
+}
+
+BLZ = {
+	color = hsv360{ 88  87  33 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { caribbean }
+	capital = STATE_GUATEMALA
+}
+
+
+BRM = {
+	color = hsv360{ 88  87  33 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { caribbean }
+	capital = STATE_BERMUDA
+}
+
+YUK = {
+	color = { 204 173 195 }
+	
+	country_type = colonial
+	
+	tier = grand_principality
+	
+	cultures = { anglo_canadian athabaskan }
+	capital = STATE_YUKON_TERRITORY
+}
+
+SON = {
+	color = { 165 67 82 }
+	
+	country_type = colonial
+	
+	tier = grand_principality
+	
+	cultures = { mexican }
+	capital = STATE_SONORA
+}
+
+NTE = {
+	color = { 165 154 67 }
+	
+	country_type = colonial
+	
+	tier = grand_principality
+	
+	cultures = { mexican }
+	capital = STATE_SINALOA
+}

@@ -17,7 +17,7 @@
 	ai_will_do = { always = no }
 }
 
-DES = {
+REPLACE:DES = {
 	states = {
 		STATE_UTAH
 		STATE_NEVADA
@@ -48,7 +48,7 @@ GPR = {
 	ai_will_do = { always = no }
 }
 
-CAL = {
+REPLACE:CAL = {
 	states = {
 		STATE_CALIFORNIA
 		STATE_BAJA_CALIFORNIA
@@ -57,13 +57,7 @@ CAL = {
 	ai_will_do = { always = no }
 }
 
-ASK = {
-	states = {
-		STATE_ALASKA
-		
-	}
-	ai_will_do = { always = no }
-}
+
 
 YUK = {
 	states = {
@@ -96,7 +90,7 @@ NTE = {
 	ai_will_do = { always = no }
 }
 
-WIN = {
+REPLACE:WIN = {
 	use_culture_states = yes
 	
 	required_num_states = 2

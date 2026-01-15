@@ -1235,9 +1235,9 @@ CRO = { # Illyria
 		priority = 100
 		
 		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				owns_entire_state_region = STATE_DELVIDEK
+			exists = c:CRO
+			c:CRO ?= {
+				
 				owns_entire_state_region = STATE_MONTENEGRO
 				owns_entire_state_region = STATE_BOSNIA
 				owns_entire_state_region = STATE_SLAVONIA

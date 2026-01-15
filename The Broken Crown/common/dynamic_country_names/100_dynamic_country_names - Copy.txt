@@ -1225,3 +1225,25 @@ ZAP = {
 		}
 	}
 }
+
+CRO = { # Illyria
+	dynamic_country_name = {
+		name = dyn_c_illyria
+		adjective = dyn_c_illyria_adj
+
+		is_main_tag_only = yes
+		priority = 100
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				owns_entire_state_region = STATE_DELVIDEK
+				owns_entire_state_region = STATE_MONTENEGRO
+				owns_entire_state_region = STATE_BOSNIA
+				owns_entire_state_region = STATE_SLAVONIA
+				owns_entire_state_region = STATE_DALMATIA
+				owns_entire_state_region = STATE_CROATIA
+			}
+		}
+	}
+}

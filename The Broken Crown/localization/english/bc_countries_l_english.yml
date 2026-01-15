@@ -67,3 +67,39 @@
  
  JIX: "Jiangxi"
  JIX_ADJ: "Jiangxi"
+ 
+ YUK: "Yukon"
+ YUK_ADJ: "Yukonian"
+ 
+ SON: "Sonora"
+ SON_ADJ: "Sonorian"
+ 
+ ZAC: "Zacatechas"
+ ZAC_ADJ: "Zacatechas"
+ 
+ NTE: "Norte"
+ NTE_ADJ: "Nortian"
+ 
+ BLZ: "Belize"
+ BLZ_ADJ: "Belizian"
+ 
+ BRM: "Bermuda"
+ BRM_ADJ: "Bermudan"
+ 
+ WID: "Lesser Antilles"
+ WID_ADJ: "Lesser Antillian"
+ 
+ GUY: "Guyana"
+ GUY_ADJ: "Guyanan"
+ 
+ dyn_c_belize_gbr: "British Honduras"
+ dyn_c_belize_gbr_adj: "British Honduran"
+ 
+ dyn_c_windward_gbr: "British Lesser Antilles"
+ dyn_c_windward_gbr_adj: "British Lesser Antillian"
+ 
+ dyn_c_illyria: "Illyria"
+ dyn_c_illyria_adj: "Illyrian"
+ 
+ ROM: "Dacia"
+ ROM_adj: "Dacian"

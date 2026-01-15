@@ -1,5 +1,5 @@
 ﻿MILITARY_FORMATIONS = {
-	c:INT ?= {
+	c:TEX ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_texas
@@ -36,7 +36,7 @@
 		}
 	}
 
-    c:NSP ?= {
+    c:MEX ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_mexico_city
@@ -73,7 +73,7 @@
 		}
 	}
 
-    c:CAM ?= {
+    c:UCA ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_central_america
@@ -221,7 +221,7 @@
 		}
 	}
 
-    c:RAC ?= {
+    c:ALK ?= {
         create_military_formation = {
             type = army
             hq_region = ???

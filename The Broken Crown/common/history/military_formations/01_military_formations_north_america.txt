@@ -224,7 +224,7 @@
     c:ALK ?= {
         create_military_formation = {
             type = army
-            hq_region = ???
+            hq_region = sr:region_pacific
             name = "Armiya Alyaski"
 
             # Regular Infantry

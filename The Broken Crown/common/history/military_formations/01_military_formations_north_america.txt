@@ -199,56 +199,32 @@
 
     c:USA ?= {
 		create_military_formation = {
-			type = fleet
+			type = navy
 			hq_region = sr:region_new_england
 			name = "United States Atlantic Fleet"
 
-			# Frigates
+			# Frigates (Light Ships)
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigates
 				state_region = s:STATE_NEW_YORK
-				count = 8
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigates
 				state_region = s:STATE_MASSACHUSETTS
-				count = 8
+				count = 12
 			}
 
-			# Monitors
-			combat_unit = {
-				type = unit_type:combat_unit_type_monitors
-				state_region = s:STATE_NEW_YORK
-				count = 4
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_monitors
-				state_region = s:STATE_VIRGINIA
-				count = 4
-			}
-
-			# Man-o-Wars
+			# Man-o-Wars (Capital Ships)
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_wars
 				state_region = s:STATE_VIRGINIA
-				count = 4
+				count = 6
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_wars
 				state_region = s:STATE_SOUTH_CAROLINA
-				count = 4
-			}
-
-			# Ironclads
-			combat_unit = {
-				type = unit_type:combat_unit_type_ironclads
-				state_region = s:STATE_NEW_YORK
-				count = 2
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_ironclads
-				state_region = s:STATE_VIRGINIA
-				count = 2
+				count = 6
 			}
 		}
 	}
@@ -286,7 +262,7 @@
     c:TEX ?= {
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_gulf_of_mexico
+			hq_region = sr:region_dixie
 			name = "Escuadra del Golfo"
 
 			combat_unit = {
@@ -325,7 +301,7 @@
     c:ALK ?= {
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_alaska
+			hq_region = sr:region_pacific_coast
 			name = "Alyaskinskiy Tikhookeanskiy Otryad"
 
 			combat_unit = {
@@ -345,7 +321,7 @@
     c:CUB ?= {
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_the_caribbean
+			hq_region = sr:region_caribbean
 			name = "Armada de las Indias Españolas"
 
 			combat_unit = {

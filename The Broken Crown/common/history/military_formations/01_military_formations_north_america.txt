@@ -183,19 +183,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_CUBA
+				state_region = s:STATE_CENTRAL_CUBA
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_CUBA
+				state_region = s:STATE_CENTRAL_CUBA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CUBA
+				state_region = s:STATE_CENTRAL_CUBA
 				count = 2
 			}
 		}

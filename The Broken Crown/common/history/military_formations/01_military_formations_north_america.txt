@@ -2,7 +2,8 @@
 
     # Armies
 
-	c:TEX ?= {
+	# Internal Provinces
+    c:TEX ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_dixie
@@ -31,6 +32,7 @@
 		}
 	}
 
+    # New Spain
     c:MEX ?= {
 		create_military_formation = {
 			type = army
@@ -60,6 +62,7 @@
 		}
 	}
 
+    # Centroamérica
     c:UCA ?= {
 		create_military_formation = {
 			type = army
@@ -89,6 +92,7 @@
 		}
 	}
 
+    # United States
     c:USA ?= {
 		create_military_formation = {
 			type = army
@@ -147,6 +151,7 @@
 		}
 	}
 
+    # Russian American Company
     c:ALK ?= {
         create_military_formation = {
             type = army
@@ -169,6 +174,7 @@
         }
     }
 
+    # The Indies
     c:CUB ?= {
 		create_military_formation = {
 			type = army
@@ -195,7 +201,7 @@
 		}
 	}
 
-    # Navies
+    # Navies - USE TYPE = FLEET (I hate you Paradox)
 
     c:USA ?= {
 		create_military_formation = {
@@ -229,6 +235,7 @@
 		}
 	}
 
+    # New Spain
     c:MEX ?= {
 		create_military_formation = {
 			type = fleet
@@ -259,6 +266,7 @@
 		}
 	}
 
+    # Internal Provinces
     c:TEX ?= {
 		create_military_formation = {
 			type = fleet
@@ -279,6 +287,7 @@
 		}
 	}
 
+    # Centroamérica
     c:UCA ?= {
 		create_military_formation = {
 			type = fleet
@@ -298,6 +307,7 @@
 		}
 	}
     
+    # Russian American Company
     c:ALK ?= {
 		create_military_formation = {
 			type = fleet
@@ -318,6 +328,7 @@
 		}
 	}
 
+    # The Indies
     c:CUB ?= {
 		create_military_formation = {
 			type = fleet

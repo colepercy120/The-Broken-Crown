@@ -337,13 +337,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CUBA
+				state_region = s:STATE_CENTRAL_CUBA
 				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CUBA
+				state_region = s:STATE_CENTRAL_CUBA
 				count = 2
 			}
 		}

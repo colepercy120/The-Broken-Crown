@@ -1,4 +1,7 @@
 ﻿MILITARY_FORMATIONS = {
+
+    # Armies
+
 	c:TEX ?= {
 		create_military_formation = {
 			type = army
@@ -10,14 +13,6 @@
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_TEXAS
 				count = 10
-			}
-
-			# Conscript Infantry
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				service_type = conscript
-				state_region = s:STATE_TEXAS
-				count = 8
 			}
 
 			# Cavalry
@@ -46,29 +41,21 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MEXICO
-				count = 20
-			}
-
-			# Conscript Infantry
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				service_type = conscript
-				state_region = s:STATE_MEXICO
-				count = 20
+				count = 16
 			}
 
 			# Cavalry
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
 				state_region = s:STATE_MEXICO
-				count = 8
+				count = 6
 			}
 
 			# Artillery
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_MEXICO
-				count = 5
+				count = 4
 			}
 		}
 	}
@@ -84,14 +71,6 @@
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_GUATEMALA
 				count = 8
-			}
-
-			# Conscript Infantry
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				service_type = conscript
-				state_region = s:STATE_GUATEMALA
-				count = 6
 			}
 
 			# Cavalry
@@ -120,14 +99,6 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_NEW_YORK
-				count = 12
-			}
-
-			# Conscript Infantry
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				service_type = conscript
-				state_region = s:STATE_NEW_YORK
 				count = 6
 			}
 
@@ -135,14 +106,14 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_PENNSYLVANIA
-				count = 6
+				count = 4
 			}
 
 			# Artillery
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_PENNSYLVANIA
-				count = 8
+				count = 6
 			}
 		}
 	}
@@ -151,72 +122,27 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_the_midwest
-			name = "Army of the Mississippi"
-
-			# Regular Infantry
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_KENTUCKY
-				count = 14
-			}
-
-			# Conscript Infantry
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				service_type = conscript
-				state_region = s:STATE_KENTUCKY
-				count = 5
-			}
-
-			# Cavalry
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_TENNESSEE
-				count = 8
-			}
-
-			# Artillery
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_TENNESSEE
-				count = 7
-			}
-		}
-	}
-
-    c:USA ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_great_plains
 			name = "Army of the Frontier"
 
 			# Regular Infantry
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_MISSOURI
-				count = 9
-			}
-
-			# Conscript Infantry
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				service_type = conscript
-				state_region = s:STATE_MISSOURI
-				count = 4
+				count = 6
 			}
 
 			# Cavalry
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_MISSOURI
-				count = 6
+				count = 5
 			}
 
 			# Artillery
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_MISSOURI
-				count = 5
+				count = 4
 			}
 		}
 	}
@@ -225,38 +151,216 @@
         create_military_formation = {
             type = army
             hq_region = sr:region_pacific_coast
-            name = "Armiya Alyaski"
+            name = "Sibirskiy Garnizon Alyaski"
 
             # Regular Infantry
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WASHINGTON
-				count = 6
-			}
-
-			# Conscript Infantry
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				service_type = conscript
-				state_region = s:STATE_WASHINGTON
-				count = 2
-			}
-
-			# Cavalry
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_WASHINGTON
-				count = 0
+				state_region = s:STATE_ALASKA
+				count = 4
 			}
 
 			# Artillery
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_WASHINGTON
+				state_region = s:STATE_ALASKA
 				count = 1
 			}
         }
     }
+
+    c:CUB ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_the_caribbean
+			name = "Ejército de las Indias Españolas"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_CUBA
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_CUBA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_CUBA
+				count = 2
+			}
+		}
+	}
+
+    # Navies
+
+    c:USA ?= {
+		create_military_formation = {
+			type = navy
+			hq_region = sr:region_new_england
+			name = "United States Atlantic Fleet"
+
+			# Frigates
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_NEW_YORK
+				count = 8
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_MASSACHUSETTS
+				count = 8
+			}
+
+			# Monitors
+			combat_unit = {
+				type = unit_type:combat_unit_type_monitors
+				state_region = s:STATE_NEW_YORK
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_monitors
+				state_region = s:STATE_VIRGINIA
+				count = 4
+			}
+
+			# Man-o-Wars
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_VIRGINIA
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_SOUTH_CAROLINA
+				count = 4
+			}
+
+			# Ironclads
+			combat_unit = {
+				type = unit_type:combat_unit_type_ironclads
+				state_region = s:STATE_NEW_YORK
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_ironclads
+				state_region = s:STATE_VIRGINIA
+				count = 2
+			}
+		}
+	}
+
+    c:MEX ?= {
+		create_military_formation = {
+			type = navy
+			hq_region = sr:region_mexico
+			name = "Armada de Nueva España"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_VERACRUZ
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_YUCATAN
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_VERACRUZ
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_YUCATAN
+				count = 2
+			}
+		}
+	}
+
+    c:TEX ?= {
+		create_military_formation = {
+			type = navy
+			hq_region = sr:region_gulf_of_mexico
+			name = "Escuadra del Golfo"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_TEXAS
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_TAMAULIPAS
+				count = 2
+			}
+		}
+	}
+
+    c:UCA ?= {
+		create_military_formation = {
+			type = navy
+			hq_region = sr:region_central_america
+			name = "Fuerza Naval Centroamericana"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_GUATEMALA
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_COSTA_RICA
+				count = 2
+			}
+		}
+	}
+    
+    c:ALK ?= {
+		create_military_formation = {
+			type = navy
+			hq_region = sr:region_alaska
+			name = "Alyaskinskiy Tikhookeanskiy Otryad"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_ALASKA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_ALASKA
+				count = 2
+			}
+		}
+	}
+
+    c:CUB ?= {
+		create_military_formation = {
+			type = navy
+			hq_region = sr:region_the_caribbean
+			name = "Armada de las Indias Españolas"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_CUBA
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_CUBA
+				count = 2
+			}
+		}
+	}
 
     # Did I miss any?
 }

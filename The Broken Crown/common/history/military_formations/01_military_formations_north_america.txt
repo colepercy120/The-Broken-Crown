@@ -199,7 +199,7 @@
 
     c:USA ?= {
 		create_military_formation = {
-			type = navy
+			type = fleet
 			hq_region = sr:region_new_england
 			name = "United States Atlantic Fleet"
 
@@ -255,7 +255,7 @@
 
     c:MEX ?= {
 		create_military_formation = {
-			type = navy
+			type = fleet
 			hq_region = sr:region_mexico
 			name = "Armada de Nueva España"
 
@@ -285,7 +285,7 @@
 
     c:TEX ?= {
 		create_military_formation = {
-			type = navy
+			type = fleet
 			hq_region = sr:region_gulf_of_mexico
 			name = "Escuadra del Golfo"
 
@@ -305,7 +305,7 @@
 
     c:UCA ?= {
 		create_military_formation = {
-			type = navy
+			type = fleet
 			hq_region = sr:region_central_america
 			name = "Fuerza Naval Centroamericana"
 
@@ -324,7 +324,7 @@
     
     c:ALK ?= {
 		create_military_formation = {
-			type = navy
+			type = fleet
 			hq_region = sr:region_alaska
 			name = "Alyaskinskiy Tikhookeanskiy Otryad"
 
@@ -344,7 +344,7 @@
 
     c:CUB ?= {
 		create_military_formation = {
-			type = navy
+			type = fleet
 			hq_region = sr:region_the_caribbean
 			name = "Armada de las Indias Españolas"
 

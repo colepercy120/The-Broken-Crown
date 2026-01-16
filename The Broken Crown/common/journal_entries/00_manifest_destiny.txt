@@ -1,0 +1,214 @@
+﻿je_manifest_destiny_main = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_usa_manifest_destiny
+	
+	immediate = {
+		add_journal_entry = { type = je_manifest_destiny_mexico }
+		add_journal_entry = { type = je_manifest_destiny_frontier_wars }
+		add_journal_entry = { type = je_manifest_destiny_canada }
+		add_journal_entry = { type = je_manifest_destiny_carribean }
+		add_journal_entry = { type = je_manifest_destiny_pacific }
+	}
+
+	# note that if you change this, also update the decision
+	complete = {
+		custom_tooltip = {
+			text = manifest_destiny_mexico_tooltip
+			has_global_variable = manifest_destiny_mexico
+		}
+		custom_tooltip = {
+			text = manifest_destiny_frontier_tooltip
+			has_global_variable = manifest_destiny_frontier
+		}
+		custom_tooltip = {
+			text = manifest_destiny_frontier_tooltip
+			has_global_variable = manifest_destiny_canada
+		}
+		custom_tooltip = {
+			text = manifest_destiny_frontier_tooltip
+			has_global_variable = manifest_destiny_carribean
+		}
+		custom_tooltip = {
+			text = manifest_destiny_frontier_tooltip
+			has_global_variable = manifest_destiny_pacific
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny.1 }
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_manifest_destiny_mexico = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_usa_manifest_destiny
+
+	# note that if you change this, also update the decision
+	complete = {
+		owns_entire_state_region = STATE_CALIFORNIA
+		owns_entire_state_region = STATE_NEVADA
+		owns_entire_state_region = STATE_UTAH
+		owns_entire_state_region = STATE_ARIZONA
+		owns_entire_state_region = STATE_NEW_MEXICO
+		owns_entire_state_region = STATE_TEXAS
+		
+		owns_entire_state_region = STATE_RIO_GRANDE
+		owns_entire_state_region = STATE_DURANGO
+		owns_entire_state_region = STATE_SINALOA
+		owns_entire_state_region = STATE_SONORA
+		owns_entire_state_region = STATE_CHIHUAHUA
+		owns_entire_state_region = STATE_BAJA_CALIFORNIA
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny.1 }
+		set_global_variable = manifest_destiny_mexico
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_manifest_destiny_frontier_wars = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_usa_manifest_destiny
+
+	# note that if you change this, also update the decision
+	complete = {
+		owns_entire_state_region = STATE_MONTANA
+		owns_entire_state_region = STATE_WYOMING
+		owns_entire_state_region = STATE_COLORADO
+		owns_entire_state_region = STATE_NORTH_DAKOTA
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
+		owns_entire_state_region = STATE_NEBRASKA
+		owns_entire_state_region = STATE_KANSAS
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny.2 }
+		set_global_variable = manifest_destiny_frontier
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			1 = manifest_destiny.3
+		}
+	}
+
+	weight = 100
+
+	transferable = no
+	should_be_pinned_by_default = yes
+}
+
+je_manifest_destiny_canada = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_usa_manifest_destiny
+
+	# note that if you change this, also update the decision
+	complete = {
+		owns_entire_state_region = STATE_QUEBEC
+		owns_entire_state_region = STATE_ONTARIO
+		owns_entire_state_region = STATE_MANITOBA
+		owns_entire_state_region = STATE_SASKATCHEWAN
+		owns_entire_state_region = STATE_ALBERTA
+		owns_entire_state_region = STATE_NUNAVUT
+		owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny.2 }
+		set_global_variable = manifest_destiny_canada
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			1 = manifest_destiny.3
+		}
+	}
+
+	weight = 100
+
+	transferable = no
+	should_be_pinned_by_default = yes
+}
+
+je_manifest_destiny_pacific = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_usa_manifest_destiny
+
+	# note that if you change this, also update the decision
+	complete = {
+		owns_entire_state_region = STATE_IDAHO
+		owns_entire_state_region = STATE_WASHINGTON
+		owns_entire_state_region = STATE_OREGON
+		owns_entire_state_region = STATE_BRITISH_COLUMBIA
+		owns_entire_state_region = STATE_YUKON_TERRITORY
+		owns_entire_state_region = STATE_ALASKA
+		
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny.2 }
+		set_global_variable = manifest_destiny_pacific
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			1 = manifest_destiny.3
+		}
+	}
+
+	weight = 100
+
+	transferable = no
+	should_be_pinned_by_default = yes
+}
+
+je_manifest_destiny_carribean = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_usa_manifest_destiny
+
+	# note that if you change this, also update the decision
+	complete = {
+		owns_entire_state_region = STATE_WESTERN_CUBA
+		owns_entire_state_region = STATE_CENTRAL_CUBA
+		owns_entire_state_region = STATE_EASTERN_CUBA
+		owns_entire_state_region = STATE_BAHAMAS
+		owns_entire_state_region = STATE_JAMAICA
+		owns_entire_state_region = STATE_SANTO_DOMINGO
+		owns_entire_state_region = STATE_HAITI
+		owns_entire_state_region = STATE_WEST_INDIES
+		owns_entire_state_region = STATE_PUERTO_RICO
+		
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny.2 }
+		set_global_variable = manifest_destiny_carribean
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			1 = manifest_destiny.3
+		}
+	}
+
+	weight = 100
+
+	transferable = no
+	should_be_pinned_by_default = yes
+}

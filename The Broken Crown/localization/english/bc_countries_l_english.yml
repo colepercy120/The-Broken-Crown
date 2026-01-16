@@ -104,8 +104,8 @@
  ROM: "Dacia"
  ROM_adj: "Dacian"
  
- dyn_c_tex_spa: "Provincias Internas"
- dyn_c_tex_spa_adj: "Provincias Internas"
+ dyn_c_tex_spa: "Internal Provinces"
+ dyn_c_tex_spa_adj: "Internal Provinces"
 
  dyn_c_uca_spa: "Guatamala"
  dyn_c_uca_spa_adj: "Guatamalan"

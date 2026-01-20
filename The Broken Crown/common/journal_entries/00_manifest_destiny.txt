@@ -13,30 +13,33 @@
 
 	# note that if you change this, also update the decision
 	complete = {
-		custom_tooltip = {
-			text = manifest_destiny_mexico_tooltip
-			has_global_variable = manifest_destiny_mexico
-		}
-		custom_tooltip = {
-			text = manifest_destiny_frontier_tooltip
-			has_global_variable = manifest_destiny_frontier
-		}
-		custom_tooltip = {
-			text = manifest_destiny_frontier_tooltip
-			has_global_variable = manifest_destiny_canada
-		}
-		custom_tooltip = {
-			text = manifest_destiny_frontier_tooltip
-			has_global_variable = manifest_destiny_carribean
-		}
-		custom_tooltip = {
-			text = manifest_destiny_frontier_tooltip
-			has_global_variable = manifest_destiny_pacific
+		calc_true_if = {
+			amount > 5
+			custom_tooltip = {
+				text = manifest_destiny_mexico_tooltip
+				has_global_variable = manifest_destiny_mexico
+			}
+			custom_tooltip = {
+				text = manifest_destiny_frontier_tooltip
+				has_global_variable = manifest_destiny_frontier
+			}
+			custom_tooltip = {
+				text = manifest_destiny_canada_tooltip
+				has_global_variable = manifest_destiny_canada
+			}
+			custom_tooltip = {
+				text = manifest_destiny_carribean_tooltip
+				has_global_variable = manifest_destiny_carribean
+			}
+			custom_tooltip = {
+				text = manifest_destiny_pacific_tooltip
+				has_global_variable = manifest_destiny_pacific
+			}
 		}
 	}
 
 	on_complete = {
-		trigger_event = { id = manifest_destiny.1 }
+		trigger_event = { id = manifest_destiny.7 }
 	}
 
 	weight = 100
@@ -56,13 +59,15 @@ je_manifest_destiny_mexico = {
 		owns_entire_state_region = STATE_ARIZONA
 		owns_entire_state_region = STATE_NEW_MEXICO
 		owns_entire_state_region = STATE_TEXAS
-		
-		owns_entire_state_region = STATE_RIO_GRANDE
-		owns_entire_state_region = STATE_DURANGO
-		owns_entire_state_region = STATE_SINALOA
-		owns_entire_state_region = STATE_SONORA
-		owns_entire_state_region = STATE_CHIHUAHUA
-		owns_entire_state_region = STATE_BAJA_CALIFORNIA
+		calc_true_if = {
+			amount > 3
+			owns_entire_state_region = STATE_RIO_GRANDE
+			owns_entire_state_region = STATE_DURANGO
+			owns_entire_state_region = STATE_SINALOA
+			owns_entire_state_region = STATE_SONORA
+			owns_entire_state_region = STATE_CHIHUAHUA
+			owns_entire_state_region = STATE_BAJA_CALIFORNIA
+		}
 	}
 
 	on_complete = {
@@ -81,6 +86,7 @@ je_manifest_destiny_frontier_wars = {
 
 	# note that if you change this, also update the decision
 	complete = {
+		
 		owns_entire_state_region = STATE_MONTANA
 		owns_entire_state_region = STATE_WYOMING
 		owns_entire_state_region = STATE_COLORADO
@@ -125,7 +131,7 @@ je_manifest_destiny_canada = {
 	}
 
 	on_complete = {
-		trigger_event = { id = manifest_destiny.2 }
+		trigger_event = { id = manifest_destiny.4 }
 		set_global_variable = manifest_destiny_canada
 	}
 
@@ -159,7 +165,7 @@ je_manifest_destiny_pacific = {
 	}
 
 	on_complete = {
-		trigger_event = { id = manifest_destiny.2 }
+		trigger_event = { id = manifest_destiny.5 }
 		set_global_variable = manifest_destiny_pacific
 	}
 
@@ -177,26 +183,29 @@ je_manifest_destiny_pacific = {
 }
 
 je_manifest_destiny_carribean = {
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 
 	group = je_group_usa_manifest_destiny
 
 	# note that if you change this, also update the decision
 	complete = {
-		owns_entire_state_region = STATE_WESTERN_CUBA
-		owns_entire_state_region = STATE_CENTRAL_CUBA
-		owns_entire_state_region = STATE_EASTERN_CUBA
-		owns_entire_state_region = STATE_BAHAMAS
-		owns_entire_state_region = STATE_JAMAICA
-		owns_entire_state_region = STATE_SANTO_DOMINGO
-		owns_entire_state_region = STATE_HAITI
-		owns_entire_state_region = STATE_WEST_INDIES
-		owns_entire_state_region = STATE_PUERTO_RICO
+		calc_true_if = {
+			amount > 4
+			owns_entire_state_region = STATE_WESTERN_CUBA
+			owns_entire_state_region = STATE_CENTRAL_CUBA
+			owns_entire_state_region = STATE_EASTERN_CUBA
+			owns_entire_state_region = STATE_BAHAMAS
+			owns_entire_state_region = STATE_JAMAICA
+			owns_entire_state_region = STATE_SANTO_DOMINGO
+			owns_entire_state_region = STATE_HAITI
+			owns_entire_state_region = STATE_WEST_INDIES
+			owns_entire_state_region = STATE_PUERTO_RICO
+		}
 		
 	}
 
 	on_complete = {
-		trigger_event = { id = manifest_destiny.2 }
+		trigger_event = { id = manifest_destiny.6 }
 		set_global_variable = manifest_destiny_carribean
 	}
 

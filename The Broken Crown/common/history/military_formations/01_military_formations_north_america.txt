@@ -1,29 +1,38 @@
 ﻿MILITARY_FORMATIONS = {
 
-    # Armies
-
-	# Internal Provinces
-    c:TEX ?= {
+	# ============================
+	# Internal Provinces (TEX)
+	# ============================
+	c:TEX ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_dixie
 			name = "Ejército del Norte"
 
-			# Regular Infantry
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_TEXAS
-				count = 10
+				count = 6
 			}
 
-			# Cavalry
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_TAMAULIPAS
+				count = 4
+			}
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
 				state_region = s:STATE_TEXAS
-				count = 10
+				count = 6
 			}
 
-			# Artillery
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_COAHUILA
+				count = 4
+			}
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_TEXAS
@@ -32,28 +41,39 @@
 		}
 	}
 
-    # New Spain
-    c:MEX ?= {
+	# ============================
+	# New Spain (MEX)
+	# ============================
+	c:MEX ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_mexico
 			name = "Ejército de Nueva España"
 
-			# Regular Infantry
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MEXICO
-				count = 16
+				count = 8
 			}
 
-			# Cavalry
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PUEBLA
+				count = 8
+			}
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_MEXICO
-				count = 6
+				state_region = s:STATE_GUANAJUATO
+				count = 3
 			}
 
-			# Artillery
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_ZACATECAS
+				count = 3
+			}
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_MEXICO
@@ -62,28 +82,33 @@
 		}
 	}
 
-    # Centroamérica
-    c:UCA ?= {
+	# ============================
+	# Centroamérica (UCA)
+	# ============================
+	c:UCA ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_central_america
 			name = "Ejército de Centroamérica"
 
-			# Regular Infantry
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_GUATEMALA
-				count = 8
+				count = 5
 			}
 
-			# Cavalry
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_EL_SALVADOR
+				count = 3
+			}
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
 				state_region = s:STATE_GUATEMALA
 				count = 2
 			}
 
-			# Artillery
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_GUATEMALA
@@ -92,28 +117,33 @@
 		}
 	}
 
-    # United States
-    c:USA ?= {
+	# ============================
+	# United States (USA)
+	# ============================
+	c:USA ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_new_england
 			name = "Army of the Atlantic"
 
-			# Regular Infantry
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_NEW_YORK
-				count = 6
+				count = 4
 			}
 
-			# Cavalry
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_MASSACHUSETTS
+				count = 2
+			}
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_PENNSYLVANIA
 				count = 4
 			}
 
-			# Artillery
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_PENNSYLVANIA
@@ -122,27 +152,30 @@
 		}
 	}
 
-    c:USA ?= {
+	c:USA ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_the_midwest
 			name = "Army of the Frontier"
 
-			# Regular Infantry
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_MISSOURI
-				count = 6
+				count = 4
 			}
 
-			# Cavalry
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_ARKANSAS
+				count = 2
+			}
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_MISSOURI
 				count = 5
 			}
 
-			# Artillery
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_MISSOURI
@@ -151,31 +184,33 @@
 		}
 	}
 
-    # Russian American Company
-    c:ALK ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_pacific_coast
-            name = "Sibirskiy Garnizon Alyaski"
+	# ============================
+	# Russian Alaska (ALK)
+	# ============================
+	c:ALK ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_pacific_coast
+			name = "Sibirskiy Garnizon Alyaski"
 
-            # Regular Infantry
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ALASKA
 				count = 4
 			}
 
-			# Artillery
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_ALASKA
 				count = 1
 			}
-        }
-    }
+		}
+	}
 
-    # The Indies
-    c:CUB ?= {
+	# ============================
+	# Spanish Indies (CUB)
+	# ============================
+	c:CUB ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_the_caribbean
@@ -183,12 +218,18 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_CENTRAL_CUBA
-				count = 10
+				state_region = s:STATE_WESTERN_CUBA
+				count = 5
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_CENTRAL_CUBA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
 				state_region = s:STATE_CENTRAL_CUBA
 				count = 2
 			}
@@ -200,6 +241,7 @@
 			}
 		}
 	}
+
 
     # Navies - USE TYPE = FLEET (I hate you Paradox)
 

@@ -1,11 +1,10 @@
 ﻿MILITARY_FORMATIONS = {
 
-    # Armies
-
-    # United Kingdom of Portugal and Brazil
+	# ============================
+	# United Kingdom of Portugal & Brazil (POR)
+	# ============================
 	c:POR ?= {
 
-		### Exército do Norte
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_brazil
@@ -14,7 +13,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_PARA
-				count = 10
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_AMAZONAS
+				count = 4
 			}
 
 			combat_unit = {
@@ -30,7 +35,6 @@
 			}
 		}
 
-		### Exército do Sul
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_brazil
@@ -39,7 +43,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_RIO_GRANDE_DO_SUL
-				count = 12
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SANTA_CATARINA
+				count = 4
 			}
 
 			combat_unit = {
@@ -55,7 +65,6 @@
 			}
 		}
 
-		### Exército do Centro
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_brazil
@@ -64,7 +73,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MINAS_GERAIS
-				count = 10
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SAO_PAULO
+				count = 4
 			}
 
 			combat_unit = {
@@ -81,170 +96,199 @@
 		}
 	}
 
-    # Rio de la Plata 
-    c:PLT ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_la_plata
-            name = "Ejército del Plata"
+	# ============================
+	# Spanish South America
+	# ============================
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_BUENOS_AIRES
-                count = 12
-            }
+	c:PLT ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_la_plata
+			name = "Ejército del Plata"
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
-                state_region = s:STATE_BUENOS_AIRES
-                count = 4
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BUENOS_AIRES
+				count = 8
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_BUENOS_AIRES
-                count = 4
-            }
-        }
-    }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CORDOBA
+				count = 4
+			}
 
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_BUENOS_AIRES
+				count = 4
+			}
 
-    # Peru
-    c:PEU ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_andes
-            name = "Ejército del Perú"
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_BUENOS_AIRES
+				count = 4
+			}
+		}
+	}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_LIMA
-                count = 14
-            }
+	c:PEU ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_andes
+			name = "Ejército del Perú"
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
-                state_region = s:STATE_LIMA
-                count = 4
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LIMA
+				count = 8
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_LIMA
-                count = 4
-            }
-        }
-    }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_AREQUIPA
+				count = 6
+			}
 
-    # New Granada 
-    c:GCO ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_gran_colombia
-            name = "Ejército de Nueva Granada"
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_LIMA
+				count = 4
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_CUNDINAMARCA
-                count = 12
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_LIMA
+				count = 4
+			}
+		}
+	}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
-                state_region = s:STATE_CUNDINAMARCA
-                count = 3
-            }
+	c:GCO ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_gran_colombia
+			name = "Ejército de Nueva Granada"
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_CUNDINAMARCA
-                count = 3
-            }
-        }
-    }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CUNDINAMARCA
+				count = 7
+			}
 
-    # Venezuela
-    c:VNZ ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_gran_colombia
-            name = "Ejército de Venezuela"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ANTIOQUIA
+				count = 5
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_MIRANDA
-                count = 10
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_CUNDINAMARCA
+				count = 3
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
-                state_region = s:STATE_MIRANDA
-                count = 2
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_CUNDINAMARCA
+				count = 3
+			}
+		}
+	}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_MIRANDA
-                count = 2
-            }
-        }
-    }
+	c:VNZ ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_gran_colombia
+			name = "Ejército de Venezuela"
 
-    c:CHL ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_la_plata
-            name = "Ejército de Chile"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MIRANDA
+				count = 6
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_SANTIAGO
-                count = 12
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZULIA
+				count = 4
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
-                state_region = s:STATE_SANTIAGO
-                count = 2
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_MIRANDA
+				count = 2
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_SANTIAGO
-                count = 2
-            }
-        }
-    }
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_MIRANDA
+				count = 2
+			}
+		}
+	}
 
-    # Dutch Guyana 
-    c:NET ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_gran_colombia
-            name = "Koloniaal Garnizoen Guyana"
+	c:CHL ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_la_plata
+			name = "Ejército de Chile"
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_GUAYANA
-                count = 5
-            }
-        }
-    }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SANTIAGO
+				count = 8
+			}
 
-    # French Guyana
-    c:FRA ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_gran_colombia
-            name = "Garnison de la Guyane"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CONCEPCION
+				count = 4
+			}
 
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_GUAYANA
-                count = 4
-            }
-        }
-    }
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_SANTIAGO
+				count = 2
+			}
 
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_SANTIAGO
+				count = 2
+			}
+		}
+	}
 
+	# ============================
+	# Guyanas
+	# ============================
+
+	c:NET ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_gran_colombia
+			name = "Koloniaal Garnizoen Guyana"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GUAYANA
+				count = 5
+			}
+		}
+	}
+
+	c:FRA ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_gran_colombia
+			name = "Garnison de la Guyane"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GUAYANA
+				count = 4
+			}
+		}
+	}
 }

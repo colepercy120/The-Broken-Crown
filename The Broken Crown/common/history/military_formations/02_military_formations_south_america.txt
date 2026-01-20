@@ -100,37 +100,83 @@
 	# Spanish South America
 	# ============================
 
-	c:PLT ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_la_plata
-			name = "Ejército del Plata"
+    c:PLT ?= {
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_la_plata
+            name = "Ejército del Plata"
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BUENOS_AIRES
-				count = 8
-			}
+            # Buenos Aires
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_BUENOS_AIRES
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_BUENOS_AIRES
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_BUENOS_AIRES
+                count = 1
+            }
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CORDOBA
-				count = 4
-			}
+            # Córdoba
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_CORDOBA
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_CORDOBA
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_CORDOBA
+                count = 1
+            }
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_BUENOS_AIRES
-				count = 4
-			}
+            # Santa Fe
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_SANTA_FE
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_SANTA_FE
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_SANTA_FE
+                count = 1
+            }
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_BUENOS_AIRES
-				count = 4
-			}
-		}
-	}
+            # Mendoza
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_MENDOZA
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_MENDOZA
+                count = 1
+            }
+
+            # Salta
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_SALTA
+                count = 2
+            }
+        }
+    }
 
 	c:PEU ?= {
 		create_military_formation = {

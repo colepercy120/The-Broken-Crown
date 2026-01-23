@@ -1,5 +1,7 @@
 ﻿MILITARY_FORMATIONS = {
 
+    # ARMY ====================================================================
+
 	# ==================================================
 	# United Kingdom of Portugal and Brazil (POR)
 	# Military Law: Professional Army
@@ -301,6 +303,186 @@
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_GUAYANA
 				count = 4
+			}
+		}
+	}
+
+    # NAVY ====================================================================
+
+    # ==================================================
+	# United Kingdom of Portugal and Brazil (POR)
+	# Naval Role: Continental Naval Superpower
+	# ==================================================
+	c:POR ?= {
+
+		# Brazil Atlantic Fleet
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_brazil
+			name = "Esquadra do Atlântico Sul"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_RIO_DE_JANEIRO
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_BAHIA
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_RIO_DE_JANEIRO
+				count = 4
+			}
+		}
+
+		# Northern Brazil Patrol Fleet
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_amazonas
+			name = "Esquadra do Norte"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_PARA
+				count = 4
+			}
+		}
+	}
+
+	# ==================================================
+	# New Granada (GCO)
+	# Naval Role: Coastal Defense
+	# ==================================================
+	c:GCO ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_gran_colombia
+			name = "Escuadra Granadina"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_PANAMA
+				count = 3
+			}
+		}
+	}
+
+	# ==================================================
+	# Venezuela (VNZ)
+	# Naval Role: Regional Defense
+	# ==================================================
+	c:VNZ ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_gran_colombia
+			name = "Escuadra Venezolana"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_MIRANDA
+				count = 3
+			}
+		}
+	}
+
+	# ==================================================
+	# Peru (PEU)
+	# Naval Role: Pacific Defense
+	# ==================================================
+	c:PEU ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_south_pacific
+			name = "Escuadra del Pacífico"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_LIMA
+				count = 3
+			}
+		}
+	}
+
+	# ==================================================
+	# Chile (CHL)
+	# Naval Role: Coastal Patrol
+	# ==================================================
+	c:CHL ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_south_pacific
+			name = "Escuadra de Chile"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_SANTIAGO
+				count = 2
+			}
+		}
+	}
+
+	# ==================================================
+	# Rio de la Plata (PLT)
+	# Naval Role: River & Estuary Patrol
+	# ==================================================
+	c:PLT ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_la_plata
+			name = "Escuadra del Río de la Plata"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_URUGUAY
+				count = 3
+			}
+		}
+	}
+
+	# ==================================================
+	# Netherlands (NET) – Guyana
+	# Naval Role: Token Colonial Patrol
+	# ==================================================
+	c:NET ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_gran_colombia
+			name = "Guyana Eskader"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_GUAYANA
+				count = 1
+			}
+		}
+	}
+
+	# ==================================================
+	# France (FRA) – French Guyana
+	# Naval Role: Token Colonial Patrol
+	# ==================================================
+	c:FRA ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_guyana
+			name = "Escadre de Guyane"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_GUAYANA
+				count = 1
 			}
 		}
 	}

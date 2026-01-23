@@ -1,5 +1,7 @@
 ﻿MILITARY_FORMATIONS = {
 
+	# ARMY ====================================================================
+
 	# ==================================================
 	# United States of America (USA)
 	# Military Law: Professional Army
@@ -288,4 +290,172 @@
 			# Infantry-only frontier garrisons ✔
 		}
 	}
+
+	# NAVY ====================================================================
+
+	# ==================================================
+	# United States of America (USA)
+	# Naval Role: Regional Naval Superpower
+	# Tech Level: Frigates / Man-o-Wars
+	# ==================================================
+	c:USA ?= {
+
+		# Atlantic Fleet
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_new_england
+			name = "United States Atlantic Fleet"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_MASSACHUSETTS
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_NEW_YORK
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_MASSACHUSETTS
+				count = 4
+			}
+		}
+
+		# Gulf Fleet
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_dixie
+			name = "Gulf Fleet"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_LOUISIANA
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_FLORIDA
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_LOUISIANA
+				count = 2
+			}
+		}
+	}
+
+	# ==================================================
+	# New Spain (MEX)
+	# Naval Role: Coastal Defense / Commerce Protection
+	# ==================================================
+	c:MEX ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_gulf_of_mexico
+			name = "Armada del Golfo"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_VERACRUZ
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_wars
+				state_region = s:STATE_VERACRUZ
+				count = 2
+			}
+		}
+	}
+
+	# ==================================================
+	# Provincias Internas / Interior Provinces (TEX)
+	# Naval Role: Minimal Coastal Patrol
+	# ==================================================
+	c:TEX ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_gulf_of_mexico
+			name = "Escuadra del Golfo Norte"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_TEXAS
+				count = 2
+			}
+		}
+	}
+
+	# ==================================================
+	# Centroamérica (UCA)
+	# Naval Role: Regional Defense
+	# ==================================================
+	c:UCA ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_central_america
+			name = "Escuadra Centroamericana"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_GUATEMALA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_COSTA_RICA
+				count = 2
+			}
+		}
+	}
+
+	# ==================================================
+	# Spanish Indies / Cuba (CUB)
+	# Naval Role: Caribbean Garrison Fleet
+	# ==================================================
+	c:CUB ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_the_caribbean
+			name = "Escuadra de las Indias"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_CUBA
+				count = 4
+			}
+		}
+	}
+
+	# ==================================================
+	# Russian Alaska (ALK)
+	# Naval Role: Supply & Patrol
+	# ==================================================
+	c:ALK ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_pacific_northwest
+			name = "Alyaskaya Eskadra"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigates
+				state_region = s:STATE_ALASKA
+				count = 2
+			}
+		}
+	}
+
 }

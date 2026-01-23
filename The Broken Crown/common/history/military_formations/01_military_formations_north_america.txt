@@ -154,7 +154,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_PUEBLA
+				state_region = s:STATE_ZACATECAS
 				count = 8
 			}
 
@@ -168,7 +168,7 @@
 			# Cavalry arm
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_GUANAJUATO
+				state_region = s:STATE_GUERRERO
 				count = 6
 			}
 
@@ -232,7 +232,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_the_caribbean
+			hq_region = sr:region_caribbean
 			name = "Ejército de las Indias Españolas"
 
 			combat_unit = {
@@ -259,7 +259,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_alaska
+			hq_region = sr:region_pacific_coast
 			name = "Alyaskiy Garnizon"
 
 			combat_unit = {
@@ -270,13 +270,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORTHERN_COLUMBIA
+				state_region = s:STATE_BRITISH_COLUMBIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SOUTHERN_COLUMBIA
+				state_region = s:STATE_WASHINGTON
 				count = 2
 			}
 

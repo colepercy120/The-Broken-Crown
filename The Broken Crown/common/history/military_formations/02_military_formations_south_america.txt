@@ -110,7 +110,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CARACAS
+				state_region = s:STATE_MIRANDA
 				count = 8
 			}
 
@@ -122,7 +122,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_CARACAS
+				state_region = s:STATE_MIRANDA
 				count = 4
 			}
 
@@ -200,7 +200,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CORDOBA
+				state_region = s:STATE_BAJO_PARAGUAY
 				count = 4
 			}
 

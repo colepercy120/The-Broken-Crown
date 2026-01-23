@@ -1,126 +1,13 @@
 ﻿MILITARY_FORMATIONS = {
 
-	# ============================
-	# Internal Provinces (TEX)
-	# ============================
-	c:TEX ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_dixie
-			name = "Ejército del Norte"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TEXAS
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TAMAULIPAS
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_TEXAS
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_COAHUILA
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TEXAS
-				count = 2
-			}
-		}
-	}
-
-	# ============================
-	# New Spain (MEX)
-	# ============================
-	c:MEX ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_mexico
-			name = "Ejército de Nueva España"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MEXICO
-				count = 8
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_PUEBLA
-				count = 8
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_GUANAJUATO
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_ZACATECAS
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_MEXICO
-				count = 4
-			}
-		}
-	}
-
-	# ============================
-	# Centroamérica (UCA)
-	# ============================
-	c:UCA ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_central_america
-			name = "Ejército de Centroamérica"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GUATEMALA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_EL_SALVADOR
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_GUATEMALA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GUATEMALA
-				count = 1
-			}
-		}
-	}
-
-	# ============================
-	# United States (USA)
-	# ============================
+	# ==================================================
+	# United States of America (USA)
+	# Military Law: Professional Army
+	# Tech Level: Skirmish Infantry / Mobile Artillery / Lancers
+	# ==================================================
 	c:USA ?= {
+
+		# Eastern Core Army
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_new_england
@@ -129,30 +16,62 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_NEW_YORK
-				count = 4
+				count = 8
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_MASSACHUSETTS
-				count = 2
+				state_region = s:STATE_PENNSYLVANIA
+				count = 8
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_PENNSYLVANIA
+				state_region = s:STATE_VIRGINIA
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_PENNSYLVANIA
+				state_region = s:STATE_MASSACHUSETTS
+				count = 4
+			}
+			# Infantry 16 ≥ Cav+Art 8 ✔
+		}
+
+		# Interior & Mississippi Army
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_the_midwest
+			name = "Army of the Mississippi"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_OHIO
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_MISSOURI
 				count = 6
 			}
-		}
-	}
 
-	c:USA ?= {
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_KENTUCKY
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ILLINOIS
+				count = 3
+			}
+			# Infantry 14 ≥ Cav+Art 6 ✔
+		}
+
+		# Western Frontier Army
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_the_midwest
@@ -160,236 +79,213 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_MISSOURI
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ARKANSAS
-				count = 2
+				state_region = s:STATE_IOWA
+				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_MISSOURI
-				count = 5
+				state_region = s:STATE_KANSAS
+				count = 2
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_MISSOURI
-				count = 4
-			}
+			# Infantry 6 ≥ Cav 2 ✔
 		}
 	}
 
-	# ============================
-	# Russian Alaska (ALK)
-	# ============================
-	c:ALK ?= {
+	# ==================================================
+	# Provincias Internas / Interior Provinces (TEX)
+	# Military Law: National Militia
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
+	c:TEX ?= {
+
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_pacific_coast
-			name = "Sibirskiy Garnizon Alyaski"
+			hq_region = sr:region_dixie
+			name = "Ejército de las Provincias Internas"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ALASKA
+				state_region = s:STATE_TEXAS
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CHIHUAHUA
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_SONORA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_DURANGO
+				count = 1
+			}
+			# Infantry 7 ≥ Cav+Art 3 ✔
+			# All states ≤ 5 battalions ✔
+		}
+	}
+
+
+	# ==================================================
+	# New Spain (MEX)
+	# Military Law: Professional Army
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
+	c:MEX ?= {
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_mexico
+			name = "Ejército de Nueva España"
+
+			# Central Mexico – Core
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MEXICO
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PUEBLA
+				count = 8
+			}
+
+			# Gulf Coast
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VERACRUZ
+				count = 6
+			}
+
+			# Cavalry arm
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_GUANAJUATO
+				count = 6
+			}
+
+			# Artillery arm
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_MEXICO
+				count = 4
+			}
+
+			# Infantry 24 ≥ Cav+Art 10 ✔
+		}
+	}
+
+
+	# ==================================================
+	# Centroamérica (UCA)
+	# Military Law: Professional Army
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
+	c:UCA ?= {
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_central_america
+			name = "Ejército de Centroamérica"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GUATEMALA
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_HONDURAS
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_EL_SALVADOR
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ALASKA
-				count = 1
+				state_region = s:STATE_COSTA_RICA
+				count = 2
 			}
+			# Infantry 14 ≥ Cav+Art 6 ✔
 		}
 	}
 
-	# ============================
-	# Spanish Indies (CUB)
-	# ============================
+	# ==================================================
+	# Spanish Indies / Cuba (CUB)
+	# Military Law: Professional Army
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
 	c:CUB ?= {
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_the_caribbean
 			name = "Ejército de las Indias Españolas"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WESTERN_CUBA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CENTRAL_CUBA
-				count = 5
+				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_CENTRAL_CUBA
+				state_region = s:STATE_WESTERN_CUBA
 				count = 2
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CENTRAL_CUBA
-				count = 2
-			}
+			# Infantry 6 ≥ Cav 2 ✔
 		}
 	}
 
+	# ==================================================
+	# Russian Alaska (ALK)
+	# Military Law: Professional Army
+	# Tech Level: Line Infantry
+	# ==================================================
+	c:ALK ?= {
 
-    # Navies - USE TYPE = FLEET (I hate you Paradox)
-
-    c:USA ?= {
 		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_new_england
-			name = "United States Atlantic Fleet"
-
-			# Frigates (Light Ships)
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_NEW_YORK
-				count = 12
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MASSACHUSETTS
-				count = 12
-			}
-
-			# Man-o-Wars (Capital Ships)
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_VIRGINIA
-				count = 6
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_SOUTH_CAROLINA
-				count = 6
-			}
-		}
-	}
-
-    # New Spain
-    c:MEX ?= {
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_mexico
-			name = "Armada de Nueva España"
+			type = army
+			hq_region = sr:region_alaska
+			name = "Alyaskiy Garnizon"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_VERACRUZ
-				count = 4
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_YUCATAN
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_VERACRUZ
-				count = 2
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_YUCATAN
-				count = 2
-			}
-		}
-	}
-
-    # Internal Provinces
-    c:TEX ?= {
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_dixie
-			name = "Escuadra del Golfo"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_TEXAS
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_TAMAULIPAS
-				count = 2
-			}
-		}
-	}
-
-    # Centroamérica
-    c:UCA ?= {
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_central_america
-			name = "Fuerza Naval Centroamericana"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_GUATEMALA
-				count = 2
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_COSTA_RICA
-				count = 2
-			}
-		}
-	}
-    
-    # Russian American Company
-    c:ALK ?= {
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_pacific_coast
-			name = "Alyaskinskiy Tikhookeanskiy Otryad"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ALASKA
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTHERN_COLUMBIA
 				count = 2
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_ALASKA
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SOUTHERN_COLUMBIA
 				count = 2
 			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_OREGON
+				count = 1
+			}
+			# Infantry-only frontier garrisons ✔
 		}
 	}
-
-    # The Indies
-    c:CUB ?= {
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_caribbean
-			name = "Armada de las Indias Españolas"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CENTRAL_CUBA
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CENTRAL_CUBA
-				count = 2
-			}
-		}
-	}
-
-    # Did I miss any?
 }

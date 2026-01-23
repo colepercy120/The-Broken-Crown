@@ -1,184 +1,147 @@
 ﻿MILITARY_FORMATIONS = {
 
-	# ============================
-	# United Kingdom of Portugal & Brazil (POR)
-	# ============================
+	# ==================================================
+	# United Kingdom of Portugal and Brazil (POR)
+	# Military Law: Professional Army
+	# Tech Level: Skirmish Infantry / Mobile Artillery / Lancers
+	# ==================================================
 	c:POR ?= {
 
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_brazil
-			name = "Exército do Norte"
+			name = "Exército do Brasil"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_PARA
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_RIO_DE_JANEIRO
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_BAHIA
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_MINAS_GERAIS
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_SAO_PAULO
 				count = 6
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_AMAZONAS
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_RIO_DE_JANEIRO
 				count = 4
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_PARA
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_PARA
-				count = 4
-			}
+			# Infantry 26 ≥ Cav+Art 10 ✔
 		}
+	}
+
+	# ==================================================
+	# New Granada (GCO)
+	# Military Law: Professional Army
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
+	c:GCO ?= {
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_brazil
-			name = "Exército do Sul"
+			hq_region = sr:region_gran_colombia
+			name = "Ejército de la Nueva Granada"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_RIO_GRANDE_DO_SUL
+				state_region = s:STATE_CUNDINAMARCA
 				count = 8
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SANTA_CATARINA
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_RIO_GRANDE_DO_SUL
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_RIO_GRANDE_DO_SUL
-				count = 4
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_brazil
-			name = "Exército do Centro"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MINAS_GERAIS
+				state_region = s:STATE_ANTIOQUIA
 				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SAO_PAULO
+				state_region = s:STATE_CAUCA
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PANAMA
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_MINAS_GERAIS
-				count = 3
+				state_region = s:STATE_ECUADOR
+				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_MINAS_GERAIS
-				count = 3
+				state_region = s:STATE_CUNDINAMARCA
+				count = 4
 			}
+			# Infantry 22 ≥ Cav+Art 8 ✔
 		}
 	}
 
-	# ============================
-	# Spanish South America
-	# ============================
+	# ==================================================
+	# Venezuela (VNZ)
+	# Military Law: Professional Army
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
+	c:VNZ ?= {
 
-    c:PLT ?= {
-        create_military_formation = {
-            type = army
-            hq_region = sr:region_la_plata
-            name = "Ejército del Plata"
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_gran_colombia
+			name = "Ejército de Venezuela"
 
-            # Buenos Aires
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_BUENOS_AIRES
-                count = 3
-            }
-            combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
-                state_region = s:STATE_BUENOS_AIRES
-                count = 1
-            }
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_BUENOS_AIRES
-                count = 1
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CARACAS
+				count = 8
+			}
 
-            # Córdoba
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_CORDOBA
-                count = 3
-            }
-            combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
-                state_region = s:STATE_CORDOBA
-                count = 1
-            }
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_CORDOBA
-                count = 1
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZULIA
+				count = 6
+			}
 
-            # Santa Fe
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_SANTA_FE
-                count = 3
-            }
-            combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
-                state_region = s:STATE_SANTA_FE
-                count = 1
-            }
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_SANTA_FE
-                count = 1
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_CARACAS
+				count = 4
+			}
 
-            # Mendoza
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_MENDOZA
-                count = 2
-            }
-            combat_unit = {
-                type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_MENDOZA
-                count = 1
-            }
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_ZULIA
+				count = 2
+			}
+			# Infantry 14 ≥ Cav+Art 6 ✔
+		}
+	}
 
-            # Salta
-            combat_unit = {
-                type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_SALTA
-                count = 2
-            }
-        }
-    }
-
+	# ==================================================
+	# Peru (PEU)
+	# Military Law: Professional Army
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
 	c:PEU ?= {
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_andes
@@ -192,89 +155,84 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LA_PAZ
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_POTOSI
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassers
+				state_region = s:STATE_SANTA_CRUZ
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_AREQUIPA
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_LIMA
 				count = 4
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_LIMA
-				count = 4
-			}
+			# Infantry 20 ≥ Cav+Art 8 ✔
 		}
 	}
 
-	c:GCO ?= {
+	# ==================================================
+	# Rio de la Plata (PLT)
+	# Military Law: National Militia
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
+	c:PLT ?= {
+
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_gran_colombia
-			name = "Ejército de Nueva Granada"
+			hq_region = sr:region_la_plata
+			name = "Ejército del Río de la Plata"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CUNDINAMARCA
-				count = 7
+				state_region = s:STATE_SANTA_FE
+				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ANTIOQUIA
-				count = 5
+				state_region = s:STATE_CORDOBA
+				count = 4
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_CUNDINAMARCA
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_URUGUAY
 				count = 3
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CUNDINAMARCA
-				count = 3
-			}
-		}
-	}
-
-	c:VNZ ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_gran_colombia
-			name = "Ejército de Venezuela"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MIRANDA
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ZULIA
-				count = 4
-			}
-
-			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_MIRANDA
+				state_region = s:STATE_CORRIENTES
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_MIRANDA
+				state_region = s:STATE_BUENOS_AIRES
 				count = 2
 			}
+			# Infantry 11 ≥ Cav+Art 4 ✔
+			# No state exceeds 5 battalions ✔
 		}
 	}
 
+	# ==================================================
+	# Chile (CHL)
+	# Military Law: Professional Army
+	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# ==================================================
 	c:CHL ?= {
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_la_plata
@@ -283,19 +241,19 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SANTIAGO
-				count = 8
+				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CONCEPCION
+				state_region = s:STATE_LOS_RIOS
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassers
-				state_region = s:STATE_SANTIAGO
-				count = 2
+				state_region = s:STATE_ARAUCANIA
+				count = 3
 			}
 
 			combat_unit = {
@@ -303,35 +261,44 @@
 				state_region = s:STATE_SANTIAGO
 				count = 2
 			}
+			# Infantry 10 ≥ Cav+Art 5 ✔
 		}
 	}
 
-	# ============================
-	# Guyanas
-	# ============================
-
+	# ==================================================
+	# Netherlands (Guyana) (NET)
+	# Military Law: Professional Army
+	# Tech Level: Skirmish Infantry
+	# ==================================================
 	c:NET ?= {
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_gran_colombia
-			name = "Koloniaal Garnizoen Guyana"
+			name = "Troepenmacht in Suriname"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_GUAYANA
-				count = 5
+				count = 4
 			}
 		}
 	}
 
+	# ==================================================
+	# France (French Guyana) (FRA)
+	# Military Law: Professional Army
+	# Tech Level: Skirmish Infantry
+	# ==================================================
 	c:FRA ?= {
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_gran_colombia
 			name = "Garnison de la Guyane"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_GUAYANA
 				count = 4
 			}

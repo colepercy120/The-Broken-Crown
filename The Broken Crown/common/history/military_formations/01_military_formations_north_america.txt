@@ -359,7 +359,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_gulf_of_mexico
+			hq_region = sr:region_mexico
 			name = "Armada del Golfo"
 
 			combat_unit = {
@@ -384,7 +384,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_gulf_of_mexico
+			hq_region = sr:region_dixie
 			name = "Escuadra del Golfo Norte"
 
 			combat_unit = {
@@ -428,12 +428,12 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_the_caribbean
+			hq_region = sr:region_caribbean
 			name = "Escuadra de las Indias"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigates
-				state_region = s:STATE_CUBA
+				state_region = s:STATE_EASTERN_CUBA
 				count = 4
 			}
 		}
@@ -447,7 +447,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_pacific_northwest
+			hq_region = sr:region_pacific_coast
 			name = "Alyaskaya Eskadra"
 
 			combat_unit = {

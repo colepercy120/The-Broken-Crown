@@ -343,7 +343,7 @@
 		# Northern Brazil Patrol Fleet
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_amazonas
+			hq_region = sr:region_brazil
 			name = "Esquadra do Norte"
 
 			combat_unit = {
@@ -400,7 +400,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_south_pacific
+			hq_region = sr:region_andes
 			name = "Escuadra del Pacífico"
 
 			combat_unit = {
@@ -419,7 +419,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_south_pacific
+			hq_region = sr:region_la_plata
 			name = "Escuadra de Chile"
 
 			combat_unit = {
@@ -476,7 +476,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_guyana
+			hq_region = sr:region_gran_colombia
 			name = "Escadre de Guyane"
 
 			combat_unit = {

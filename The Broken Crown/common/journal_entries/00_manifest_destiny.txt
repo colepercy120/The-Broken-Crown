@@ -14,11 +14,19 @@
 	# note that if you change this, also update the decision
 	complete = {
 		calc_true_if = {
-			amount > 5
+			amount > 1
 			custom_tooltip = {
 				text = manifest_destiny_mexico_tooltip
 				has_global_variable = manifest_destiny_mexico
 			}
+			custom_tooltip = {
+				text = manifest_destiny_pacific_tooltip
+				has_global_variable = manifest_destiny_pacific
+			}
+		}
+		calc_true_if = {
+			amount > 2
+			
 			custom_tooltip = {
 				text = manifest_destiny_frontier_tooltip
 				has_global_variable = manifest_destiny_frontier
@@ -31,10 +39,12 @@
 				text = manifest_destiny_carribean_tooltip
 				has_global_variable = manifest_destiny_carribean
 			}
-			custom_tooltip = {
-				text = manifest_destiny_pacific_tooltip
-				has_global_variable = manifest_destiny_pacific
-			}
+			
+		}
+		any_state = {
+			count >= 40
+			owner = ROOT 
+			is_incorporated = yes
 		}
 	}
 
@@ -76,7 +86,7 @@ je_manifest_destiny_mexico = {
 	}
 
 	weight = 100
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default = no
 }
 
 je_manifest_destiny_frontier_wars = {
@@ -111,7 +121,7 @@ je_manifest_destiny_frontier_wars = {
 	weight = 100
 
 	transferable = no
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default = no
 }
 
 je_manifest_destiny_canada = {
@@ -145,7 +155,7 @@ je_manifest_destiny_canada = {
 	weight = 100
 
 	transferable = no
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default = no
 }
 
 je_manifest_destiny_pacific = {
@@ -179,7 +189,7 @@ je_manifest_destiny_pacific = {
 	weight = 100
 
 	transferable = no
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default = no
 }
 
 je_manifest_destiny_carribean = {
@@ -219,5 +229,5 @@ je_manifest_destiny_carribean = {
 	weight = 100
 
 	transferable = no
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default = no
 }

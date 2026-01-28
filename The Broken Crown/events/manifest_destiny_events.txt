@@ -347,7 +347,7 @@ manifest_destiny.4 = {
 
 	title = manifest_destiny.4.t
 	desc = manifest_destiny.4.d
-	flavor = manifest_destiny.4.f
+	
 
 	duration = 3
 
@@ -388,7 +388,7 @@ manifest_destiny.5 = {
 
 	title = manifest_destiny.5.t
 	desc = manifest_destiny.5.d
-	flavor = manifest_destiny.5.f
+	
 
 	duration = 3
 
@@ -434,7 +434,7 @@ manifest_destiny.6 = {
 
 	title = manifest_destiny.6.t
 	desc = manifest_destiny.6.d
-	flavor = manifest_destiny.6.f
+	
 
 	duration = 3
 

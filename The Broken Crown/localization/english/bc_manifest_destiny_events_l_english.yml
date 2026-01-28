@@ -1,0 +1,20 @@
+﻿l_english:
+ 
+  manifest_destiny.1.t: "The Spanish Cession"
+  
+  manifest_destiny.4.t: "Northern Lights"
+  manifest_destiny.4.d: "The vast expanse of the far north has been settled and is in the process of gaining statehood. These territories are now integral to the Union and will forever be defended!" 
+  manifest_destiny.4.a: "For the Union!"
+  
+  manifest_destiny.5.t: "An End to Alaska!"
+  manifest_destiny.5.d: "From Cascading waterfalls to vast peaks, the Pacific Northwest has been secured! Russian Dominion across North America has been destroyed and their people are now expercing the glory of the United States"
+  manifest_destiny.5.a: "For the Union!"
+  
+  manifest_destiny.6.t: "The Glittering Isles"
+  manifest_destiny.6.d: "Since the American Revolution the formerly British carribean has remained under Spanish Dominion. No Longer! our countrymen have been freed from imperial tyranny and the gilttering shores of the carribean are now part of our glorious union!"
+  manifest_destiny.6.a: "For the Union!"
+  
+  manifest_destiny.7.t: "America the Beautiful"
+  manifest_destiny.7.d: "America Stands triumpant! The Stars and Stripes fly from the cities of New England to the Shores of California and from the Glaciers of Alaska to the tropical paradises of the Carribean. We are truly a Shining City on a hill, a true empire of Liberty!"
+  manifest_destiny.7.f: "O beautiful for spacious skies, \nFor amber waves of grain, \nFor purple mountain majesties \nAbove the fruited plain! \nAmerica! America! \nGod shed His grace on thee \nAnd crown thy good with brotherhood \nFrom sea to shining sea!"
+  manifest_destiny.7.a: "From Sea to Shining Sea!"

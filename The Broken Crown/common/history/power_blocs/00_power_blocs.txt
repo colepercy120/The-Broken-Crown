@@ -5,8 +5,8 @@
 			map_color = hsv{ 0.99  0.7  0.9 }
 
 			founding_date = 1784.5.12 # Treaty of Paris (1783) comes into effect
-			identity = identity_sovereign_empire
-			principle = principle_vassalization_1
+			identity = identity_ideological_union
+			principle = principle_creative_legislature_1
 
 			# subjects are automatically part of the bloc
 		}
@@ -22,20 +22,41 @@
 
 	c:AUS = {
 		create_power_bloc = {
-			name = METTERNICH_SYSTEM
+			name = HOLY_ROMAN_EMPIRE
 
 			map_color = { 219 211 157 }
 
-			founding_date = 1815.6.9 # Final agreement of the 1814 Congress of Vienna
-			identity = identity_ideological_union
-			principle = principle_creative_legislature_1
+			founding_date = 962.2.2 # Final agreement of the 1814 Congress of Vienna
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
 
 
 			# Habsburg leaders in Italy and Italian states held up by direct Austrian intervention
-#			member = c:MOD
-#			member = c:TUS
-#			member = c:PAR
-#			member = c:SIC
+			member = c:BAV
+			member = c:WUR
+			member = c:BAD
+			member = c:RHE
+			member = c:HES
+			member = c:FRM
+			member = c:NAS
+			member = c:WLD
+			member = c:LIP
+			member = c:SCM
+			member = c:WES
+			
+			member = c:HAN
+			member = c:BRA
+			member = c:HEK
+			member = c:MEI
+			member = c:COB
+			member = c:SCW
+			member = c:WEI
+			member = c:SAX
+			member = c:ANH
+			member = c:MEC
+			member = c:LUB
+			member = c:PRU
+			member = c:MST
 		}
 		if = {
 			limit = {
@@ -109,6 +130,8 @@
 			principle = principle_vassalization_1
 
 			# subjects are automatically part of the bloc
+			member = c:ASS
+			member = c:BYZ
 		}
 		if = {
 			limit = {

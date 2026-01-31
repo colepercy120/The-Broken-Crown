@@ -76,12 +76,12 @@
 
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_KIEV
+                state_region = s:STATE_CHERNIHIV
                 count = 12
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_mobile_artillery
-                state_region = s:STATE_KIEV
+                state_region = s:STATE_CHERNIHIV
                 count = 4
             }
 
@@ -108,7 +108,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_russia_arctic
+            hq_region = sr:region_arctic_russia
             name = "Severnaya Armiya"
 
             # Arkhangelsk
@@ -131,12 +131,12 @@
 
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_GALICH
+                state_region = s:STATE_VOLOGDA
                 count = 6
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_lancers
-                state_region = s:STATE_GALICH
+                state_region = s:STATE_VOLOGDA
                 count = 2
             }
         }
@@ -179,7 +179,7 @@
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_mobile_artillery
-                state_region = s:STATE_SAMARA
+                state_region = s:STATE_URAL
                 count = 4
             }
         }

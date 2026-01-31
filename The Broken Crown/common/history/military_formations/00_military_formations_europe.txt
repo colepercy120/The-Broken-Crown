@@ -1,3 +1,227 @@
 ﻿MILITARY_FORMATIONS = {
-	
+
+    
+    # ARMY ====================================================================
+
+
+	# ==================================================
+    # Russia (RUS)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 170
+    # ==================================================
+    c:RUS ?= {
+
+        # --------------------------------------------------
+        # Western Army — Zapadnaya Armiya
+        # Strategic Region: Russia
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_russia
+            name = "Zapadnaya Armiya"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MOSCOW
+                count = 14
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_MOSCOW
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TVER
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_PSKOV
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_PSKOV
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_YAROSLAVL
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NIZHNY_NOVGOROD
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_NIZHNY_NOVGOROD
+                count = 4
+            }
+        }
+
+        # --------------------------------------------------
+        # Dnieper Army — Dneprovskaya Armiya
+        # Strategic Region: Dnieper
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_dnieper
+            name = "Dneprovskaya Armiya"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KIEV
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_KIEV
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KURSK
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CHERSON
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_KHARKOV
+                count = 4
+            }
+        }
+
+        # --------------------------------------------------
+        # Northern Army — Severnaya Armiya
+        # Strategic Region: Arctic Russia
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_russia_arctic
+            name = "Severnaya Armiya"
+
+            # Arkhangelsk
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ARKHANGELSK
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_ARKHANGELSK
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NENETSIA
+                count = 10
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_GALICH
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_GALICH
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # Ural Army — Uralskaya Armiya
+        # Strategic Region: Urals
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_urals
+            name = "Uralskaya Armiya"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_PERM
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_PERM
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CHELYABINSK
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_CHELYABINSK
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_UFA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_SAMARA
+                count = 4
+            }
+        }
+    }
+
+    # ==================================================
+    # Baltic Governorates (UBD)
+    # Military Law: Professional Army
+    # Small puppet force
+    # Total Battalions: 8
+    # ==================================================
+    c:UBD ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_baltic_states
+            name = "Baltiyskaya Armiya"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_TALINN
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_RIGA
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_TARTU
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_RIGA
+                count = 1
+            }
+        }
+    }
+
 }

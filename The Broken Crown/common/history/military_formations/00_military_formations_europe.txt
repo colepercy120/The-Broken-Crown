@@ -224,4 +224,164 @@
         }
     }
 
+
+    # ==================================================
+    # France (FRA)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 140
+    # ==================================================
+    c:FRA ?= {
+
+        # --------------------------------------------------
+        # Armee du Nord
+        # Strategic Region: France
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_france
+            name = "Armee du Nord"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ILE_DE_FRANCE
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_ILE_DE_FRANCE
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_PICARDY
+                count = 10
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_FRENCH_LOW_COUNTRIES
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_FRENCH_LOW_COUNTRIES
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NORMANDY
+                count = 8
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BRITTANY
+                count = 8
+            }
+        }
+
+        # --------------------------------------------------
+        # Armee du Centre
+        # Strategic Region: France
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_france
+            name = "Armee du Centre"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ORLEANS
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_ORLEANS
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CHAMPAGNE
+                count = 8
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BURGUNDY
+                count = 8
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LORRAINE
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_LORRAINE
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_FRANCHE_COMTE
+                count = 3
+            }
+        }
+
+        # --------------------------------------------------
+        # Armee d'Occitanie
+        # Strategic Region: Occitania
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_occitania
+            name = "Armee d'Occitanie"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_PROVENCE
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_PROVENCE
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LANGUEDOC
+                count = 8
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_AQUITAINE
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_AQUITAINE
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_RHONE
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_GUYENNE
+                count = 6
+            }
+        }
+    }
+
 }

@@ -666,7 +666,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_livonia
+            hq_region = sr:region_baltic_states
             name = "Armia Litewska"
 
             # Lithuania

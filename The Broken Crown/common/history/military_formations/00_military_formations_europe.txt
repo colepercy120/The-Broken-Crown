@@ -532,4 +532,178 @@
         }
     }
 
+
+    # ==================================================
+    # Poland–Lithuania (PLC)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 110
+    # ==================================================
+    c:PLC ?= {
+
+        # --------------------------------------------------
+        # Wojsko Polskie — Main Polish Army
+        # Strategic Region: Poland
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_poland
+            name = "Wojsko Polskie"
+
+            # Warszawa (Greater Poland)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_GREATER_POLAND
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_GREATER_POLAND
+                count = 4
+            }
+
+            # Posen
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_POSEN
+                count = 10
+            }
+
+            # West Prussia
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_WEST_PRUSSIA
+                count = 4
+            }
+
+            # Lesser Poland (Lublin)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LESSER_POLAND
+                count = 10
+            }
+
+            # Mazovia (Plock)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MAZOVIA
+                count = 8
+            }
+
+            # West Galicia
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_WEST_GALICIA
+                count = 4
+            }
+
+            # Upper Silesia
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_UPPER_SILESIA
+                count = 6
+            }
+        }
+
+        # --------------------------------------------------
+        # Armia Dnieprowa — Dnieper Front Army
+        # Strategic Region: Dnieper
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_dnieper
+            name = "Armia Dnieprowa"
+
+            # Volhynia
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_VOLHYNIA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_VOLHYNIA
+                count = 3
+            }
+
+            # Kiev
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KIEV
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_KIEV
+                count = 4
+            }
+
+            # East Galicia
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_EAST_GALICIA
+                count = 3
+            }
+
+            # West Galicia (reinforcement overlap)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_WEST_GALICIA
+                count = 6
+            }
+
+            # Lower Silesia (strategic reserve edge)
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_LOWER_SILESIA
+                count = 4
+            }
+        }
+
+        # --------------------------------------------------
+        # Armia Litewska — Lithuanian Army
+        # Strategic Region: Livonia
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_livonia
+            name = "Armia Litewska"
+
+            # Lithuania
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LITHUANIA
+                count = 10
+            }
+
+            # Vilnius
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_VILNIUS
+                count = 4
+            }
+
+            # Hrodna
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_HRODNA
+                count = 8
+            }
+
+            # Minsk
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MINSK
+                count = 8
+            }
+
+            # Lithuania cavalry wing
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_LITHUANIA
+                count = 4
+            }
+        }
+    }
+
 }

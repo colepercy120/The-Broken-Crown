@@ -384,4 +384,152 @@
         }
     }
 
+
+    # ==================================================
+    # Italy (ITA)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 120
+    # ==================================================
+    c:ITA ?= {
+
+        # --------------------------------------------------
+        # Armee del Nord
+        # Strategic Region: Italy
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_italy
+            name = "Armee del Nord"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_PIEDMONT
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_PIEDMONT
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LOMBARDY
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_LOMBARDY
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_VENETIA
+                count = 10
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_EMILIA
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CORSICA
+                count = 6
+            }
+        }
+
+        # --------------------------------------------------
+        # Armee Centrale
+        # Strategic Region: Italy
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_italy
+            name = "Armee Centrale"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TUSCANY
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_TUSCANY
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LAZIO
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_LAZIO
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_UMBRIA
+                count = 6
+            }
+
+            # Marche
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_ABRUZZO
+                count = 3
+            }
+        }
+
+        # --------------------------------------------------
+        # Armee del Mezzogiorno
+        # Strategic Region: Italy
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_italy
+            name = "Armee del Mezzogiorno"
+
+            # Campania (Naples)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CAMPANIA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_CAMPANIA
+                count = 4
+            }
+
+            # Calabria
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CALABRIA
+                count = 8
+            }
+
+            # Sicily
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_SICILY
+                count = 4
+            }
+
+            # Sardinia
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SARDINIA
+                count = 6
+            }
+        }
+    }
+
 }

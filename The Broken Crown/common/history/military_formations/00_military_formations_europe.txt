@@ -183,7 +183,75 @@
                 count = 4
             }
         }
+
+        # --------------------------------------------------
+        # Sibirskaya Armiya (Siberian Army)
+        # Purpose: Frontier guard, colonial garrison, tripwire force
+        # Tech: Skirmish Infantry / Mobile Artillery / Cuirassers
+        # Total Battalions: 30
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_east_siberia
+            name = "Sibirskaya Armiya"
+
+            # Western Siberia - Tobolsk
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TOBOLSK
+                count = 5
+            }
+
+            # Central Siberia - Tomsk
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TOMSK
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_TOMSK
+                count = 2
+            }
+
+            # Yenisei / Irkutsk
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_IRKUTSK
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_UPPER_YENISEYSK
+                count = 2
+            }
+
+            # Transbaikal / Amur frontier
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TRANS_BAIKAL
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_YAKUTSK
+                count = 2
+            }
+
+            # Frontier cavalry (Cuirassers)
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_TRANSBAIKAL
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_KAMCHATKA
+                count = 2
+            }
+        }
     }
+
 
     # ==================================================
     # Baltic Governorates (UBD)
@@ -912,6 +980,145 @@
                 type = unit_type:combat_unit_type_lancers
                 state_region = s:STATE_SOUTHERN_TRANSYLVANIA
                 count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Byzantium (BYZ)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 90
+    # ==================================================
+    c:BYZ ?= {
+
+        # --------------------------------------------------
+        # Anatoliki Stratia (Eastern Army)
+        # Focus: Bulgaria, Eastern Serbia
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_balkans
+            name = "Anatoliki Stratia"
+
+            # Bulgaria
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BULGARIA
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_BULGARIA
+                count = 4
+            }
+
+            # Eastern Serbia
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SERBIA_EAST
+                count = 10
+            }
+
+            # Northern Bulgarian cavalry wing
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_SERBIA_EAST
+                count = 4
+            }
+
+            # Western Thrace
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_WESTERN_THRACE
+                count = 3
+            }
+        }
+
+        # --------------------------------------------------
+        # Voreia Stratia (Northern Army)
+        # Focus: Macedonia, Northern Greece
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_balkans
+            name = "Voreia Stratia"
+
+            # Macedonia
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MACEDONIA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_MACEDONIA
+                count = 4
+            }
+
+            # Northern Greece (Epirus/Thessaly/etc.)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_GREECE
+                count = 8
+            }
+
+            # Macedonia cavalry
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_MACEDONIA
+                count = 4
+            }
+
+            # Western Thrace overlap (reinforcement corridor)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_WESTERN_THRACE
+                count = 6
+            }
+        }
+
+        # --------------------------------------------------
+        # Elliniki Stratia (Hellenic Army)
+        # Focus: Greece proper
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_balkans
+            name = "Elliniki Stratia"
+
+            # Southern Greece
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_GREECE
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_GREECE
+                count = 4
+            }
+
+            # Islands (Ionian / Crete)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_IONIAN_ISLANDS
+                count = 4
+            }
+
+            # Southern cavalry detachment
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_GREECE
+                count = 4
+            }
+
+            # Macedonia reinforcement overlap
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MACEDONIA
+                count = 6
             }
         }
     }

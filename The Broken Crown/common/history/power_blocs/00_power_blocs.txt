@@ -1,21 +1,25 @@
 ﻿POWER_BLOCS = {
 	c:GBR = {
 		create_power_bloc = {
-			name = BRITISH_EMPIRE
+			name = GRAND_ALLIANCE
 			map_color = hsv{ 0.99  0.7  0.9 }
 
 			founding_date = 1784.5.12 # Treaty of Paris (1783) comes into effect
-			identity = identity_ideological_union
-			principle = principle_creative_legislature_1
+			identity = identity_military_treaty_organization
+			principle = principle_aggressive_coordination_2
 
 			# subjects are automatically part of the bloc
+			member = c:PLC
+			member = c:ITA
+			member = c:NET
+			member = c:HAI
 		}
 		if = {
 			limit = {
 				has_dlc_feature = power_bloc_features
 			}
 			power_bloc = {
-				add_principle = principle_colonial_offices_2
+				add_principle = principle_ideological_truth_1
 			}
 		}
 	}
@@ -168,3 +172,25 @@
 #		}
 #	}
 #}
+
+c:SPA = {
+		create_power_bloc = {
+			name = SPANISH_CROWN
+
+			map_color = hsv360{ 38  97  83 }
+
+			founding_date = 1492.10.12 # Coronation of Nicholas I
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+
+			
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_defensive_cooperation_1
+			}
+		}
+	}

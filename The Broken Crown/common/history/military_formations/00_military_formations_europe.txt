@@ -706,4 +706,214 @@
         }
     }
 
+
+    # ==================================================
+    # Austria (AUS)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 45
+    # ==================================================
+    c:AUS ?= {
+
+        # --------------------------------------------------
+        # Kaiserliche Armee
+        # Strategic Region: Austria
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_south_germany
+            name = "Kaiserliche Armee"
+
+            # Lower Austria (Vienna)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_AUSTRIA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_AUSTRIA
+                count = 4
+            }
+
+            # Upper Austria
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TYROL
+                count = 6
+            }
+
+            # Bohemia (Czechia)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BOHEMIA
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_BOHEMIA
+                count = 3
+            }
+
+            # Moravia
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_MORAVIA
+                count = 5
+            }
+
+            # South Tyrol
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SOUTH_TYROL
+                count = 6
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Hungary (HUN)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 30
+    # ==================================================
+    c:HUN ?= {
+
+        # --------------------------------------------------
+        # Magyar Honvedseg
+        # Strategic Region: Hungary
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_danubia
+            name = "Magyar Honvedseg"
+
+            # Central Hungary (Budapest)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CENTRAL_HUNGARY
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_CENTRAL_HUNGARY
+                count = 3
+            }
+
+            # Slovakia
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SLOVAKIA
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_SLOVAKIA
+                count = 4
+            }
+
+            # Vojvodina / North Balkans
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_DELVIDEK
+                count = 3
+            }
+
+            # Western Hungary Interior
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TRANSDANUBIA
+                count = 4
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Croatia (CRO)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 15
+    # ==================================================
+    c:CRO ?= {
+
+        # --------------------------------------------------
+        # Hrvatska Vojska
+        # Strategic Region: Balkans
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_balkans
+            name = "Hrvatska Vojska"
+
+            # Croatia proper
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CROATIA
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_CROATIA
+                count = 2
+            }
+
+            # Bosnia
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_BOSNIA
+                count = 3
+            }
+
+            # Kosovo / Albania frontier
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ALBANIA
+                count = 4
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Transylvania (TRA)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 10
+    # ==================================================
+    c:TRA ?= {
+
+        # --------------------------------------------------
+        # Ardealului Armata
+        # Strategic Region: Transylvania
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_danubia
+            name = "Ardealului Armata"
+
+            # Central Transylvania
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NORTHERN_TRANSYLVANIA
+                count = 7
+            }
+
+            # Artillery
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_SOUTHERN_TRANSYLVANIA
+                count = 2
+            }
+
+            # Cavalry
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_SOUTHERN_TRANSYLVANIA
+                count = 1
+            }
+        }
+    }
+
 }

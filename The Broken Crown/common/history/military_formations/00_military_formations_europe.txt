@@ -877,12 +877,12 @@
 
 
     # ==================================================
-    # Transylvania (TRA)
+    # Transylvania (TRS)
     # Military Law: Professional Army
     # Tech: Skirmish Infantry / Mobile Artillery / Lancers
     # Total Battalions: 10
     # ==================================================
-    c:TRA ?= {
+    c:TRS ?= {
 
         # --------------------------------------------------
         # Ardealului Armata

@@ -321,7 +321,7 @@ je_alaska_expansion_canada = {
 	}
 
 	on_complete = {
-		trigger_event = { id = manifest_destiny.4 }
+		trigger_event = { id = alaska.12 }
 		
 	}
 
@@ -358,7 +358,7 @@ je_alaska_expansion_pacific = {
 	}
 
 	on_complete = {
-		trigger_event = { id = manifest_destiny.4 }
+		trigger_event = { id = alaska.13 }
 		
 	}
 

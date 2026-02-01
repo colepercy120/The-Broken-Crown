@@ -376,3 +376,90 @@ alaska.11 = {
 		
 	}
 }
+
+alaska.12 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = alaska.12.t
+	desc = alaska.12.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = alaska.12.a
+		default_option = yes
+		s:STATE_SASKATCHEWAN = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_ALBERTA = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_MANITOBA = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_NUNAVUT = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_NORTHWEST_TERRITORIES = {
+			add_homeland = cu:alaskan
+		}
+		
+	}
+}
+alaska.13 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = alaska.13.t
+	desc = alaska.13.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = alaska.13.a
+		default_option = yes
+		s:STATE_CALIFORNIA = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_NEVADA = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_BAJA_CALIFORNIA = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_UTAH = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_ARIZONA = {
+			add_homeland = cu:alaskan
+		}
+		s:STATE_SONORA = {
+			add_homeland = cu:alaskan
+		}
+	}
+}

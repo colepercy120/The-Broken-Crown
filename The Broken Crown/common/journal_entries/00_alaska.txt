@@ -235,7 +235,15 @@ je_alaska_settle_interior = {
 
 	on_complete = {
 		trigger_event = { id = alaska.10 }
-		
+		show_as_tooltip = {
+			add_modifier = {
+				name = alaska_settled
+				years = 20 
+ 
+				is_decaying = yes 
+			}
+			add_journal_entry = { type = je_alaska_national_identity }
+		}
 	}
 
 	modifiers_while_active = {
@@ -249,7 +257,7 @@ je_alaska_settle_interior = {
 }
 
 je_alaska_national_identity = {
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_objectives
 	
@@ -283,7 +291,14 @@ je_alaska_national_identity = {
 
 	on_complete = {
 		trigger_event = { id = alaska.11 }
-		
+		show_as_tooltip = {
+			add_modifier = {
+				name = alaska_culture
+				years = 20 
+ 
+				is_decaying = yes 
+			}
+		}
 	}
 
 	modifiers_while_active = {
@@ -297,7 +312,7 @@ je_alaska_national_identity = {
 }
 
 je_alaska_expansion_canada = {
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	group = je_group_usa_manifest_destiny
 	
@@ -322,7 +337,23 @@ je_alaska_expansion_canada = {
 
 	on_complete = {
 		trigger_event = { id = alaska.12 }
-		
+		show_as_tooltip = {
+			s:STATE_SASKATCHEWAN = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_ALBERTA = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_MANITOBA = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_NUNAVUT = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_NORTHWEST_TERRITORIES = {
+				add_homeland = cu:alaskan
+			}
+		}
 	}
 
 	
@@ -333,7 +364,7 @@ je_alaska_expansion_canada = {
 	should_be_pinned_by_default = no
 }
 je_alaska_expansion_pacific = {
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	group = je_group_usa_manifest_destiny
 	
@@ -359,7 +390,26 @@ je_alaska_expansion_pacific = {
 
 	on_complete = {
 		trigger_event = { id = alaska.13 }
-		
+		show_as_tooltip = {
+			s:STATE_CALIFORNIA = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_NEVADA = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_BAJA_CALIFORNIA = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_UTAH = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_ARIZONA = {
+				add_homeland = cu:alaskan
+			}
+			s:STATE_SONORA = {
+				add_homeland = cu:alaskan
+			}
+		}
 	}
 
 	

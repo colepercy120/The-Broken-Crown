@@ -323,7 +323,7 @@ alaska.10 = {
 
 	title = alaska.10.t
 	desc = alaska.10.d
-	flavor = alaska.10.f
+	
 
 	duration = 3
 
@@ -357,7 +357,7 @@ alaska.11 = {
 
 	title = alaska.11.t
 	desc = alaska.11.d
-	flavor = alaska.11.f
+	
 
 	duration = 3
 

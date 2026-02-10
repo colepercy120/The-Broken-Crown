@@ -50,6 +50,10 @@
 
 	on_complete = {
 		trigger_event = { id = manifest_destiny.7 }
+		show_as_tooltip = {
+			add_journal_entry = { type = je_empire_liberty_east }
+			add_journal_entry = { type = je_empire_liberty_west }
+		}
 	}
 
 	weight = 100

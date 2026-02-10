@@ -1,0 +1,97 @@
+﻿
+je_empire_liberty_east = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_usa_manifest_destiny
+	
+	
+
+	# note that if you change this, also update the decision
+	complete = {
+		country_rank >= rank_value:great_power
+		is_power_bloc_leader = yes
+		
+		owns_entire_state_region = STATE_GREENLAND
+		owns_entire_state_region = STATE_BERMUDA
+		OR = {
+			owns_entire_state_region = STATE_ICELAND
+			owns_entire_state_region = STATE_AZORES
+		}
+		any_state_region = {
+			filter = {
+				OR = {
+					is_in_geographic_region = geographic_region_europe
+					is_in_geographic_region = geographic_region_africa
+				}
+				NOT = {
+					this = s:STATE_GREENLAND
+					this = s:STATE_BERMUDA
+					this = s:STATE_ICELAND
+					this = s:STATE_AZORES
+				}
+			}
+			count >= 10
+			any_scope_state = {
+				OR = {
+					owner = root
+					owner = {
+						OR = { 
+							any_overlord_or_above = { this = root }
+							is_in_same_power_bloc = root
+						}
+						
+					}
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny.6 }
+		
+	}
+
+	
+
+	weight = 100
+
+	transferable = no
+	should_be_pinned_by_default = yes
+}
+
+je_empire_liberty_west = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_usa_manifest_destiny
+	
+	
+
+	# note that if you change this, also update the decision
+	complete = {
+		calc_true_if = {
+			amount > 4
+			owns_entire_state_region = STATE_WESTERN_CUBA
+			owns_entire_state_region = STATE_CENTRAL_CUBA
+			owns_entire_state_region = STATE_EASTERN_CUBA
+			owns_entire_state_region = STATE_BAHAMAS
+			owns_entire_state_region = STATE_JAMAICA
+			owns_entire_state_region = STATE_SANTO_DOMINGO
+			owns_entire_state_region = STATE_HAITI
+			owns_entire_state_region = STATE_WEST_INDIES
+			owns_entire_state_region = STATE_PUERTO_RICO
+		}
+		
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny.6 }
+		
+	}
+
+	
+
+	weight = 100
+
+	transferable = no
+	should_be_pinned_by_default = yes
+}

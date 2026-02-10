@@ -543,6 +543,7 @@ manifest_destiny.7 = {
 	option = {
 		name = manifest_destiny.7.a
 		default_option = yes
-		
+		add_journal_entry = { type = je_empire_liberty_east }
+		add_journal_entry = { type = je_empire_liberty_west }
 	}
 }

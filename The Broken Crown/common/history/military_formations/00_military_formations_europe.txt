@@ -1123,4 +1123,1197 @@
         }
     }
 
+
+    # ==================================================
+    # Great Britain (GBR)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 80
+    # ==================================================
+    c:GBR ?= {
+
+        # --------------------------------------------------
+        # 1. Southern Army
+        # HQ: England SR
+        # Focus: London, Home Counties, West Country
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_england
+            name = "Southern Army"
+
+            # London
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_YORKSHIRE
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_YORKSHIRE
+                count = 4
+            }
+
+            # Home Counties
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_HOME_COUNTIES
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_HOME_COUNTIES
+                count = 3
+            }
+
+            # West Country
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_WEST_COUNTRY
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_WEST_COUNTRY
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # 2. Midlands Army
+        # HQ: England SR
+        # Focus: Midlands, Wales, Northern England
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_england
+            name = "Midlands Army"
+
+            # Midlands
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_EAST_ANGLIA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_EAST_ANGLIA
+                count = 3
+            }
+
+            # Wales
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_WALES
+                count = 6
+            }
+
+            # Northern England
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LANCASHIRE
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_LANCASHIRE
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_LANCASHIRE
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # 3. Northern Army
+        # HQ: North Sea Coast SR
+        # Focus: Scotland (Lowlands + Highlands)
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_sea_coast
+            name = "Northern Army"
+
+            # Scotland — Lowlands
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LOWLANDS
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_LOWLANDS
+                count = 3
+            }
+
+            # Scotland — Highlands
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_HIGHLANDS
+                count = 7
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_HIGHLANDS
+                count = 4
+            }
+        }
+    }
+
+    # ==================================================
+    # Kingdom of Spain (SPA)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 60
+    # ==================================================
+    c:SPA ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_iberia
+            name = Guardia_Real
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NEW_CASTILE
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_OLD_CASTILE
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_OLD_CASTILE
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_OLD_CASTILE
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_NEW_CASTILE
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_EXTREMADURA
+                count = 1
+            }
+        }
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_iberia
+            name = Ejercito_del_Norte
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_GALICIA
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LOWER_ANDALUSIA
+                count = 5
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_UPPER_ANDALUSIA
+                count = 3
+            }
+
+            combat_unit = { # Fijo de Ceuta
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_AL_RIF
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_VALENCIA
+                count = 4
+            }
+
+            combat_unit = { # Húsares de la Princesa
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_OLD_CASTILE
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_VALENCIA
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_NEW_CASTILE
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_OLD_CASTILE
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_EXTREMADURA
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_NEW_CASTILE
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_GALICIA
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_CATALONIA
+                count = 1
+            }
+        }
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_iberia
+            name = Ejercito_del_Centro
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CATALONIA
+                count = 7
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ARAGON
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_CATALONIA
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_LOWER_ANDALUSIA
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_VALENCIA
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_UPPER_ANDALUSIA
+                count = 2
+            }
+        }
+    }
+
+    # ==================================================
+    # Carlist Spain (SPC)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 60
+    # ==================================================
+    c:SPC ?= {
+
+        # Army of the North
+        create_military_formation = {
+            name = "Carlist_Army_of_the_North"
+            type = army
+            hq_region = sr:region_iberia
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BASQUE_COUNTRY
+                count = 26
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_BASQUE_COUNTRY
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_BASQUE_COUNTRY
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_BASQUE_COUNTRY
+                count = 1
+            }
+        }
+
+        # Army of Maestrazgo
+        create_military_formation = {
+            name = "Army_of_Maestrazgo"
+            type = army
+            hq_region = sr:region_iberia
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ARAGON
+                count = 12
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BASQUE_COUNTRY
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_BASQUE_COUNTRY
+                count = 1
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_BASQUE_COUNTRY
+                count = 1
+            }
+        }
+
+        # Army of Catalonia
+        create_military_formation = {
+            name = "Army_of_Catalonia"
+            type = army
+            hq_region = sr:region_iberia
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BASQUE_COUNTRY
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CATALONIA
+                count = 8
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Portugal (POR) - European Army
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions in Europe: 50
+    # ==================================================
+    c:POR ?= {
+
+        # --------------------------------------------------
+        # Exército de Lisboa
+        # HQ: Portugal SR
+        # Core metropolitan army; capital defense
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_portugal
+            name = "Exercito_de_Lisboa"
+
+            # Lisbon
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ESTREMADURA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_ESTREMADURA
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BEIRA
+                count = 6
+            }
+
+            # Lisbon cavalry detachment
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_ESTREMADURA
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # Exército do Norte
+        # HQ: Portugal SR
+        # Controls the Porto / Minho region
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_portugal
+            name = "Exercito_do_Norte"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BEIRA
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_BEIRA
+                count = 3
+            }
+
+            # Northern interior (Minho / Alto Douro)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ENTRE_DOURO_E_MINHO
+                count = 5
+            }
+
+            # Northern cavalry squadron
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_ENTRE_DOURO_E_MINHO
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # Exército do Sul
+        # HQ: Portugal SR
+        # Covers Alentejo & Algarve; Peninsular frontier force
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_portugal
+            name = "Exercito_do_Sul"
+
+            # Alentejo
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ALENTEJO
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_ALENTEJO
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ENTRE_DOURO_E_MINHO
+                count = 4
+            }
+
+            # Southern cavalry detachment
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_ALENTEJO
+                count = 2
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Prussia (PRU)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 40
+    # ==================================================
+    c:PRU ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_germany
+            name = "Armee Nord"
+
+            # Brandenburg
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BRANDENBURG
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_BRANDENBURG
+                count = 3
+            }
+
+            # Pomerania
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_POMERANIA
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_POMERANIA
+                count = 2
+            }
+        }
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_poland
+            name = "Armee Ost"
+
+            # East Prussia – infantry core
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_EAST_PRUSSIA
+                count = 10
+            }
+
+            # East Prussia – artillery & cavalry
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_EAST_PRUSSIA
+                count = 5
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_EAST_PRUSSIA
+                count = 4
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Hanover (HAN)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 35
+    # ==================================================
+    c:HAN ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_germany
+            name = "Hannoversche Armee"
+
+            # Hanover core
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_HANOVER
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_HANOVER
+                count = 4
+            }
+
+            # Elbe region
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ELBE
+                count = 7
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_ELBE
+                count = 3
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Rhineland (RHE)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 32
+    # ==================================================
+    c:RHE ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_rhine
+            name = "Rheinische_Armee"
+
+            # Rhineland
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_RHINELAND
+                count = 8
+            }
+
+            # North Rhine
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NORTH_RHINE
+                count = 7
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_NORTH_RHINE
+                count = 3
+            }
+
+            # Ruhr (industrial heart -> more artillery)
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_RUHR
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_RUHR
+                count = 2
+            }
+
+            # Reserve infantry
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_RUHR
+                count = 4
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Westphalia (WES)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 30
+    # ==================================================
+    c:WES ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_rhine
+            name = "Westfalische Armee"
+
+            # Westphalia infantry
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_WESTPHALIA
+                count = 12
+            }
+
+            # Artillery
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_WESTPHALIA
+                count = 6
+            }
+
+            # Cavalry
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_WESTPHALIA
+                count = 4
+            }
+
+            # Extra infantry
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_WESTPHALIA
+                count = 8
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Bavaria (BAV)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 38
+    # ==================================================
+    c:BAV ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_south_germany
+            name = "Bayerische Armee"
+
+            # Bavaria (core)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BAVARIA
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_BAVARIA
+                count = 4
+            }
+
+            # Franconia (north Bavaria)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_FRANCONIA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_FRANCONIA
+                count = 4
+            }
+
+            # Cavalry reserve
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_FRANCONIA
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_BAVARIA
+                count = 3
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Netherlands (NET)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 25
+    # ==================================================
+    c:NET ?= {
+
+        # --------------------------------------------------
+        # Nederlands Noorderleger (Northern Army)
+        # HQ: Rhine SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_rhine
+            name = "Nederlands Noorderleger"
+
+            # Friesland
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_FRIESLAND
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_FRIESLAND
+                count = 2
+            }
+
+            # Gelre
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_GELRE
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_GELRE
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # Nederlands Zuidleger (Southern Army)
+        # HQ: Rhine SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_rhine
+            name = "Nederlands Zuidleger"
+
+            # Holland (core population)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_HOLLAND
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_HOLLAND
+                count = 3
+            }
+
+            # Holland cavalry garrison
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_HOLLAND
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Belgium (BEL)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 22
+    # ==================================================
+    c:BEL ?= {
+
+        # --------------------------------------------------
+        # Belgisch Leger (Belgian Army)
+        # HQ: Rhine SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_rhine
+            name = "Belgisch Leger"
+
+            # Flanders (industrial coast)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_FLANDERS
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_FLANDERS
+                count = 2
+            }
+
+            # Wallonia (heavily industrial; more artillery)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_WALLONIA
+                count = 7
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_WALLONIA
+                count = 3
+            }
+
+            # Cavalry split between both
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_FLANDERS
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_WALLONIA
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Denmark (DEN)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 15
+    # ==================================================
+    c:DEN ?= {
+
+        # --------------------------------------------------
+        # Danske Hæren (Danish Army)
+        # HQ: Scandinavia SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_baltic
+            name = "Danske Hæren"
+
+            # Sjælland (core)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SJAELLAND
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_SJAELLAND
+                count = 2
+            }
+
+            # Jylland
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_JYLLAND
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_JYLLAND
+                count = 2
+            }
+
+            # Iceland garrison
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ICELAND
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Sweden (SWE)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Finland merged into Sweden; Total Battalions: 13
+    # ==================================================
+    c:SWE ?= {
+
+        # --------------------------------------------------
+        # Svenska Armén (Swedish Army)
+        # HQ: Scandinavia SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_baltic
+            name = "Svenska Armen"
+
+            # Uppland (Swedish core)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_UPPLAND
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_UPPLAND
+                count = 1
+            }
+
+            # Norrland
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NORRLAND
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_NORRLAND
+                count = 1
+            }
+
+            # Finland (absorbed from FIN)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SOUTH_FINLAND
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_SOUTH_FINLAND
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_NORTH_FINLAND
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Norway (NOR)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 8
+    # ==================================================
+    c:NOR ?= {
+
+        # --------------------------------------------------
+        # Norske Hæren (Norwegian Army)
+        # HQ: Scandinavia SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_baltic
+            name = "Norske Hæren"
+
+            # Southern Norway
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_EASTERN_NORWAY
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_WESTERN_NORWAY
+                count = 1
+            }
+
+            # Northern Norway
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NORTHERN_NORWAY
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_NORTHERN_NORWAY
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Schleswig (SCH)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cuirassers
+    # Total Battalions: 3
+    # ==================================================
+    c:SCH ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_germany
+            name = "Schleswiger_Armee"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_SCHLESWIG_HOLSTEIN
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_SCHLESWIG_HOLSTEIN
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_SCHLESWIG_HOLSTEIN
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Holstein (HOL)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cuirassers
+    # Total Battalions: 3
+    # ==================================================
+    c:HOL ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_germany
+            name = "Holsteiner_Armee"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_SCHLESWIG_HOLSTEIN
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_SCHLESWIG_HOLSTEIN
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_SCHLESWIG_HOLSTEIN
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Ireland (IRE)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 12
+    # ==================================================
+    c:IRE ?= {
+
+        # --------------------------------------------------
+        # Arm na hÉireann (Army of Ireland)
+        # HQ: North Sea SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_sea_coast
+            name = "Arm na hÉireann"
+
+            # Leinster (Dublin core)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LEINSTER
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_LEINSTER
+                count = 1
+            }
+
+            # Munster
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MUNSTER
+                count = 2
+            }
+
+            # Ulster
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ULSTER
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_ULSTER
+                count = 1
+            }
+
+            # Connaught (light cavalry)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CONNaught
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_CONNaught
+                count = 1
+            }
+        }
+    }
+
+
 }

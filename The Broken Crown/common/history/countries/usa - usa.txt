@@ -57,6 +57,7 @@
 		
 		add_journal_entry = { type = je_seminole_wars }
 		add_journal_entry = { type = je_manifest_destiny_main }
+		add_journal_entry = { type = je_usa_civil_rights }
 
 		
 		

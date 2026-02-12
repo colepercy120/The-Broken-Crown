@@ -153,30 +153,30 @@
 		}
 	}
 	s:STATE_ARMENIA={
-		region_state:RUS={
+		region_state:CAU={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:RUS"
+						country="c:CAU"
 						levels=2
 						region="STATE_ARMENIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citCAU_orchards" }
 			}
 		}
 	}
 	s:STATE_AZERBAIJAN={
-		region_state:RUS={
+		region_state:CAU={
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:RUS"
+						country="c:CAU"
 						levels=1
 						region="STATE_AZERBAIJAN"
 					}
@@ -189,7 +189,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:RUS"
+						country="c:CAU"
 						levels=2
 						region="STATE_AZERBAIJAN"
 					}
@@ -200,13 +200,13 @@
 		}
 	}
 	s:STATE_GREATER_CAUCASUS={
-		region_state:RUS={
+		region_state:CAU={
 			create_building={
 				building="building_textile_mill"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:RUS"
+						country="c:CAU"
 						levels=1
 						region="STATE_GREATER_CAUCASUS"
 					}

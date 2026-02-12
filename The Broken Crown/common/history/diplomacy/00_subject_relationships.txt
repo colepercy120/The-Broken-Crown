@@ -92,6 +92,10 @@
 			type = puppet
 		}
 		create_diplomatic_pact = {
+			country = c:CAU
+			type = personal_union
+		}
+		create_diplomatic_pact = {
 			country = c:MCH
 			type = puppet
 		}
@@ -109,6 +113,10 @@
 		}
 		create_diplomatic_pact = {
 			country = c:OZH
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:ASS
 			type = protectorate
 		}
 	}
@@ -492,6 +500,10 @@
 		# Tahiti
 		create_diplomatic_pact = {
 			country = c:PLY
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:IRE
 			type = protectorate
 		}
 	}

@@ -2249,7 +2249,7 @@
 		}
 	}
 	s:STATE_ELIZAVETPOL={
-		region_state:RUS={
+		region_state:CAU={
 		}
 	}
 	s:STATE_STAVROPOL={

@@ -311,3 +311,48 @@ NTE = {
 	cultures = { mexican }
 	capital = STATE_SINALOA
 }
+
+REPLACE:TEX = {
+	color = { 4  39  104 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { mexican dixie }
+	capital = STATE_TEXAS
+	is_named_from_capital = yes
+}
+
+REPLACE:CAU = {
+	color = { 200 100 55 }
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { russian armenian georgian azerbaijani }
+	capital = STATE_GREATER_CAUCASUS
+}
+
+REPLACE:SAF = {
+	color = { 180  158  127 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { dutch boer }
+	capital = STATE_CAPE_COLONY
+}
+
+REPLACE:BCE = { # British Ceylon
+	color = { 0 51 102 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_CEYLON
+	cultures = { dutch }
+}

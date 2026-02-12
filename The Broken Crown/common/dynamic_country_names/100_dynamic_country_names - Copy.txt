@@ -266,7 +266,7 @@ RME = {
 }
 
 
-DEFAULT = {
+INJECT:DEFAULT = {
 
 		dynamic_country_name = {
 		name = colonial_admin_indonesia
@@ -1226,7 +1226,7 @@ ZAP = {
 	}
 }
 
-CRO = { # Illyria
+INJECT:CRO = { # Illyria
 	dynamic_country_name = {
 		name = dyn_c_illyria
 		adjective = dyn_c_illyria_adj
@@ -1335,6 +1335,79 @@ CUB = { # Ontario
 				owns_entire_state_region = STATE_EASTERN_CUBA
 				owns_entire_state_region = STATE_CENTRAL_CUBA
 				owns_entire_state_region = STATE_PUERTO_RICO
+			}
+		}
+	}
+}
+
+REPLACE:GBR = { # Great Britain of United Kingdom
+	dynamic_country_name = {
+		name = dyn_c_british_commonwealth
+		adjective = dyn_c_british_commonwealth_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			scope:actor ?= { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_british_commonwealth
+		adjective = dyn_c_british_commonwealth_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_greater_manchester
+		adjective = dyn_c_greater_manchester_adj
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			NOT = { has_game_rule = plausible_formable_nations }
+			scope:actor ?= {
+				NOT = { has_law_or_variant = law_type:law_council_republic }
+				exists = capital
+				capital = { state_region = s:STATE_LANCASHIRE }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_mancunian_commune
+		adjective = dyn_c_mancunian_commune_adj
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			scope:actor ?= {
+				exists = capital
+				capital = { state_region = s:STATE_LANCASHIRE }
+			}
+		}
+	}
+}
+
+INJECT:USA = { # United States of America
+	dynamic_country_name = {
+		name = dyn_c_united_states_earth
+		adjective = dyn_c_united_states_earth_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			any_state = {
+				percent > 0.9
+				owner = c:USA
 			}
 		}
 	}

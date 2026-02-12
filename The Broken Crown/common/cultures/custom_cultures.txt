@@ -1,7 +1,7 @@
 ﻿caribbean= { # "English" in localization
 	color= rgb{ 210 156 140 }
 	religion = protestant
-	heritage = heritage_british
+	heritage = heritage_north_american_settler
 	language = language_anglophone
 	
 	obsessions = {
@@ -144,7 +144,7 @@
 antillean= {
 	color= rgb{ 76 118 155 }
 	religion = catholic
-	heritage = heritage_gallic
+	heritage = heritage_north_american_settler
 	language = language_francophone
 	
 	obsessions = {
@@ -263,7 +263,7 @@ antillean= {
 alaskan= {
 	color= rgb{ 144 3 252 }
 	religion = orthodox
-	heritage = heritage_east_slavic
+	heritage = heritage_north_american_settler
 	language = language_east_slavic
 
 	obsessions = {

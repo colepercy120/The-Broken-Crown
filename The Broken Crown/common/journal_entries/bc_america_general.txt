@@ -121,3 +121,47 @@ je_empire_liberty_west = {
 	transferable = no
 	should_be_pinned_by_default = yes
 }
+
+je_usa_civil_rights = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	group = je_group_usa_american_civil_war
+
+	is_shown_in_lobby = {
+		c:USA = THIS
+	}
+
+	complete = {
+		country_average_culture_pop_acceptance = {
+			culture = cu:afro_american
+			value >= 60
+		}
+	}
+
+	on_complete = {
+		add_primary_culture = cu:afro_american
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			180 = 0
+			
+			60 = acw_followup_events.5 # Supremacist Violence
+			
+		}
+	}
+
+	
+
+	invalid = {
+		NOT = {
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:afro_american
+				}
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}

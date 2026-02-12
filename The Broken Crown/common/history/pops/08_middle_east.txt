@@ -1592,7 +1592,7 @@
 		}
 	}
 	s:STATE_TRABZON = {
-		region_state:RUS = {
+		region_state:CAU = {
 			create_pop = {
 				culture = turkish
 				size = 678712
@@ -1633,7 +1633,7 @@
 		}
 	}
 	s:STATE_ERZURUM = {
-		region_state:RUS = {
+		region_state:CAU = {
 			create_pop = {
 				culture = turkish
 				size = 244045
@@ -1687,7 +1687,7 @@
 		}
 	}
 	s:STATE_KARS = {
-		region_state:RUS = {
+		region_state:CAU = {
 			create_pop = {
 				culture = turkish
 				size = 61000

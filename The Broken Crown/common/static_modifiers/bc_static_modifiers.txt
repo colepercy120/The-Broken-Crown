@@ -23,3 +23,23 @@ alaska_culture = {
 	
 	country_prestige_add = 25
 }
+
+sea_to_shining_sea = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	
+	state_migration_pull_mult = 0.1
+	country_prestige_add = 100
+}
+
+empire_of_liberty_east = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	
+	state_migration_pull_mult = 0.1
+	country_prestige_add = 100
+}
+empire_of_liberty_west = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	
+	state_migration_pull_mult = 0.1
+	country_prestige_add = 100
+}

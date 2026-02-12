@@ -30,7 +30,7 @@ je_empire_liberty_east = {
 					this = s:STATE_AZORES
 				}
 			}
-			count >= 10
+			count >= 15
 			any_scope_state = {
 				OR = {
 					owner = root
@@ -47,7 +47,7 @@ je_empire_liberty_east = {
 	}
 
 	on_complete = {
-		trigger_event = { id = manifest_destiny.6 }
+		trigger_event = { id = manifest_destiny.8 }
 		
 	}
 
@@ -68,23 +68,49 @@ je_empire_liberty_west = {
 
 	# note that if you change this, also update the decision
 	complete = {
-		calc_true_if = {
-			amount > 4
-			owns_entire_state_region = STATE_WESTERN_CUBA
-			owns_entire_state_region = STATE_CENTRAL_CUBA
-			owns_entire_state_region = STATE_EASTERN_CUBA
-			owns_entire_state_region = STATE_BAHAMAS
-			owns_entire_state_region = STATE_JAMAICA
-			owns_entire_state_region = STATE_SANTO_DOMINGO
-			owns_entire_state_region = STATE_HAITI
-			owns_entire_state_region = STATE_WEST_INDIES
-			owns_entire_state_region = STATE_PUERTO_RICO
-		}
+		country_rank >= rank_value:great_power
+		is_power_bloc_leader = yes
 		
+		owns_entire_state_region = STATE_HAWAIIAN_ISLANDS
+		
+		OR = {
+			owns_entire_state_region = STATE_FORMOSA
+			owns_entire_state_region = STATE_KYUSHU
+			owns_entire_state_region = STATE_LUZON
+			owns_entire_state_region = STATE_WEST_JAVA
+			owns_entire_state_region = STATE_NEW_SOUTH_WALES
+		}
+		any_state_region = {
+			filter = {
+				OR = {
+					is_in_geographic_region = geographic_region_east_asia
+					custom_tooltip = {
+						text = "Is in Oceania"
+						region = sr:region_oceania
+					}
+				}
+				NOT = {
+					this = s:STATE_HAWAIIAN_ISLANDS
+				}
+			}
+			count >= 15
+			any_scope_state = {
+				OR = {
+					owner = root
+					owner = {
+						OR = { 
+							any_overlord_or_above = { this = root }
+							is_in_same_power_bloc = root
+						}
+						
+					}
+				}
+			}
+		}
 	}
 
 	on_complete = {
-		trigger_event = { id = manifest_destiny.6 }
+		trigger_event = { id = manifest_destiny.9 }
 		
 	}
 

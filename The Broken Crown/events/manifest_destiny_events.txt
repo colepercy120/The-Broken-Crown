@@ -543,7 +543,78 @@ manifest_destiny.7 = {
 	option = {
 		name = manifest_destiny.7.a
 		default_option = yes
+		add_modifier = {
+			name = sea_to_shining_sea
+			years = 50 
+ 
+			is_decaying = yes 
+		}
 		add_journal_entry = { type = je_empire_liberty_east }
 		add_journal_entry = { type = je_empire_liberty_west }
+	}
+}
+
+manifest_destiny.8 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = manifest_destiny.8.t
+	desc = manifest_destiny.8.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = manifest_destiny.8.a
+		default_option = yes
+		add_modifier = {
+			name = empire_of_liberty_east
+			years = 50 
+ 
+			is_decaying = yes 
+		}
+	}
+}
+manifest_destiny.9 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = manifest_destiny.9.t
+	desc = manifest_destiny.9.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = manifest_destiny.9.a
+		default_option = yes
+		add_modifier = {
+			name = empire_of_liberty_west
+			years = 50 
+ 
+			is_decaying = yes 
+		}
 	}
 }

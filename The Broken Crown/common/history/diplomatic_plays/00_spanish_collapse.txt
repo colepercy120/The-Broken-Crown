@@ -1,0 +1,46 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:MEX ?= {
+		create_diplomatic_play = {
+			name = mexican_war_of_independence
+
+			target_country = c:SPA
+			
+			add_initiator_backers = { c:GCO c:PLT c:CHL}
+
+			war = yes
+
+			type = dp_independence
+
+			add_war_goal = {
+				holder = c:GCO
+				type = independence
+				target_country = c:SPA
+				primary_demand = yes
+			}
+			add_war_goal = {
+				holder = c:PLT
+				type = independence
+				target_country = c:SPA
+				primary_demand = yes
+			}
+			add_war_goal = {
+				holder = c:CHL
+				type = independence
+				target_country = c:PEU
+				primary_demand = yes
+			}
+			add_war_goal = {
+				holder = c:MEX
+				type = liberate_subject
+				target_country = c:CUB
+				primary_demand = yes
+			}
+			add_war_goal = {
+				holder = c:GCO
+				type = liberate_subject
+				target_country = c:PEU
+				primary_demand = yes
+			}
+		}
+	}
+}

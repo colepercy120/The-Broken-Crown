@@ -1,0 +1,184 @@
+﻿namespace = spanish_collapse
+
+# Completed Mexico JE
+spanish_collapse.1 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.1.t
+	desc = spanish_collapse.1.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.1.a
+		default_option = yes
+		add_journal_entry = { type = je_mexico_consolidate }
+	}
+}
+
+# Texan Independence
+spanish_collapse.2 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.2.t
+	desc = spanish_collapse.2.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.2.a
+		c:USA = {
+			trigger_event = spanish_collapse.4
+		}
+		
+		
+	}
+	option = {
+		name = spanish_collapse.2.b
+		c:MEX = {
+			trigger_event = spanish_collapse.4
+		}
+		
+		
+	}
+	option = {
+		name = spanish_collapse.2.c
+		default_option = yes
+		make_independent = yes
+		add_journal_entry = { type = je_texas_consolidate }
+	}
+}
+
+# Guatamalan Independence
+spanish_collapse.3 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.3.t
+	desc = spanish_collapse.3.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.3.a
+		default_option = yes
+		make_independent = yes
+		add_journal_entry = { type = je_central_america_consolidate }
+	}
+	
+	option = {
+		name = spanish_collapse.3.b
+		default_option = yes
+		make_independent = yes
+		add_journal_entry = { type = je_central_america_consolidate }
+	}
+	
+	option = {
+		name = spanish_collapse.3.c
+		default_option = yes
+		make_independent = yes
+		add_journal_entry = { type = je_central_america_consolidate }
+	}
+}
+
+spanish_collapse.4 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.4.t
+	desc = spanish_collapse.4.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.4.a
+		default_option = yes
+		annex_with_incorporation = c:TEX
+	}
+	option = {
+		name = spanish_collapse.4.b
+		c:TEX = {
+			trigger_event = spanish_collapse.5
+		}
+		
+	}
+}
+
+spanish_collapse.5 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.5.t
+	desc = spanish_collapse.5.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.5.a
+		default_option = yes
+		make_independent = yes
+		add_journal_entry = { type = je_texas_consolidate }
+	}
+}

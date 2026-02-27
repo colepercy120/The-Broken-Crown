@@ -1,0 +1,23 @@
+﻿##Define journal entry groups here:
+
+# journalentrygroup_mygroup = {
+# context = none/country
+# }
+
+
+
+# Global groups
+
+
+
+
+
+## Place flavour content above generic groups
+
+je_group_spanish_collapse = {
+	context = country
+}
+
+##
+
+

@@ -2316,4 +2316,101 @@
     }
 
 
+    # Copying vanilla numbers
+
+	c:CIR ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_caucasus
+
+			combat_unit = { #
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_NORTH_CAUCASUS
+				count = 3
+			}
+
+			combat_unit = { #
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KUBAN
+				count = 6
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_caucasus
+
+			combat_unit = { #
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KUBAN
+				count = 3
+			}
+
+			combat_unit = { #
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KUBAN
+				count = 6
+			}
+		}
+	}
+
+	c:CHC ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_caucasus
+			name = Murtazeki
+
+			combat_unit = { #
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_NORTH_CAUCASUS
+				count = 1
+			}
+
+			combat_unit = { #
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTH_CAUCASUS
+				count = 3
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_caucasus
+			name = Milishia
+
+			combat_unit = { #
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTH_CAUCASUS
+				count = 1
+			}
+
+			combat_unit = { #
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_DAGESTAN
+				count = 5
+			}
+		}
+	}
+
+
+	c:LUX ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_rhine
+			name = Luxemburger_Miliz
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WALLONIA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_WALLONIA
+				count = 2
+			}
+		}
+	}
+
 }

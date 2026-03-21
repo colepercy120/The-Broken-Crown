@@ -1125,6 +1125,74 @@
 
 
     # ==================================================
+    # Dacia (ROM)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cuirassers
+    # Total Battalions: 20
+    # ==================================================
+    c:ROM ?= {
+
+        # --------------------------------------------------
+        # Armata Daciei (Army of Dacia)
+        # HQ: Danubia SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_danubia
+            name = "Armata Daciei"
+
+            # Wallachia (capital core)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_WALLACHIA
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_WALLACHIA
+                count = 2
+            }
+
+            # Moldavia
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_MOLDAVIA
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_MOLDAVIA
+                count = 1
+            }
+
+            # Bessarabia (frontier)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_BESSARABIA
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_BESSARABIA
+                count = 1
+            }
+
+            # Dobrudja (Danube / coastal)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_DOBRUDJA
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_DOBRUDJA
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
     # Great Britain (GBR)
     # Military Law: Professional Army
     # Tech: Skirmish Infantry / Mobile Artillery / Lancers
@@ -1730,12 +1798,12 @@
             # Hanover core
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_HANOVER
+                state_region = s:STATE_HANNOVER
                 count = 12
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_mobile_artillery
-                state_region = s:STATE_HANOVER
+                state_region = s:STATE_HANNOVER
                 count = 4
             }
 
@@ -1812,7 +1880,7 @@
     # Westphalia (WES)
     # Military Law: Professional Army
     # Tech: Skirmish Infantry / Mobile Artillery / Lancers
-    # Total Battalions: 30
+    # Total Battalions: 15
     # ==================================================
     c:WES ?= {
 
@@ -1825,28 +1893,139 @@
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
                 state_region = s:STATE_WESTPHALIA
-                count = 12
+                count = 6
             }
 
             # Artillery
             combat_unit = {
                 type = unit_type:combat_unit_type_mobile_artillery
                 state_region = s:STATE_WESTPHALIA
-                count = 6
+                count = 3
             }
 
             # Cavalry
             combat_unit = {
                 type = unit_type:combat_unit_type_lancers
                 state_region = s:STATE_WESTPHALIA
-                count = 4
+                count = 2
             }
 
             # Extra infantry
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
                 state_region = s:STATE_WESTPHALIA
-                count = 8
+                count = 4
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Saxony (SAX)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 16
+    # ==================================================
+    c:SAX ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_germany
+            name = "Sachsische Armee"
+
+            # Saxony core
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SAXONY
+                count = 10
+            }
+
+            # Artillery support
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_SAXONY
+                count = 4
+            }
+
+            # Cavalry detachment
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_SAXONY
+                count = 2
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Mecklenburg (MEC)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 15
+    # ==================================================
+    c:MEC ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_germany
+            name = "Mecklenburgische Armee"
+
+            # Infantry core
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MECKLENBURG
+                count = 10
+            }
+
+            # Artillery
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_MECKLENBURG
+                count = 3
+            }
+
+            # Cavalry
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_MECKLENBURG
+                count = 2
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Anhalt (ANH)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Mobile Artillery / Lancers
+    # Total Battalions: 14
+    # ==================================================
+    c:ANH ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_north_germany
+            name = "Anhaltische Armee"
+
+            # Infantry core
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ANHALT
+                count = 9
+            }
+
+            # Artillery
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_ANHALT
+                count = 3
+            }
+
+            # Cavalry
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_ANHALT
+                count = 2
             }
         }
     }
@@ -2037,7 +2216,7 @@
     # Denmark (DEN)
     # Military Law: Professional Army
     # Tech: Skirmish Infantry / Mobile Artillery / Lancers
-    # Total Battalions: 15
+    # Total Battalions: 25
     # ==================================================
     c:DEN ?= {
 
@@ -2054,31 +2233,31 @@
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
                 state_region = s:STATE_SJAELLAND
-                count = 6
+                count = 10
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_mobile_artillery
                 state_region = s:STATE_SJAELLAND
-                count = 2
+                count = 3
             }
 
             # Jylland
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
                 state_region = s:STATE_JYLLAND
-                count = 4
+                count = 7
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_lancers
                 state_region = s:STATE_JYLLAND
-                count = 2
+                count = 3
             }
 
             # Iceland garrison
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
                 state_region = s:STATE_ICELAND
-                count = 1
+                count = 2
             }
         }
     }
@@ -2104,12 +2283,12 @@
             # Uppland (Swedish core)
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_UPPLAND
+                state_region = s:STATE_GOTALAND
                 count = 4
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_mobile_artillery
-                state_region = s:STATE_UPPLAND
+                state_region = s:STATE_GOTALAND
                 count = 1
             }
 
@@ -2128,17 +2307,17 @@
             # Finland (absorbed from FIN)
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_SOUTH_FINLAND
+                state_region = s:STATE_UUSIMAA
                 count = 3
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_mobile_artillery
-                state_region = s:STATE_SOUTH_FINLAND
+                state_region = s:STATE_UUSIMAA
                 count = 1
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_lancers
-                state_region = s:STATE_NORTH_FINLAND
+                state_region = s:STATE_OSTROBOTHNIA
                 count = 1
             }
         }

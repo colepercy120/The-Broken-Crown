@@ -46,7 +46,7 @@ je_mexico_consolidate = {
 	}
 
 	on_complete = {
-		trigger_event = { id = spanish_collapse.2 }
+		trigger_event = { id = spanish_collapse.8 }
 		show_as_tooltip = { add_journal_entry = { type = je_mexican_empire } }
 	}
 
@@ -177,10 +177,32 @@ je_mexican_empire = {
 	# note that if you change this, also update the decision
 	complete = {
 		is_subject = no
+		any_scope_state = {
+			count >=50
+			is_incorporated = yes
+		}
+		any_scope_state = {
+				OR = {
+					state_region = s:STATE_TEXAS
+					state_region = s:STATE_CALIFORNIA
+					state_region = s:STATE_LOUISIANA
+					
+					state_region = s:STATE_PUERTO_RICO
+					state_region = s:STATE_WESTERN_CUBA
+					state_region = s:STATE_CENTRAL_CUBA
+					state_region = s:STATE_EASTERN_CUBA
+					
+					state_region = s:STATE_PANAMA
+					
+					state_region = s:STATE_LUZON
+				}
+				count >= 7
+			}
+		country_rank = rank_value:great_power
 	}
 
 	on_complete = {
-		trigger_event = { id = spanish_collapse.3 }
+		trigger_event = { id = spanish_collapse.9 }
 		
 	}
 

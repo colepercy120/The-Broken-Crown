@@ -43,3 +43,10 @@ empire_of_liberty_west = {
 	state_migration_pull_mult = 0.1
 	country_prestige_add = 100
 }
+
+immigration_boom = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	
+	state_migration_pull_mult = 0.1
+	
+}

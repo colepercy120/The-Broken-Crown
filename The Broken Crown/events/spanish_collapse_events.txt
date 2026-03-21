@@ -26,6 +26,12 @@ spanish_collapse.1 = {
 		name = spanish_collapse.1.a
 		default_option = yes
 		add_journal_entry = { type = je_mexico_consolidate }
+		c:TEX = {
+			trigger_event = spanish_collapse.2
+		}
+		c:UCA = {
+			trigger_event = spanish_collapse.3
+		}
 	}
 }
 
@@ -107,18 +113,16 @@ spanish_collapse.3 = {
 	option = {
 		name = spanish_collapse.3.b
 		default_option = yes
-		make_independent = yes
-		add_journal_entry = { type = je_central_america_consolidate }
+		
+		c:MEX = {
+			trigger_event = spanish_collapse.6
+		}
 	}
 	
-	option = {
-		name = spanish_collapse.3.c
-		default_option = yes
-		make_independent = yes
-		add_journal_entry = { type = je_central_america_consolidate }
-	}
+	
 }
 
+# Texan Annexation Chain
 spanish_collapse.4 = {
 	type = country_event
 	placement = ROOT
@@ -180,5 +184,139 @@ spanish_collapse.5 = {
 		default_option = yes
 		make_independent = yes
 		add_journal_entry = { type = je_texas_consolidate }
+	}
+}
+
+# Central America Annexation Chain
+spanish_collapse.6 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.6.t
+	desc = spanish_collapse.6.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.6.a
+		default_option = yes
+		annex_with_incorporation = c:UCA
+	}
+	option = {
+		name = spanish_collapse.6.b
+		c:UCA = {
+			trigger_event = spanish_collapse.7
+		}
+		
+	}
+}
+
+spanish_collapse.7 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.7.t
+	desc = spanish_collapse.7.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.7.a
+		default_option = yes
+		make_independent = yes
+		add_journal_entry = { type = je_central_america_consolidate }
+	}
+}
+
+# Mexico JE Effects
+spanish_collapse.8 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.8.t
+	desc = spanish_collapse.8.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.8.a
+		default_option = yes
+		add_journal_entry = { type = je_mexican_empire } 
+		add_modifier = {
+			name = immigration_boom
+			years = 50 
+ 
+			is_decaying = yes 
+		}
+	}
+}
+
+spanish_collapse.9 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = spanish_collapse.9.t
+	desc = spanish_collapse.9.d
+	
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spanish_collapse.9.a
+		default_option = yes
+		add_journal_entry = { type = je_mexican_empire } 
+		add_modifier = {
+			name = immigration_boom
+			years = 50 
+ 
+			is_decaying = yes 
+		}
 	}
 }

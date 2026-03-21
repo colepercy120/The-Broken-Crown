@@ -33,7 +33,14 @@
  je_alaska_expansion_pacific: "Expansion: California"
  je_alaska_expansion_pacific_reason: "The Spanish Empire is clearly on the decline and we have had small outposts in California for centuries now. its time to fill the power vaccume before the Americans do"
  
- 
+ je_group_spanish_collapse: "Spanish Collapse"
+ je_mexico_independence: "Mexican Independence"
+ je_mexico_independence_reason: "Mexico has long been neglected and abused by the spanish crown, following the start of the Carlist war we have finally taken the oppritunity to cast off our chains and declare Independence"
+ texas_uca_leave: "Our frontiers will attempt to secede"
+ je_mexico_consolidate: "Consolidate Mexico"
+ je_mexico_consolidate_reason: "Independence comes with probloms both expected and not, to truly function on the world stage we must biuld institions and our economy"
+ je_mexican_empire: "The Mexican Empire"
+ je_mexican_empire_reason: "Mexico has emerged onto the world stage as a major power. but we are not yet truly a great power. to establish dominion across the hemisphere we need to expand our borders and show to the great powers once and for all we are not to be trifled with"
  
  
  

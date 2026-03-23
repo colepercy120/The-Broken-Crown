@@ -1,3 +1,200 @@
 ﻿MILITARY_FORMATIONS = {
+
+
+    # ARMY ====================================================================
+
+
+    # ==================================================
+    # Egypt (EGY)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: ~150
+    # ==================================================
+    c:EGY ?= {
+
+        # --------------------------------------------------
+        # Al-Jaysh al-Misri (Core Army)
+        # HQ: Nile SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_nile_basin
+            name = "Al_Jaysh_al_Misri"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LOWER_EGYPT
+                count = 15
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_LOWER_EGYPT
+                count = 6
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MIDDLE_EGYPT
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_MIDDLE_EGYPT
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_UPPER_EGYPT
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_UPPER_EGYPT
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SINAI
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_SINAI
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # Jaysh al-Sudan (Southern / Frontier Army)
+        # HQ: Nile SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_nile_basin
+            name = "Jaysh_al_Sudan"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_DONGOLA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_DONGOLA
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KORDOFAN
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_KORDOFAN
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BLUE_NILE
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_BLUE_NILE
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ERITREA
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_ERITREA
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # Jaysh al-Sham (Levant Army)
+        # HQ: Arabia SR
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_arabic
+            name = "Jaysh_al_Sham"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_SYRIA
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_SYRIA
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ALEPPO
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_ALEPPO
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_PALESTINE
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_PALESTINE
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_LEBANON
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_LEBANON
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TRANSJORDAN
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_TRANSJORDAN
+                count = 2
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ADANA
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_ADANA
+                count = 2
+            }
+        }
+    }
 	
 }

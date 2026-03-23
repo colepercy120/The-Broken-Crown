@@ -2495,6 +2495,141 @@
     }
 
 
+    # ==================================================
+    # Ottoman Empire (TUR)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 20
+    # Puppet of Egypt
+    # ==================================================
+    c:TUR ?= {
+
+        # --------------------------------------------------
+        # Osmanli Ordusu (Ottoman Army)
+        # Role: Defensive buffer for Egypt in Anatolia
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_anatolia
+            name = "Osmanli_Ordusu"
+
+            # Konya (capital - primary concentration)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_KONYA
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_KONYA
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_KONYA
+                count = 1
+            }
+
+            # Ankara (secondary defensive line)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_ANKARA
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_ANKARA
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_ANKARA
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Transcaucasia (CAU)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 15
+    # Russian Puppet State
+    # ==================================================
+    c:CAU ?= {
+
+        # --------------------------------------------------
+        # Kavkazskaya Armiya (Caucasus Army - romanized)
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_caucasus
+            name = "Kavkazskaya_Armiya"
+
+            # Tiflis (capital)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TIFLIS
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_TIFLIS
+                count = 1
+            }
+
+            # Armenia (mountain defense)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ARMENIA
+                count = 2
+            }
+
+            # Kars (frontier stronghold)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KARS
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_KARS
+                count = 1
+            }
+
+            # Baku (coastal/economic)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BAKU
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_BAKU
+                count = 1
+            }
+
+            # Elizavetpol (interior)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ELIZAVETPOL
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_ELIZAVETPOL
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_ELIZAVETPOL
+                count = 1
+            }
+        }
+    }
+
+
     # Copying vanilla numbers
 
 	c:CIR ?= {

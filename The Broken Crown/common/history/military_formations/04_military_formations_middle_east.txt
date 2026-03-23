@@ -1,3 +1,342 @@
 ﻿MILITARY_FORMATIONS = {
-	
+
+
+    # ARMY ====================================================================
+
+
+	# ==================================================
+    # Persia (PER)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 45
+    # ==================================================
+    c:PER ?= {
+
+        # --------------------------------------------------
+        # Sepah_e_Markazi (Central Army)
+        # Core political and economic heartland
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_persia
+            name = "Sepah_e_Markazi"
+
+            # Irak-i-Ajami (capital)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_IRAKAJEMI
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_IRAKAJEMI
+                count = 3
+            }
+
+            # Isfahan
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ISFAHAN
+                count = 5
+            }
+
+            # Fars
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_FARS
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_FARS
+                count = 2
+            }
+
+            # Mazandaran
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MAZANDARAN
+                count = 3
+            }
+
+            # Semnan
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_SEMNAN
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # Sepah_e_Sharqi (Frontier Army)
+        # Covers east, west, and southern periphery
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_persia
+            name = "Sepah_e_Sharqi"
+
+            # Khorasan (eastern frontier)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KHORASAN
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_KHORASAN
+                count = 2
+            }
+
+            # Kerman
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KERMAN
+                count = 4
+            }
+
+            # Hormuz (treated as full state)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:LARISTAN
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_LARISTAN
+                count = 2
+            }
+
+            # Persian Kurdistan
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_PERSIAN_KURDISTAN
+                count = 3
+            }
+
+            # Luristan
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_LURISTAN
+                count = 2
+            }
+
+            # Tabriz
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TABRIZ
+                count = 3
+            }
+
+            # Urmia
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_URMIA
+                count = 2
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Nejd (NEJ)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 30
+    # ==================================================
+    c:NEJ ?= {
+
+        # --------------------------------------------------
+        # Jaysh_al_Najd (Core Army)
+        # Focus: Interior control and stability
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_arabia
+            name = "Jaysh_al_Najd"
+
+            # Nejd (capital)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_NEJD
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_NEJD
+                count = 3
+            }
+
+            # Hail
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_HAIL
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_HAIL
+                count = 2
+            }
+        }
+
+        # --------------------------------------------------
+        # Jaysh_al_Sahil (Coastal / Frontier Army)
+        # Focus: Coasts, pilgrimage routes, trade ports
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_arabia
+            name = "Jaysh_al_Sahil"
+
+            # Hedjaz (religious + population center)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_HEDJAZ
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_HEDJAZ
+                count = 2
+            }
+
+            # Trucial Coast
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_ABU_DHABI
+                count = 3
+            }
+
+            # Yemen (partial control - coastal presence)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_YEMEN
+                count = 2
+            }
+
+            # Hormuz (treaty port presence)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_LARISTAN
+                count = 1
+            }
+
+            # Mobile desert forces
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_LARISTAN
+                count = 2
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Iraq (IRQ)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 20
+    # ==================================================
+    c:IRQ ?= {
+
+        # --------------------------------------------------
+        # Al-Jaysh al-Iraqi (Iraqi Army)
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_arabia
+            name = "Al_Jaysh_al_Iraqi"
+
+            # Baghdad (capital core)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_BAGHDAD
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_BAGHDAD
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_BAGHDAD
+                count = 1
+            }
+
+            # Basra (southern / economic region)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_BASRA
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_BASRA
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_BASRA
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Assyria (ASS)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 20
+    # ==================================================
+    c:ASS ?= {
+
+        # --------------------------------------------------
+        # Al-Jaysh al-Ashuri (Assyrian Army)
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_arabia
+            name = "Al_Jaysh_al_Ashuri"
+
+            # Mosul (capital core)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_MOSUL
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_MOSUL
+                count = 3
+            }
+
+            # Deir-ez-Zor (desert control)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_DEIR_EZ_ZOR
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_DEIR_EZ_ZOR
+                count = 1
+            }
+
+            # Diyarbakir (northern frontier - Anatolia SR)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_DIYARBAKIR
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_DIYARBAKIR
+                count = 1
+            }
+        }
+    }
+
 }

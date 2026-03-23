@@ -2570,12 +2570,12 @@
             # Tiflis (capital)
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_TIFLIS
+                state_region = s:STATE_GREATER_CAUCASUS
                 count = 3
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_TIFLIS
+                state_region = s:STATE_GREATER_CAUCASUS
                 count = 1
             }
 
@@ -2601,12 +2601,12 @@
             # Baku (coastal/economic)
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_BAKU
+                state_region = s:STATE_AZERBAIJAN
                 count = 2
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_BAKU
+                state_region = s:STATE_AZERBAIJAN
                 count = 1
             }
 

@@ -245,7 +245,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_arabia
+            hq_region = sr:region_arabic
             name = "Al_Jaysh_al_Iraqi"
 
             # Baghdad (capital core)
@@ -298,7 +298,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_arabia
+            hq_region = sr:region_arabic
             name = "Al_Jaysh_al_Ashuri"
 
             # Mosul (capital core)

@@ -50,7 +50,7 @@
 	# ==================================================
 	# New Granada (GCO)
 	# Military Law: Professional Army
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:GCO ?= {
 
@@ -84,7 +84,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_ECUADOR
 				count = 4
 			}
@@ -101,7 +101,7 @@
 	# ==================================================
 	# Venezuela (VNZ)
 	# Military Law: Professional Army
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:VNZ ?= {
 
@@ -123,7 +123,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_MIRANDA
 				count = 4
 			}
@@ -140,7 +140,7 @@
 	# ==================================================
 	# Peru (PEU)
 	# Military Law: Professional Army
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:PEU ?= {
 
@@ -168,7 +168,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_SANTA_CRUZ
 				count = 4
 			}
@@ -185,7 +185,7 @@
 	# ==================================================
 	# Rio de la Plata (PLT)
 	# Military Law: National Militia
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:PLT ?= {
 
@@ -213,7 +213,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_CORRIENTES
 				count = 2
 			}
@@ -231,7 +231,7 @@
 	# ==================================================
 	# Chile (CHL)
 	# Military Law: Professional Army
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:CHL ?= {
 
@@ -253,7 +253,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_ARAUCANIA
 				count = 3
 			}

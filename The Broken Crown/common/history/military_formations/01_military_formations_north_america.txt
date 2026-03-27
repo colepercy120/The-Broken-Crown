@@ -97,7 +97,7 @@
 	# ==================================================
 	# Provincias Internas / Interior Provinces (TEX)
 	# Military Law: National Militia
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:TEX ?= {
 
@@ -119,7 +119,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_SONORA
 				count = 2
 			}
@@ -138,7 +138,7 @@
 	# ==================================================
 	# New Spain (MEX)
 	# Military Law: Professional Army
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:MEX ?= {
 
@@ -169,7 +169,7 @@
 
 			# Cavalry arm
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_GUERRERO
 				count = 6
 			}
@@ -189,7 +189,7 @@
 	# ==================================================
 	# Centroamérica (UCA)
 	# Military Law: Professional Army
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:UCA ?= {
 
@@ -211,7 +211,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_EL_SALVADOR
 				count = 4
 			}
@@ -228,7 +228,7 @@
 	# ==================================================
 	# Spanish Indies / Cuba (CUB)
 	# Military Law: Professional Army
-	# Tech Level: Line Infantry / Cannon Artillery / Cuirassers
+	# Tech Level: Line Infantry / Cannon Artillery / cuirassiers
 	# ==================================================
 	c:CUB ?= {
 
@@ -244,7 +244,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_WESTERN_CUBA
 				count = 2
 			}

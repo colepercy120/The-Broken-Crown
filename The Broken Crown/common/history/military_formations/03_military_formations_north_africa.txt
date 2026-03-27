@@ -49,7 +49,7 @@
                 count = 8
             }
             combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
+                type = unit_type:combat_unit_type_cuirassiers
                 state_region = s:STATE_UPPER_EGYPT
                 count = 3
             }
@@ -92,7 +92,7 @@
                 count = 8
             }
             combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
+                type = unit_type:combat_unit_type_cuirassiers
                 state_region = s:STATE_KORDOFAN
                 count = 2
             }
@@ -146,7 +146,7 @@
                 count = 10
             }
             combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
+                type = unit_type:combat_unit_type_cuirassiers
                 state_region = s:STATE_ALEPPO
                 count = 3
             }
@@ -179,7 +179,7 @@
                 count = 5
             }
             combat_unit = {
-                type = unit_type:combat_unit_type_cuirassers
+                type = unit_type:combat_unit_type_cuirassiers
                 state_region = s:STATE_TRANSJORDAN
                 count = 2
             }

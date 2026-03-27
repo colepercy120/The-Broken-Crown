@@ -2727,4 +2727,269 @@
 		}
 	}
 
+
+
+    # NAVY ====================================================================
+    # NOTE: These navies are meant to be PLACEHOLDERS. They will likely have to
+    # be replaced when the naval rework comes out.
+    # =========================================================================
+
+
+    # ==================================================
+    # Great Britain (GBR) - Fleets (Highly Distributed)
+    # ==================================================
+    c:GBR ?= {
+
+        # Channel Fleet
+        create_military_formation = {
+            type = fleet
+            hq_region = sr:region_england
+            name = "Channel_Fleet"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_EAST_ANGLIA
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_HOME_COUNTIES
+                count = 7
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_WEST_COUNTRY
+                count = 5
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_EAST_ANGLIA
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_HOME_COUNTIES
+                count = 4
+            }
+        }
+
+        # Home Fleet
+        create_military_formation = {
+            type = fleet
+            hq_region = sr:region_north_sea_coast
+            name = "Home_Fleet"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_LOWLANDS
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_HIGHLANDS
+                count = 8
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_LOWLANDS
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_HIGHLANDS
+                count = 4
+            }
+        }
+
+        # Atlantic Fleet
+        create_military_formation = {
+            type = fleet
+            hq_region = sr:region_england
+            name = "Atlantic_Fleet"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_WALES
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_LANCASHIRE
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_YORKSHIRE
+                count = 5
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_WALES
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_MIDLANDS
+                count = 5
+            }
+        }
+    }
+
+
+    # ==================================================
+    # France (FRA) - Fleets (Highly Distributed)
+    # ==================================================
+    c:FRA ?= {
+
+        # Channel Fleet
+        create_military_formation = {
+            type = fleet
+            hq_region = sr:region_france
+            name = "Flotte_de_la_Manche"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_NORMANDY
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_BRITTANY
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_POITOU
+                count = 10
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_NORMANDY
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_FRENCH_LOW_COUNTRIES
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_PICARDY
+                count = 6
+            }
+        }
+
+        # Mediterranean Fleet
+        create_military_formation = {
+            type = fleet
+            hq_region = sr:region_occitania
+            name = "Flotte_de_la_Mediterranee"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_PROVENCE
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_LANGUEDOC
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_AQUITAINE
+                count = 8
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_PROVENCE
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_LANGUEDOC
+                count = 6
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Italy (ITA) - Fleets (Highly Distributed)
+    # ==================================================
+    c:ITA ?= {
+
+        # Tyrrhenian Fleet
+        create_military_formation = {
+            type = fleet
+            hq_region = sr:region_italy
+            name = "Flotta_Tirrenica"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_LAZIO
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_TUSCANY
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_CAMPANIA
+                count = 8
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_CORSICA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_SARDINIA
+                count = 10
+            }
+        }
+
+        # Adriatic Fleet
+        create_military_formation = {
+            type = fleet
+            hq_region = sr:region_italy
+            name = "Flotta_Adriatica"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_VENETIA
+                count = 12
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_ROMAGNA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_frigates
+                state_region = s:STATE_UMBRIA
+                count = 8
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_ABRUZZO
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_man_o_wars
+                state_region = s:STATE_APULIA
+                count = 5
+            }
+        }
+    }
 }

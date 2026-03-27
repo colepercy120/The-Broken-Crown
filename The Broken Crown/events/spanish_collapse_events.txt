@@ -102,6 +102,8 @@ spanish_collapse.3 = {
 
 	trigger = {
 	}
+	
+	
 
 	option = {
 		name = spanish_collapse.3.a

@@ -101,6 +101,22 @@ je_central_america_consolidate = {
 	group = je_group_spanish_collapse
 
 	should_be_pinned_by_default = yes
+	
+	modifiers_while_active = {
+		bc_unrest
+	}
+	
+	immediate = {
+		every_scope_state = {
+			add_radicals_in_state = {
+				value = 1
+			}
+		}
+		
+		
+	}
+	
+	scripted_progress_bar = central_america_collapse_progess_bar
 
 
 	is_shown_in_lobby = {
@@ -112,44 +128,21 @@ je_central_america_consolidate = {
 			10 = 0
 			1 = central_america.3
 		}
+		
 	}
 
 	complete = {
-		any_scope_state = {
-			state_region = s:STATE_GUATEMALA
-			turmoil < 0.2
+		custom_tooltip = {
+			text = central_america_suceed_tt_bc
+			"scope:journal_entry.scripted_bar_progress(central_america_collapse_progess_bar)" >= 100
 		}
-		any_scope_state = {
-			state_region = s:STATE_GUATEMALA
-			turmoil < 0.2
-		}
-		any_scope_state = {
-			state_region = s:STATE_COSTA_RICA
-			turmoil < 0.2
-		}
-		any_scope_state = {
-			state_region = s:STATE_SAN_SALVADOR
-			turmoil < 0.2
-		}
-		any_scope_state = {
-			state_region = s:STATE_NICARAGUA
-			turmoil < 0.2
-		}
+		
 	}
 
 	fail = {
 		custom_tooltip = {
-			text = central_america_fail_tt
-			any_scope_state = {
-				OR = {
-					state_region = s:STATE_GUATEMALA
-					state_region = s:STATE_HONDURAS
-					state_region = s:STATE_COSTA_RICA
-					state_region = s:STATE_SAN_SALVADOR
-					state_region = s:STATE_NICARAGUA
-				}
-				count < 3
-			}
+			text = central_america_fail_tt_bc
+			"scope:journal_entry.scripted_bar_progress(central_america_collapse_progess_bar)" <= 0
 		}
 	}
 
@@ -158,13 +151,7 @@ je_central_america_consolidate = {
 		custom_tooltip = central_america_capital_tt
 	}
 
-	status_desc = {
-		first_valid = {
-			triggered_desc = {
-				desc = central_america_breakup_status
-			}
-		}
-	}
+	
 }
 
 je_mexican_empire = {

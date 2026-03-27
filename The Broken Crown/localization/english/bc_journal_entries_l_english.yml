@@ -42,5 +42,20 @@
  je_mexican_empire: "The Mexican Empire"
  je_mexican_empire_reason: "Mexico has emerged onto the world stage as a major power. but we are not yet truly a great power. to establish dominion across the hemisphere we need to expand our borders and show to the great powers once and for all we are not to be trifled with"
  
- 
- 
+ je_central_america_consolidate: "Central American Consolidation"
+ je_central_america_consolidate_reason: "The Former Captincy General of Guatamala was not fully prepared for Independence. despite our leaders ambitions we still have to convince our people that we are a legitimate state. should we fail, our provinces will spin off and seek their own destiny \n\nThe Factors that influence the progress bar are: \n - Having States in Central America \n - Low Government Legitimacy \n - Isolated States \n - Turmoil"
+ central_america_suceed_tt_bc: "The Progess Bar reaches 100"
+ central_america_fail_tt_bc: "The Progress Bar reaches 0"
+ central_america_collapse_progess_bar: "Central American Consolidation"
+ central_america_collapse_progess_bar_desc: "Central American Consolidation"
+ secured_guatamala: "Secured Guatemala"
+ secured_chiapas: "Secured Chiapas"
+ secured_honduras: "Secured Honduras"
+ secured_san_salvador: "Secured San Salvador"
+ secured_nicaragua: "Secured Nicaragua"
+ secured_costa_rica: "Secured Costa Rica"
+ secured_panama: "Secured Panama"
+ secured_yucatan: "Secured Yucatan"
+ isolated_states: "Isolated States"
+ illegitimate_government: "Illegitimate Government"
+ uca_collapsed: "Central America has Collapsed"

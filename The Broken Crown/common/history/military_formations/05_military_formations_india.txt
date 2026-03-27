@@ -1,3 +1,205 @@
 ﻿MILITARY_FORMATIONS = {
-	
+
+    # ARMY ====================================================================
+
+
+	# ==================================================
+    # Maharashtra (MHR)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Cannon Artillery / Lancers
+    # Total Battalions: 70
+    # ==================================================
+    c:MHR ?= {
+
+        # --------------------------------------------------
+        # Sena Pramukh (Primary Army)
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_bombay
+            name = "Sena_Pramukh"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BOMBAY
+                count = 20
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_BOMBAY
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_BOMBAY
+                count = 4
+            }
+        }
+
+        # --------------------------------------------------
+        # Dakshin Sena (Interior Army)
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_central_india
+            name = "Dakshin_Sena"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CENTRAL_PROVINCES
+                count = 28
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_CENTRAL_PROVINCES
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_CENTRAL_PROVINCES
+                count = 4
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Nagpur (NAG)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Cannon Artillery / Lancers
+    # Total Battalions: 25
+    # ==================================================
+    c:NAG ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_central_india
+            name = "Nagpur_Sena"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CENTRAL_PROVINCES
+                count = 17
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_CENTRAL_PROVINCES
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_CENTRAL_PROVINCES
+                count = 3
+            }
+        }
+    }
+
+
+    # ==================================================
+    # East India Company (BIC)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Cannon Artillery / Lancers
+    # Total Battalions: 70
+    # ==================================================
+    c:BIC ?= {
+
+        # --------------------------------------------------
+        # Bengal Army (Core)
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_bengal
+            name = "Bengal_Army"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_WEST_BENGAL
+                count = 14
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_WEST_BENGAL
+                count = 5
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_BIHAR
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_BIHAR
+                count = 3
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_WEST_BENGAL
+                count = 3
+            }
+        }
+
+        # --------------------------------------------------
+        # Madras Army
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_madras
+            name = "Madras_Army"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_NORTHERN_CIRCARS
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_NORTHERN_CIRCARS
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_NORTHERN_CIRCARS
+                count = 3
+            }
+        }
+
+        # --------------------------------------------------
+        # Eastern Expeditionary Force
+        # --------------------------------------------------
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_indochina
+            name = "Eastern_Expeditionary_Force"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_ARAKAN
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_PEGU
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_TENASSERIM
+                count = 4
+            }
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_ARAKAN
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_TENASSERIM
+                count = 2
+            }
+        }
+    }
+
 }

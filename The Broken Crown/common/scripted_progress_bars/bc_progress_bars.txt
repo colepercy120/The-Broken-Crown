@@ -1,0 +1,153 @@
+﻿
+### Central America Dissolution
+
+central_america_collapse_progess_bar = {
+	name = "central_america_collapse_progess_bar"
+	desc = "central_america_collapse_progess_bar_desc"
+
+	default_green = yes #This is the skin
+
+	monthly_progress = {
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_GUATEMALA
+					turmoil < 0.2
+				}
+			}
+			add = {
+				desc = secured_guatamala
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_CHIAPAS
+					turmoil < 0.2
+				}
+			}
+			add = {
+				desc = secured_chiapas
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_HONDURAS
+					turmoil < 0.2
+				}
+			}
+			add = {
+				desc = secured_honduras
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_SAN_SALVADOR
+					turmoil < 0.2
+				}
+			}
+			add = {
+				desc = secured_san_salvador
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_NICARAGUA
+					turmoil < 0.2
+				}
+			}
+			add = {
+				desc = secured_nicaragua
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_COSTA_RICA
+					turmoil < 0.2
+				}
+			}
+			add = {
+				desc = secured_costa_rica
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_PANAMA
+					turmoil < 0.2
+				}
+			}
+			add = {
+				desc = secured_panama
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_YUCATAN
+					turmoil < 0.2
+				}
+			}
+			add = {
+				desc = secured_yucatan
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				country_turmoil < 0.2
+			}
+			add = {
+				desc = "Low Turmoil"
+				value = 1
+			}
+		}
+		
+		if = {
+			limit = {
+				isolated_states > 0
+			}
+			add = {
+				desc = isolated_states
+				value = -10
+			}
+		}
+		if = {
+			limit = {
+				government_legitimacy < 25
+			}
+			add = {
+				desc = illegitimate_government
+				value = -10
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					count < 3
+				}
+				
+			}
+			add = {
+				desc = uca_collapsed
+				value = -20
+			}
+		}
+	}
+
+	start_value = 10
+	min_value = 0
+	max_value = 100
+
+}

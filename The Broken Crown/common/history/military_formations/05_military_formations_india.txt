@@ -202,4 +202,165 @@
         }
     }
 
+
+    # ==================================================
+    # Hindustan (MUG)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 18
+    # ==================================================
+    c:MUG ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_delhi
+            name = "Hindustani_Sena"
+
+            # Delhi (capital)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_DELHI
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_DELHI
+                count = 2
+            }
+
+            # Agra
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_AGRA
+                count = 6
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_AGRA
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_AGRA
+                count = 2
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Mysore (MYS)
+    # Military Law: Professional Army
+    # Tech: Skirmish Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 15
+    # ==================================================
+    c:MYS ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_madras
+            name = "Mysore_Sena"
+
+            # Mysore (capital)
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MYSORE
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_MYSORE
+                count = 2
+            }
+
+            # Ceded Districts
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_CEDED_DISTRICTS
+                count = 3
+            }
+
+            # Malabar
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_MALABAR
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_MALABAR
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_MALABAR
+                count = 2
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Pudukottai (PUD)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 6
+    # ==================================================
+    c:PUD ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_madras
+            name = "Pudukottai_Forces"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_CARNATIC
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_CARNATIC
+                count = 1
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassers
+                state_region = s:STATE_CARNATIC
+                count = 1
+            }
+        }
+    }
+
+
+    # ==================================================
+    # Ceylon (BCE)
+    # Military Law: Professional Army
+    # Tech: Line Infantry / Cannon Artillery / Cavalry
+    # Total Battalions: 8
+    # ==================================================
+    c:BCE ?= {
+
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_madras
+            name = "Ceylon_Garrison"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_CEYLON
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cannon_artillery
+                state_region = s:STATE_CEYLON
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_dragoons
+                state_region = s:STATE_CEYLON
+                count = 1
+            }
+        }
+    }
+
 }

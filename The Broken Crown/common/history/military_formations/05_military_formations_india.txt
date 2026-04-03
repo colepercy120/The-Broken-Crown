@@ -150,17 +150,17 @@
 
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_NORTHERN_CIRCARS
+                state_region = s:STATE_CIRCARS
                 count = 10
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_NORTHERN_CIRCARS
+                state_region = s:STATE_CIRCARS
                 count = 3
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_lancers
-                state_region = s:STATE_NORTHERN_CIRCARS
+                state_region = s:STATE_CIRCARS
                 count = 3
             }
         }
@@ -213,7 +213,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_delhi
+            hq_region = sr:region_punjab
             name = "Hindustani_Sena"
 
             # Delhi (capital)
@@ -265,36 +265,36 @@
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
                 state_region = s:STATE_MYSORE
-                count = 5
+                count = 10
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_cannon_artillery
                 state_region = s:STATE_MYSORE
-                count = 2
+                count = 4
             }
 
             # Ceded Districts
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_CEDED_DISTRICTS
-                count = 3
+                state_region = s:STATE_KURNOOL
+                count = 6
             }
 
             # Malabar
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
-                state_region = s:STATE_MALABAR
-                count = 2
+                state_region = s:STATE_TRAVANCORE
+                count = 4
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_MALABAR
-                count = 1
+                state_region = s:STATE_TRAVANCORE
+                count = 2
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_dragoons
-                state_region = s:STATE_MALABAR
-                count = 2
+                state_region = s:STATE_TRAVANCORE
+                count = 4
             }
         }
     }
@@ -315,17 +315,17 @@
 
             combat_unit = {
                 type = unit_type:combat_unit_type_line_infantry
-                state_region = s:STATE_CARNATIC
+                state_region = s:STATE_MADRAS
                 count = 4
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_cannon_artillery
-                state_region = s:STATE_CARNATIC
+                state_region = s:STATE_MADRAS
                 count = 1
             }
             combat_unit = {
                 type = unit_type:combat_unit_type_cuirassiers
-                state_region = s:STATE_CARNATIC
+                state_region = s:STATE_MADRAS
                 count = 1
             }
         }
@@ -369,7 +369,7 @@
     c:PAN ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_punjab
+			hq_region = sr:region_punjab # Delhi SR
 			name = FaujiKhas
 
 			combat_unit = {

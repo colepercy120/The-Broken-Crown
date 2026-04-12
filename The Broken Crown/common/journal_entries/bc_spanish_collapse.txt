@@ -64,7 +64,27 @@ je_texas_consolidate = {
 	group = je_group_spanish_collapse
 	
 	
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			1 = spanish_collapse.10
+		}
+		
+	}
 	
+	modifiers_while_active = {
+		bc_unrest
+	}
+	
+	immediate = {
+		every_scope_state = {
+			add_radicals_in_state = {
+				value = 1
+			}
+		}
+		
+		
+	}
 	
 	
 	
@@ -86,7 +106,24 @@ je_texas_consolidate = {
 		
 		
 	}
+	
+	fail = {
+		any_scope_state = {
+			count <=3
+			owner = root
+		}
+	}
+	
+	on_fail = {
+		trigger_event = { id = spanish_collapse.11 popup = yes }
+		
+	}
+	
+	timeout = 3650
 
+	on_timeout = {
+		trigger_event = { id = spanish_collapse.11 popup = yes }
+	}
 	
 
 	weight = 100

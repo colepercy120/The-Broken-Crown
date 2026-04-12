@@ -322,3 +322,865 @@ spanish_collapse.9 = {
 		}
 	}
 }
+
+# State secedes
+spanish_collapse.10 = {
+	type = country_event
+	placement = scope:secession_capital
+	title = spanish_collapse.10.t
+	desc = spanish_collapse.10.d
+	flavor =  spanish_collapse.10.f
+
+	duration = 3
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+		any_scope_state = {
+			is_capital = no
+			
+			turmoil > 0.2
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_capital = no
+				
+				turmoil > 0.2
+			}
+			save_scope_as = secession_state
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					state_region = s:STATE_GUATEMALA
+				}
+			}
+			create_country = {
+				tag = GUA
+				origin = this
+				state = scope:secession_state
+			}
+			c:GUA ?= {
+				save_scope_as = secession_country
+				capital = {
+					save_scope_as = secession_capital
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					state_region = s:STATE_HONDURAS
+				}
+			}
+			create_country = {
+				tag = HON
+				origin = this
+				state = scope:secession_state
+			}
+			c:HON ?= {
+				save_scope_as = secession_country
+				capital = {
+					save_scope_as = secession_capital
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					state_region = s:STATE_COSTA_RICA
+				}
+			}
+			create_country = {
+				tag = COS
+				origin = this
+				state = scope:secession_state
+			}
+			c:COS ?= {
+				save_scope_as = secession_country
+				capital = {
+					save_scope_as = secession_capital
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					state_region = s:STATE_SAN_SALVADOR
+				}
+			}
+			create_country = {
+				tag = ELS
+				origin = this
+				state = scope:secession_state
+			}
+			c:ELS ?= {
+				save_scope_as = secession_country
+				capital = {
+					save_scope_as = secession_capital
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					state_region = s:STATE_NICARAGUA
+				}
+			}
+			create_country = {
+				tag = NIC
+				origin = this
+				state = scope:secession_state
+			}
+			c:NIC ?= {
+				save_scope_as = secession_country
+				capital = {
+					save_scope_as = secession_capital
+				}
+			}
+		}
+		
+		
+		if = {
+			limit = {
+				scope:secession_state = {
+					state_region = s:STATE_RIO_GRANDE
+				}
+			}
+			create_country = {
+				tag = RIO
+				origin = this
+				state = scope:secession_state
+			}
+			c:RIO ?= {
+				save_scope_as = secession_country
+				capital = {
+					save_scope_as = secession_capital
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					state_region = s:STATE_TEXAS
+				}
+			}
+			create_country = {
+		 		
+		 		origin = this
+		 		state = scope:secession_state
+		 		on_created = {
+		 			save_scope_as = secession_country
+		 			capital = {
+		 				save_scope_as = secession_capital
+		 			}
+		 		}
+		 	}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					OR = {
+						state_region = s:STATE_SONORA
+						state_region = s:STATE_SINALOA
+					}
+				}
+			}
+			if = {
+				limit = {
+					c:SON = {
+						exists = yes
+					}
+				}
+				scope:secession_state = {
+					set_state_owner = c:SON
+				}
+			}
+			else = {
+				create_country = {
+					tag = SON
+					origin = this
+					state = scope:secession_state
+				}
+				c:SON ?= {
+					save_scope_as = secession_country
+					capital = {
+						save_scope_as = secession_capital
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					OR = {
+						state_region = s:STATE_CALIFORNIA
+						state_region = s:STATE_BAJA_CALIFORNIA
+					}
+				}
+			}
+			if = {
+				limit = {
+					c:CAL = {
+						exists = yes
+					}
+				}
+				scope:secession_state = {
+					set_state_owner = c:CAL
+				}
+			}
+			else = {
+				create_country = {
+					tag = CAL
+					origin = this
+					state = scope:secession_state
+				}
+				c:CAL ?= {
+					save_scope_as = secession_country
+					capital = {
+						save_scope_as = secession_capital
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					OR = {
+						state_region = s:STATE_UTAH
+						state_region = s:STATE_NEVADA
+					}
+				}
+			}
+			if = {
+				limit = {
+					c:DES = {
+						exists = yes
+					}
+				}
+				scope:secession_state = {
+					set_state_owner = c:DES
+				}
+			}
+			else = {
+				create_country = {
+					tag = DES
+					origin = this
+					state = scope:secession_state
+				}
+				c:DES ?= {
+					save_scope_as = secession_country
+					capital = {
+						save_scope_as = secession_capital
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					OR = { 
+						state_region = s:STATE_NEW_MEXICO
+						state_region = s:STATE_ARIZONA
+						state_region = s:STATE_COLORADO
+					}
+				}
+			}
+			if = {
+				limit = {
+					c:PUE = {
+						exists = yes
+					}
+				}
+				scope:secession_state = {
+					set_state_owner = c:PUE
+				}
+			}
+			else = {
+				create_country = {
+					tag = PUE
+					origin = this
+					state = scope:secession_state
+				}
+				c:PUE ?= {
+					save_scope_as = secession_country
+					capital = {
+						save_scope_as = secession_capital
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:secession_state = {
+					OR = {
+						state_region = s:STATE_DURANGO
+						state_region = s:STATE_CHIHUAHUA
+					}
+				}
+			}
+			if = {
+				limit = {
+					c:NTE = {
+						exists = yes
+					}
+				}
+				scope:secession_state = {
+					set_state_owner = c:NTE
+				}
+			}
+			else = {
+				create_country = {
+					tag = NTE
+					origin = this
+					state = scope:secession_state
+				}
+				c:NTE ?= {
+					save_scope_as = secession_country
+					capital = {
+						save_scope_as = secession_capital
+					}
+				}
+			}
+		}
+		# else = {
+		# 	create_country = {
+		# 		
+		# 		origin = this
+		# 		state = scope:secession_state
+		# 		on_created = {
+		# 			save_scope_as = secession_country
+		# 			capital = {
+		# 				save_scope_as = secession_capital
+		# 			}
+		# 		}
+		# 	}
+		# 	
+		# }
+		# set_country_type = decentralized
+	}
+
+	# Accept secession
+	option = {
+		name = spanish_collapse.10.a
+		default_option = yes
+		add_radicals = {
+			value = large_radicals
+		}
+		scope:secession_country = {
+			change_relations = {
+				country = ROOT
+				value = 20
+			}
+			capital = {
+				state_region = {
+					add_devastation = 15
+				}
+				add_loyalists_in_state = {
+					value = 0.5
+				}
+			}
+		}
+	}
+
+	# Reject Secession
+	option = {
+		name = spanish_collapse.10.b
+		scope:secession_capital = {
+			state_region = {
+				add_claim = ROOT
+			}
+		}
+		add_radicals = {
+			value = large_radicals
+		}
+		scope:secession_country = {
+			change_relations = {
+				country = ROOT
+				value = -50
+			}
+			capital = {
+				state_region = {
+					add_devastation = 25
+				}
+				add_loyalists_in_state = {
+					value = 0.5
+				}
+			}
+		}
+	}
+}
+
+spanish_collapse.11 = {
+	type = country_event
+	placement = ROOT
+	title = spanish_collapse.11.t
+	desc = spanish_collapse.11.d
+	flavor =  spanish_collapse.11.f
+
+	duration = 3
+
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+
+	}
+
+	immediate = {
+		capital = {
+			save_scope_as = capital_scope
+		}
+
+		# All remaining Central American states secede
+		if = {
+			limit = {
+				exists = s:STATE_TEXAS.region_state:TEX
+				s:STATE_TEXAS.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = TEX
+				origin = this
+				state = s:STATE_TEXAS.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+			c:TEX ?= { save_scope_as = scope_TEX }
+			#if = {
+			#	limit = { exists = s:STATE_CHIAPAS.region_state:TEX }
+			#	s:STATE_CHIAPAS.region_state:TEX = { set_state_owner = c:TEX }
+			#}
+		}
+		# Los Altos, greatest of all central american nations
+		if = {
+			limit = {
+				NOT = { exists = c:RIO }
+				exists = s:STATE_RIO_GRANDE.region_state:TEX
+				s:STATE_RIO_GRANDE.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = RIO
+				origin = this
+				state = s:STATE_RIO_GRANDE.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:PUE }
+				exists = s:STATE_NEW_MEXICO.region_state:TEX
+				s:STATE_NEW_MEXICO.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = PUE
+				origin = this
+				state = s:STATE_NEW_MEXICO.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:PUE }
+				exists = s:STATE_COLORADO.region_state:TEX
+				s:STATE_COLORADO.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = PUE
+				origin = this
+				state = s:STATE_COLORADO.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:PUE }
+				exists = s:STATE_ARIZONA.region_state:TEX
+				s:STATE_ARIZONA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = PUE
+				origin = this
+				state = s:STATE_ARIZONA.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = { 
+				exists = c:PUE
+				exists = s:STATE_ARIZONA.region_state:TEX 
+				s:STATE_ARIZONA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			s:STATE_ARIZONA.region_state:TEX = { set_state_owner = c:PUE }
+		}
+		if = {
+			limit = { 
+				exists = c:PUE
+				exists = s:STATE_COLORADO.region_state:TEX 
+				s:STATE_COLORADO.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			s:STATE_COLORADO.region_state:TEX = { set_state_owner = c:PUE }
+		}
+		
+		if = {
+			limit = {
+				NOT = { exists = c:DES }
+				exists = s:STATE_UTAH.region_state:TEX
+				s:STATE_UTAH.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = DES
+				origin = this
+				state = s:STATE_UTAH.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:DES }
+				exists = s:STATE_NEVADA.region_state:TEX
+				s:STATE_NEVADA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = DES
+				origin = this
+				state = s:STATE_NEVADA.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = { 
+				exists = c:DES
+				exists = s:STATE_NEVADA.region_state:TEX 
+				s:STATE_NEVADA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			s:STATE_NEVADA.region_state:TEX = { set_state_owner = c:DES }
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:CAL }
+				exists = s:STATE_CALIFORNIA.region_state:TEX
+				s:STATE_CALIFORNIA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = CAL
+				origin = this
+				state = s:STATE_CALIFORNIA.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:CAL }
+				exists = s:STATE_BAJA_CALIFORNIA.region_state:TEX
+				s:STATE_BAJA_CALIFORNIA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = CAL
+				origin = this
+				state = s:STATE_BAJA_CALIFORNIA.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = { 
+				exists = c:CAL
+				exists = s:STATE_BAJA_CALIFORNIA.region_state:TEX 
+				s:STATE_BAJA_CALIFORNIA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			s:STATE_BAJA_CALIFORNIA.region_state:TEX = { set_state_owner = c:CAL }
+		}
+		
+		if = {
+			limit = {
+				NOT = { exists = c:SON }
+				exists = s:STATE_SONORA.region_state:TEX
+				s:STATE_SONORA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = SON
+				origin = this
+				state = s:STATE_SONORA.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:SON }
+				exists = s:STATE_SINALOA.region_state:TEX
+				s:STATE_SINALOA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = SON
+				origin = this
+				state = s:STATE_SINALOA.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = { 
+				exists = c:SON
+				exists = s:STATE_SINALOA.region_state:TEX 
+				s:STATE_SINALOA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			s:STATE_SINALOA.region_state:TEX = { set_state_owner = c:SON }
+		}
+		
+		
+		if = {
+			limit = {
+				NOT = { exists = c:NTE }
+				exists = s:STATE_CHIHUAHUA.region_state:TEX
+				s:STATE_CHIHUAHUA.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = NTE
+				origin = this
+				state = s:STATE_CHIHUAHUA.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:NTE }
+				exists = s:STATE_DURANGO.region_state:TEX
+				s:STATE_DURANGO.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			create_country = {
+				tag = NTE
+				origin = this
+				state = s:STATE_DURANGO.region_state:TEX
+				on_created = {
+					set_variable = tex_secession_country
+				}
+			}
+		}
+		if = {
+			limit = { 
+				exists = c:NTE
+				exists = s:STATE_DURANGO.region_state:TEX 
+				s:STATE_DURANGO.region_state:TEX = {
+					is_capital = no
+				}
+			}
+			s:STATE_DURANGO.region_state:TEX = { set_state_owner = c:NTE }
+		}
+		
+		### Change tag
+		if = {
+			limit = {
+				NOT = { exists = c:TEX }
+				capital = {
+					OR = { 
+						state_region = s:STATE_TEXAS
+					}
+				}
+			}
+			change_tag = TEX
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:RIO }
+				capital = {
+					OR = { 
+						state_region = s:STATE_RIO_GRANDE
+					}
+				}
+			}
+			change_tag = RIO
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:PUE }
+				capital = {
+					OR = { 
+						state_region = s:STATE_NEW_MEXICO
+						state_region = s:STATE_ARIZONA
+						state_region = s:STATE_COLORADO
+					}
+				}
+			}
+			change_tag = PUE
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:DES }
+				capital = {
+					OR = { 
+						state_region = s:STATE_UTAH
+						state_region = s:STATE_NEVADA
+					}
+				}
+			}
+			change_tag = DES
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:CAL }
+				capital = {
+					OR = { 
+						state_region = s:STATE_CALIFORNIA
+						state_region = s:STATE_BAJA_CALIFORNIA
+					}
+				}
+			}
+			change_tag = CAL
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:SON }
+				capital = {
+					OR = { 
+						state_region = s:STATE_SONORA
+						state_region = s:STATE_SINALOA
+					}
+				}
+			}
+			change_tag = SON
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:NTE }
+				capital = {
+					OR = { 
+						state_region = s:STATE_CHIHUAHUA
+						state_region = s:STATE_DURANGO
+					}
+				}
+			}
+			change_tag = NTE
+		}
+		
+	}
+
+	option = { #Fine fine
+		name = spanish_collapse.11.a
+		default_option = yes
+		# Change tag to whatever is appropriate ro your capital state
+		
+		capital = {
+			add_loyalists_in_state = {
+				value = 0.5
+			}
+		}
+		every_country = {
+			limit = {
+				has_variable = tex_secession_country
+			}
+			change_relations = {
+				country = ROOT
+				value = 20
+			}
+			capital = {
+				state_region = {
+					add_devastation = 15
+				}
+				add_loyalists_in_state = {
+					value = 0.5
+				}
+			}
+		}
+	}
+
+	option = { #We fight to the end
+		name = spanish_collapse.11.b
+		
+		capital = { #you also get loyalists
+			add_loyalists_in_state = {
+				value = 0.5
+			}
+		}
+		
+		# add claims on any state you just lost
+		every_country = {
+			limit = {
+				has_variable = tex_secession_country
+			}
+			capital = {
+				state_region = {
+					add_claim = ROOT
+					add_devastation = 25
+				}
+				add_loyalists_in_state = {
+					value = 0.5
+				}
+			}
+			change_relations = {
+				country = ROOT
+				value = -50
+			}
+		}
+	}
+}

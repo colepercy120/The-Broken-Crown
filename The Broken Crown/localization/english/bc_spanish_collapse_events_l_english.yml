@@ -41,4 +41,14 @@
   spanish_collapse.9.d: "Mexico has risen from the ashes of the spanish empire to be a global power in our own right! Our Empire stretches across the globe and our power is undeniable. the world will learn to fear the Mexican Empire!"
   spanish_collapse.9.a: "Viva Mexico!"
   
-  
+ spanish_collapse.10.t: "[SCOPE.sState('secession_state').GetName] Secedes"
+ spanish_collapse.10.d: "[SCOPE.sState('secession_state').GetName] has declared its secession from [ROOT.GetCountry.GetName]. This has prompted further instability and turmoil in the remaining states of our fragile union."
+ spanish_collapse.10.f: ""The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] signed a decree allowing the remaining states to secede, but this was nothing more than a formality; the dissolution of our confederation was already a reality. But perhaps what was may come again, given time for the wounds of division to heal.""
+ spanish_collapse.10.a: "Let them have their independence."
+ spanish_collapse.10.b: "They will regret this betrayal."
+ 
+ spanish_collapse.11.t: "The Dissolution of [ROOT.GetCountry.GetName]"
+ spanish_collapse.11.d: "The remaining states of the union have declared their independence. It has become clear that the union of [ROOT.GetCountry.GetName] is over, and that [SCOPE.sState('capital_scope').GetName] must fend for itself."
+ spanish_collapse.11.f: ""It is reclaiming the ownership of our country, or bowing down to them. It is forgetting the names of our parents, or learning the enemy's ancestors. It is sowing our own land, or seeing them ravage it. It is freedom, or it is war!""
+ spanish_collapse.11.a: "We must accept our fate."
+ spanish_collapse.11.b: "We will not abandon the union so lightly."

@@ -126,7 +126,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_arabic
+            hq_region = sr:region_near_east
             name = "Jaysh_al_Sham"
 
             combat_unit = {

@@ -16,10 +16,7 @@
 			country = c:GCO
 			type = colony
 		}
-		create_diplomatic_pact = {
-			country = c:PLT
-			type = colony
-		}
+		
 		
 #		create_diplomatic_pact = {
 #			country = c:CAL
@@ -204,7 +201,10 @@
 			country = c:SIL
 			type = puppet
 		}
-		
+		create_diplomatic_pact = {
+			country = c:PLT
+			type = colony
+		}
 		
 		
 
@@ -217,11 +217,7 @@
 			country = c:NSW
 			type = colony
 		}
-		# Colony of Western Australia
-		create_diplomatic_pact = {
-			country = c:WAS
-			type = colony
-		}
+		
 		# Colony of South Australia, established in February 1836
 		create_diplomatic_pact = {
 			country = c:SAS
@@ -244,6 +240,13 @@
 			type = protectorate
 		}
 		
+	}
+	c:ITA ?= {
+		# Colony of Western Australia
+		create_diplomatic_pact = {
+			country = c:WAS
+			type = colony
+		}
 	}
 	c:DAI ?= {
 		create_diplomatic_pact = {
@@ -733,6 +736,16 @@
 	c:BUR ?= {
 		create_diplomatic_pact = {
 			country = c:SHS
+			type = vassal
+		}
+	}
+	c:JAP ?= {
+		create_diplomatic_pact = {
+			country = c:RYU
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:EZO
 			type = vassal
 		}
 	}

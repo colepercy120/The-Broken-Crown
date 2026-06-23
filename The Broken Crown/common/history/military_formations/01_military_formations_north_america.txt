@@ -12,7 +12,7 @@
 		# Eastern Core Army
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_new_england
+			hq_region = sr:region_atlantic_coast
 			name = "Army of the Atlantic"
 
 			combat_unit = {
@@ -44,7 +44,7 @@
 		# Interior & Mississippi Army
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_the_midwest
+			hq_region = sr:region_great_plains
 			name = "Army of the Mississippi"
 
 			combat_unit = {
@@ -76,7 +76,7 @@
 		# Western Frontier Army
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_the_midwest
+			hq_region = sr:region_great_plains
 			name = "Army of the Frontier"
 
 			combat_unit = {
@@ -103,7 +103,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_dixie
+			hq_region = sr:region_great_plains
 			name = "Ejército de las Provincias Internas"
 
 			combat_unit = {
@@ -144,7 +144,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_mexico
+			hq_region = sr:region_central_america
 			name = "Ejército de Nueva España"
 
 			# Central Mexico – Core
@@ -234,7 +234,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_caribbean
+			hq_region = sr:region_central_america
 			name = "Ejército de las Indias Españolas"
 
 			combat_unit = {
@@ -303,7 +303,7 @@
 		# Atlantic Fleet
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_new_england
+			hq_region = sr:region_atlantic_coast
 			name = "United States Atlantic Fleet"
 
 			combat_unit = {
@@ -328,7 +328,7 @@
 		# Gulf Fleet
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_dixie
+			hq_region = sr:region_atlantic_coast
 			name = "Gulf Fleet"
 
 			combat_unit = {
@@ -359,7 +359,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_mexico
+			hq_region = sr:region_central_america
 			name = "Armada del Golfo"
 
 			combat_unit = {
@@ -384,7 +384,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_dixie
+			hq_region = sr:region_atlantic_coast
 			name = "Escuadra del Golfo Norte"
 
 			combat_unit = {
@@ -428,7 +428,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_caribbean
+			hq_region = sr:region_central_america
 			name = "Escuadra de las Indias"
 
 			combat_unit = {

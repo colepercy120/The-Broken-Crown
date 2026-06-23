@@ -71,7 +71,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_dnieper
+            hq_region = sr:region_eastern_europe
             name = "Dneprovskaya Armiya"
 
             combat_unit = {
@@ -108,7 +108,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_arctic_russia
+            hq_region = sr:region_russia
             name = "Severnaya Armiya"
 
             # Arkhangelsk
@@ -147,7 +147,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_urals
+            hq_region = sr:region_russia
             name = "Uralskaya Armiya"
 
             combat_unit = {
@@ -192,7 +192,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_east_siberia
+            hq_region = sr:region_siberia
             name = "Sibirskaya Armiya"
 
             # Western Siberia - Tobolsk
@@ -263,7 +263,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_baltic_states
+            hq_region = sr:region_eastern_europe
             name = "Baltiyskaya Armiya"
 
             combat_unit = {
@@ -307,7 +307,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_france
+            hq_region = sr:region_western_europe
             name = "Armee du Nord"
 
             combat_unit = {
@@ -357,7 +357,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_france
+            hq_region = sr:region_western_europe
             name = "Armee du Centre"
 
             combat_unit = {
@@ -407,7 +407,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_occitania
+            hq_region = sr:region_southern_europe
             name = "Armee d'Occitanie"
 
             combat_unit = {
@@ -467,7 +467,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_italy
+            hq_region = sr:region_southern_europe
             name = "Armee del Nord"
 
             combat_unit = {
@@ -517,7 +517,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_italy
+            hq_region = sr:region_southern_europe
             name = "Armee Centrale"
 
             combat_unit = {
@@ -562,7 +562,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_italy
+            hq_region = sr:region_southern_europe
             name = "Armee del Mezzogiorno"
 
             # Campania (Naples)
@@ -615,7 +615,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_poland
+            hq_region = sr:region_eastern_europe
             name = "Wojsko Polskie"
 
             # Warszawa (Greater Poland)
@@ -679,7 +679,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_dnieper
+            hq_region = sr:region_eastern_europe
             name = "Armia Dnieprowa"
 
             # Volhynia
@@ -734,7 +734,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_baltic_states
+            hq_region = sr:region_eastern_europe
             name = "Armia Litewska"
 
             # Lithuania
@@ -789,7 +789,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_south_germany
+            hq_region = sr:region_central_europe
             name = "Kaiserliche Armee"
 
             # Lower Austria (Vienna)
@@ -854,7 +854,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_danubia
+            hq_region = sr:region_balkans
             name = "Magyar Honvedseg"
 
             # Central Hungary (Budapest)
@@ -958,7 +958,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_danubia
+            hq_region = sr:region_balkans
             name = "Ardealului Armata"
 
             # Central Transylvania
@@ -1138,7 +1138,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_danubia
+            hq_region = sr:region_balkans
             name = "Armata Daciei"
 
             # Wallachia (capital core)
@@ -1207,7 +1207,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_england
+            hq_region = sr:region_western_europe
             name = "Southern Army"
 
             # London
@@ -1254,7 +1254,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_england
+            hq_region = sr:region_western_europe
             name = "Midlands Army"
 
             # Midlands
@@ -1301,7 +1301,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_sea_coast
+            hq_region = sr:region_western_europe
             name = "Northern Army"
 
             # Scotland — Lowlands
@@ -1340,7 +1340,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_iberia
+            hq_region = sr:region_southern_europe
             name = Guardia_Real
 
             combat_unit = {
@@ -1382,7 +1382,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_iberia
+            hq_region = sr:region_southern_europe
             name = Ejercito_del_Norte
 
             combat_unit = {
@@ -1466,7 +1466,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_iberia
+            hq_region = sr:region_southern_europe
             name = Ejercito_del_Centro
 
             combat_unit = {
@@ -1519,7 +1519,7 @@
         create_military_formation = {
             name = "Carlist_Army_of_the_North"
             type = army
-            hq_region = sr:region_iberia
+            hq_region = sr:region_southern_europe
 
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
@@ -1550,7 +1550,7 @@
         create_military_formation = {
             name = "Army_of_Maestrazgo"
             type = army
-            hq_region = sr:region_iberia
+            hq_region = sr:region_southern_europe
 
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
@@ -1581,7 +1581,7 @@
         create_military_formation = {
             name = "Army_of_Catalonia"
             type = army
-            hq_region = sr:region_iberia
+            hq_region = sr:region_southern_europe
 
             combat_unit = {
                 type = unit_type:combat_unit_type_skirmish_infantry
@@ -1613,7 +1613,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_portugal
+            hq_region = sr:region_southern_europe
             name = "Exercito_de_Lisboa"
 
             # Lisbon
@@ -1649,7 +1649,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_portugal
+            hq_region = sr:region_southern_europe
             name = "Exercito_do_Norte"
 
             combat_unit = {
@@ -1685,7 +1685,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_portugal
+            hq_region = sr:region_southern_europe
             name = "Exercito_do_Sul"
 
             # Alentejo
@@ -1726,7 +1726,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_germany
+            hq_region = sr:region_central_europe
             name = "Armee Nord"
 
             # Brandenburg
@@ -1756,7 +1756,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_poland
+            hq_region = sr:region_eastern_europe
             name = "Armee Ost"
 
             # East Prussia – infantry core
@@ -1792,7 +1792,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_germany
+            hq_region = sr:region_central_europe
             name = "Hannoversche Armee"
 
             # Hanover core
@@ -1832,7 +1832,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_rhine
+            hq_region = sr:region_western_europe
             name = "Rheinische_Armee"
 
             # Rhineland
@@ -1886,7 +1886,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_rhine
+            hq_region = sr:region_western_europe
             name = "Westfalische Armee"
 
             # Westphalia infantry
@@ -1930,7 +1930,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_germany
+            hq_region = sr:region_central_europe
             name = "Sachsische Armee"
 
             # Saxony core
@@ -1967,7 +1967,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_germany
+            hq_region = sr:region_central_europe
             name = "Mecklenburgische Armee"
 
             # Infantry core
@@ -2004,7 +2004,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_germany
+            hq_region = sr:region_central_europe
             name = "Anhaltische Armee"
 
             # Infantry core
@@ -2041,7 +2041,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_south_germany
+            hq_region = sr:region_central_europe
             name = "Bayerische Armee"
 
             # Bavaria (core)
@@ -2097,7 +2097,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_rhine
+            hq_region = sr:region_western_europe
             name = "Nederlands Noorderleger"
 
             # Friesland
@@ -2131,7 +2131,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_rhine
+            hq_region = sr:region_western_europe
             name = "Nederlands Zuidleger"
 
             # Holland (core population)
@@ -2170,7 +2170,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_rhine
+            hq_region = sr:region_western_europe
             name = "Belgisch Leger"
 
             # Flanders (industrial coast)
@@ -2226,7 +2226,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_baltic
+            hq_region = sr:region_northern_europe
             name = "Danske Hæren"
 
             # Sjælland (core)
@@ -2277,7 +2277,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_baltic
+            hq_region = sr:region_northern_europe
             name = "Svenska Armen"
 
             # Uppland (Swedish core)
@@ -2338,7 +2338,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_baltic
+            hq_region = sr:region_northern_europe
             name = "Norske Hæren"
 
             # Southern Norway
@@ -2378,7 +2378,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_germany
+            hq_region = sr:region_central_europe
             name = "Schleswiger_Armee"
 
             combat_unit = {
@@ -2410,7 +2410,7 @@
 
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_germany
+            hq_region = sr:region_central_europe
             name = "Holsteiner_Armee"
 
             combat_unit = {
@@ -2446,7 +2446,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_north_sea_coast
+            hq_region = sr:region_western_europe
             name = "Arm na hÉireann"
 
             # Leinster (Dublin core)
@@ -2510,7 +2510,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_anatolia
+            hq_region = sr:region_near_east
             name = "Osmanli_Ordusu"
 
             # Konya (capital - primary concentration)
@@ -2564,7 +2564,7 @@
         # --------------------------------------------------
         create_military_formation = {
             type = army
-            hq_region = sr:region_caucasus
+            hq_region = sr:region_greater_persia
             name = "Kavkazskaya_Armiya"
 
             # Tiflis (capital)
@@ -2635,7 +2635,7 @@
 	c:CIR ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_caucasus
+			hq_region = sr:region_greater_persia
 
 			combat_unit = { #
 				type = unit_type:combat_unit_type_hussars
@@ -2652,7 +2652,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_caucasus
+			hq_region = sr:region_greater_persia
 
 			combat_unit = { #
 				type = unit_type:combat_unit_type_hussars
@@ -2671,7 +2671,7 @@
 	c:CHC ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_caucasus
+			hq_region = sr:region_greater_persia
 			name = Murtazeki
 
 			combat_unit = { #
@@ -2689,7 +2689,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_caucasus
+			hq_region = sr:region_greater_persia
 			name = Milishia
 
 			combat_unit = { #
@@ -2710,7 +2710,7 @@
 	c:LUX ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_western_europe
 			name = Luxemburger_Miliz
 
 			combat_unit = {
@@ -2743,7 +2743,7 @@
         # Channel Fleet
         create_military_formation = {
             type = fleet
-            hq_region = sr:region_england
+            hq_region = sr:region_western_europe
             name = "Channel_Fleet"
 
             combat_unit = {
@@ -2777,7 +2777,7 @@
         # Home Fleet
         create_military_formation = {
             type = fleet
-            hq_region = sr:region_north_sea_coast
+            hq_region = sr:region_western_europe
             name = "Home_Fleet"
 
             combat_unit = {
@@ -2806,7 +2806,7 @@
         # Atlantic Fleet
         create_military_formation = {
             type = fleet
-            hq_region = sr:region_england
+            hq_region = sr:region_western_europe
             name = "Atlantic_Fleet"
 
             combat_unit = {
@@ -2847,7 +2847,7 @@
         # Channel Fleet
         create_military_formation = {
             type = fleet
-            hq_region = sr:region_france
+            hq_region = sr:region_western_europe
             name = "Flotte_de_la_Manche"
 
             combat_unit = {
@@ -2886,7 +2886,7 @@
         # Mediterranean Fleet
         create_military_formation = {
             type = fleet
-            hq_region = sr:region_occitania
+            hq_region = sr:region_southern_europe
             name = "Flotte_de_la_Mediterranee"
 
             combat_unit = {
@@ -2927,7 +2927,7 @@
         # Tyrrhenian Fleet
         create_military_formation = {
             type = fleet
-            hq_region = sr:region_italy
+            hq_region = sr:region_southern_europe
             name = "Flotta_Tirrenica"
 
             combat_unit = {
@@ -2961,7 +2961,7 @@
         # Adriatic Fleet
         create_military_formation = {
             type = fleet
-            hq_region = sr:region_italy
+            hq_region = sr:region_southern_europe
             name = "Flotta_Adriatica"
 
             combat_unit = {

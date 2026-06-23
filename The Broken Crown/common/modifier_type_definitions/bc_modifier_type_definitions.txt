@@ -1,0 +1,73 @@
+﻿
+state_caribbean_standard_of_living_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}
+
+country_caribbean_cultural_acceptance_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}
+
+state_antillean_standard_of_living_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}
+
+country_antillean_cultural_acceptance_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}
+
+state_alaskan_standard_of_living_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}
+
+country_alaskan_cultural_acceptance_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}
+
+
+country_fervor_target_caribbean_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}
+
+country_fervor_target_antillean_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}
+
+country_fervor_target_alaskan_add = {
+	decimals=1
+	color=good
+	game_data = {
+		ai_value=0
+	}
+}

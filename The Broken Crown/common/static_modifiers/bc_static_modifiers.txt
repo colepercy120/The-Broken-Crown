@@ -63,3 +63,4 @@ bc_unrest = {
 	country_legitimacy_base_add = -20
 	
 }
+

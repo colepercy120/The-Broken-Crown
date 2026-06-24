@@ -1354,7 +1354,7 @@
 				activate_production_methods = { "pm_muskets" "pm_automation_disabled" }
 			}
 			create_building = {
-				building = "building_artillery_foundries"
+				building = "building_artillery_foundry"
 				add_ownership = {
 					country= {
 						country = "c:KAS"
@@ -2878,7 +2878,7 @@
 				activate_production_methods = { "pm_muskets" "pm_automation_disabled" }
 			}
 			create_building = {
-				building = "building_artillery_foundries"
+				building = "building_artillery_foundry"
 				add_ownership = {
 					country= {
 						country = "c:MHR"

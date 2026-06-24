@@ -484,7 +484,7 @@
 				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
-				building="building_artillery_foundries"
+				building="building_artillery_foundry"
 				add_ownership={
 					country={
 						country="c:RUS"
@@ -540,7 +540,7 @@
 				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
 			}
 			create_building={
-				building="building_artillery_foundries"
+				building="building_artillery_foundry"
 				add_ownership={
 					country={
 						country="c:RUS"
@@ -636,7 +636,7 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 			create_building={
-				building="building_military_shipyard"
+				building="building_shipyard"
 				add_ownership={
 					country={
 						country="c:RUS"
@@ -644,7 +644,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 		}
 	}
@@ -1345,7 +1345,7 @@
 				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
-				building="building_military_shipyard"
+				building="building_shipyard"
 				add_ownership={
 					country={
 						country="c:RUS"
@@ -1353,7 +1353,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1552,7 +1552,7 @@
 				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
-				building="building_military_shipyard"
+				building="building_shipyard"
 				add_ownership={
 					country={
 						country="c:RUS"
@@ -1560,7 +1560,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 		}
 	}

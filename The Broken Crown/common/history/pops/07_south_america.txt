@@ -483,6 +483,10 @@ POPS = {
 				size = 95192
 			}
 			create_pop = {
+				culture = argentine
+				size = 100000
+			}
+			create_pop = {
 				culture = afro_caribeno
 				size = 19996
 			}
@@ -576,7 +580,11 @@ POPS = {
 		region_state:PLT = {
 			create_pop = {
 				culture = platinean
-				size = 206600
+				size = 106600
+			}
+			create_pop = {
+				culture = argentine
+				size = 300000
 			}
 			create_pop = {
 				culture = afro_caribeno
@@ -674,6 +682,10 @@ POPS = {
 			create_pop = {
 				culture = platinean
 				size = 94658
+			}
+			create_pop = {
+				culture = argentine
+				size = 100000
 			}
 			create_pop = {
 				culture = afro_caribeno

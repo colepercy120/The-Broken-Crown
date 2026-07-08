@@ -156,7 +156,7 @@ REPLACE:PLT = {
 
 	tier = empire
 
-	cultures = { platinean }
+	cultures = { argentine }
 	capital = STATE_BUENOS_AIRES
 }
 

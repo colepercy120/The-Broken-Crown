@@ -527,13 +527,13 @@
 		}
 	}
 	s:STATE_BAHAMAS={
-		region_state:CUB={
+		region_state:BAH={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:BAH"
 						levels=1
 						region="STATE_BAHAMAS"
 					}
@@ -546,7 +546,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:BAH"
 						levels=1
 						region="STATE_BAHAMAS"
 					}
@@ -558,7 +558,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:CUB"
+						country="c:BAH"
 						levels=1
 					}
 				}
@@ -650,20 +650,20 @@
 		
 	}
 	s:STATE_JAMAICA={
-		region_state:CUB={
+		region_state:JAM={
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:CUB"
+						country="c:JAM"
 						levels=2
 						region="STATE_JAMAICA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:CUB"
+						country="c:JAM"
 						levels=1
 						region="STATE_HOME_COUNTIES"
 					}
@@ -675,7 +675,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:JAM"
 						levels=1
 						region="STATE_JAMAICA"
 					}
@@ -688,7 +688,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:JAM"
 						levels=3
 						region="STATE_JAMAICA"
 					}
@@ -701,7 +701,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:JAM"
 						levels=5
 						region="STATE_JAMAICA"
 					}
@@ -713,7 +713,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:CUB"
+						country="c:JAM"
 						levels=1
 					}
 				}

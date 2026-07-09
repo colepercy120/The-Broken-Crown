@@ -242,7 +242,7 @@
 		}
 	}
 	s:STATE_BAHAMAS = {
-		region_state:CUB = {
+		region_state:BAH = {
 			create_pop = {
 				culture = caribbean
 				size = 19200
@@ -324,7 +324,7 @@
 		}
 	}
 	s:STATE_JAMAICA = {
-		region_state:CUB = {
+		region_state:JAM = {
 			create_pop = {
 				culture = afro_caribbean
 				size = 358596

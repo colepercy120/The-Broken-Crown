@@ -33,4 +33,53 @@
 			}
 		}
 	}
+	c:JAM ?= {
+		create_diplomatic_play = {
+			name = carribean_war_of_independence
+
+			target_country = c:CUB
+			
+			add_initiator_backers = { c:BAH}
+
+			war = yes
+
+			type = dp_independence
+
+			add_war_goal = {
+				holder = c:BAH
+				type = independence
+				target_country = c:CUB
+				primary_demand = yes
+			}
+			add_war_goal = {
+				holder = c:CUB
+				type = return_state
+				target_state = s:STATE_BAHAMAS.region_state:JAM
+				primary_demand = yes
+			}
+			add_war_goal = {
+				holder = c:CUB
+				type = return_state
+				target_state = s:STATE_JAMAICA.region_state:BAH
+				primary_demand = yes
+			}
+			
+		}
+	}
+	c:HAI ?= {
+		create_diplomatic_play = {
+			name = liberation_of_santo_domingo
+
+			target_state = s:STATE_SANTO_DOMINGO.region_state:CUB
+
+			war = yes
+
+			type = dp_return_state
+
+
+			
+			
+			
+		}
+	}
 }
